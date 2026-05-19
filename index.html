@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policy Alpha Portfolio | Institutional Strategy Research</title>
+    <meta
+      name="description"
+      content="An institutional-style portfolio research site built around policy momentum, blue-chip selection, proprietary trend execution, and cross-market asset allocation."
+    />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="styles.css?v=20260520-internal-framework" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Policy Alpha Portfolio home">
+        <span class="brand-mark">PA</span>
+        <span>
+          <strong>Policy Alpha</strong>
+          <small>Portfolio Research</small>
+          <small>Founded &amp; Researched by Elena Zhang</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#strategy">Process</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#product">Allocation</a>
+        <a href="#value-portfolio">Value Model</a>
+        <a href="#risk">Risk</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Policy Momentum · Blue-Chip Core · Cross-Market Risk</p>
+          <h1>Policy Alpha Portfolio</h1>
+          <p class="hero-byline">Independent Macro &amp; Equity Research by Elena Zhang</p>
+          <p class="hero-lead">
+            A rules-based research framework combining government policy cycles, quality blue-chip selection,
+            U.S. market risk appetite, and an internal trend framework to define entries, exits, and portfolio exposure.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#strategy">View Process</a>
+            <a class="button secondary" href="#disclaimer">Read Disclaimer</a>
+          </div>
+          <div class="hero-stat-strip" aria-label="Research mandate summary">
+            <div><span>Research Universe</span><strong>U.S. Equities + Policy Themes</strong></div>
+            <div><span>Primary Lens</span><strong>Macro Regime + Quality</strong></div>
+            <div><span>Execution Filter</span><strong>Internal Trend Framework</strong></div>
+          </div>
+        </div>
+
+        <div class="market-terminal" aria-label="Strategy dashboard">
+          <div class="terminal-top">
+            <span>POLICY ALPHA MODEL · WINDOW 2021.01-2026.05</span>
+            <strong>Illustrative Backtest</strong>
+          </div>
+          <canvas id="trendChart" width="720" height="360" aria-hidden="true"></canvas>
+          <div class="metric-grid">
+            <div>
+              <span>Cumulative Return</span>
+              <strong>+86.4%</strong>
+            </div>
+            <div>
+              <span>Annualized Return</span>
+              <strong>+12.1%</strong>
+            </div>
+            <div>
+              <span>Max Drawdown</span>
+              <strong>-18.7%</strong>
+            </div>
+            <div>
+              <span>S&amp;P 500 Comp</span>
+              <strong>+61.8%</strong>
+            </div>
+            <div>
+              <span>Nasdaq 100 Comp</span>
+              <strong>+74.2%</strong>
+            </div>
+            <div>
+              <span>Model State</span>
+              <strong>Risk On</strong>
+            </div>
+          </div>
+          <p class="terminal-disclosure">
+            Illustrative framework backtest only. Not actual account performance, future return guidance, or an investment promise.
+          </p>
+        </div>
+      </section>
+
+      <section class="notice-band" aria-label="Important notice">
+        <strong>Important Notice</strong>
+        <span>
+          This site is for personal research and strategy presentation only. It is not investment advice, fund solicitation, return guarantee, or asset management service.
+        </span>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Elena Zhang</h2>
+          <p>Principal Researcher · UNSW Business Analytics · Macro &amp; Policy-Aware Equity Research</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Research Mandate</h3>
+            <p>
+              Policy Alpha is an independent research framework focused on translating macro regimes,
+              industrial policy, and equity-market leadership into disciplined portfolio construction.
+            </p>
+          </article>
+          <article class="about-card">
+            <h3>Coverage Focus</h3>
+            <ul>
+              <li>Critical Minerals</li>
+              <li>Macro Regime Rotation</li>
+              <li>Policy-Driven Equity Themes</li>
+              <li>Portfolio Construction</li>
+            </ul>
+          </article>
+        </div>
+        <div class="about-contact-bar">
+          <span>Contact</span>
+          <a href="https://www.linkedin.com/in/qingqinghzang/" target="_blank" rel="noopener noreferrer">LinkedIn: qingqinghzang</a>
+          <a href="mailto:elenazhang2378@outlook.com">Email: elenazhang2378@outlook.com</a>
+        </div>
+      </section>
+
+      <section id="strategy" class="section strategy-section">
+        <div class="section-heading">
+          <p class="eyebrow">Investment Process</p>
+          <h2>Three Filters, Two Confirmations</h2>
+          <p>
+            The process starts with policy and industry-cycle assessment, then screens for durable blue-chip quality,
+            and finally uses an internal trend framework to confirm execution windows before capital is deployed.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="step">01</span>
+            <h3>Policy Direction</h3>
+            <p>Track fiscal, industrial, energy, technology, and healthcare policy to identify durable capital-flow themes.</p>
+          </article>
+          <article class="process-card">
+            <span class="step">02</span>
+            <h3>Blue-Chip Quality</h3>
+            <p>Prioritize companies with strong market share, balance-sheet strength, earnings resilience, and governance quality.</p>
+          </article>
+          <article class="process-card">
+            <span class="step">03</span>
+            <h3>Internal Trend Framework</h3>
+            <p>Use an internal trend model to filter noise and stage entries only after market structure improves.</p>
+          </article>
+          <article class="process-card">
+            <span class="step">04</span>
+            <h3>U.S. Market Overlay</h3>
+            <p>Monitor Nasdaq, S&amp;P 500, dollar liquidity, and rate expectations to size equity, cash, and defensive exposure.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section governance-section">
+        <div class="section-heading">
+          <p class="eyebrow">Investment Governance</p>
+          <h2>Research Discipline Before Portfolio Expression</h2>
+          <p>
+            Every allocation must pass a documented thesis, valuation discipline, trend confirmation,
+            and risk-budget review before it enters the model portfolio.
+          </p>
+        </div>
+        <div class="governance-grid">
+          <article>
+            <span>01</span>
+            <h3>Thesis Memo</h3>
+            <p>Policy catalyst, business quality, valuation range, and disconfirming evidence are written before entry.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Risk Budget</h3>
+            <p>Single-name, sector, and drawdown limits are assigned before sizing, not after volatility appears.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Execution Gate</h3>
+            <p>Internal trend confirmation defines the difference between a watchlist idea and an active position.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Review Cadence</h3>
+            <p>Positions are reviewed monthly, with immediate review after policy shifts, earnings surprises, or trend breaks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sectors" class="section allocation-section">
+        <div class="allocation-copy">
+          <p class="eyebrow">Sector Playbook</p>
+          <h2>Sector Rotation Around Policy Themes</h2>
+          <p>
+            The portfolio favors sectors supported by policy, technological progress, and demand expansion,
+            while avoiding permanent over-commitment to any single theme.
+          </p>
+          <div class="pill-list" aria-label="Focus sectors">
+            <span>Innovation Tech</span>
+            <span>EV &amp; New Energy</span>
+            <span>Lithium Resources</span>
+            <span>Healthcare</span>
+            <span>Staples</span>
+            <span>Dividend Defense</span>
+          </div>
+        </div>
+
+        <div class="allocation-panel">
+          <div class="panel-header">
+            <span>Sector Allocation Scores</span>
+            <strong>May 2026 Research View</strong>
+          </div>
+          <div class="sector-card-grid" aria-label="Sector allocation scorecards">
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">AI</span>
+                <div><strong>Innovation Tech</strong><small>Policy 9 · Trend 8 · Valuation 6 · Quality 8</small></div>
+                <b>22%</b>
+              </div>
+              <div class="weight-track"><i style="width: 88%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">EV</span>
+                <div><strong>EV &amp; New Energy</strong><small>Policy 8 · Trend 7 · Valuation 6 · Quality 7</small></div>
+                <b>18%</b>
+              </div>
+              <div class="weight-track"><i style="width: 72%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">RX</span>
+                <div><strong>Healthcare</strong><small>Policy 7 · Trend 6 · Valuation 7 · Quality 8</small></div>
+                <b>14%</b>
+              </div>
+              <div class="weight-track"><i style="width: 56%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">LI</span>
+                <div><strong>Lithium Resources</strong><small>Policy 7 · Trend 5 · Valuation 7 · Quality 5</small></div>
+                <b>8%</b>
+              </div>
+              <div class="weight-track"><i style="width: 32%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">CS</span>
+                <div><strong>Core Staples</strong><small>Policy 5 · Trend 6 · Valuation 7 · Quality 8</small></div>
+                <b>12%</b>
+              </div>
+              <div class="weight-track"><i style="width: 48%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">DY</span>
+                <div><strong>Dividend Defense</strong><small>Policy 4 · Trend 6 · Valuation 8 · Quality 7</small></div>
+                <b>10%</b>
+              </div>
+              <div class="weight-track"><i style="width: 40%"></i></div>
+            </article>
+            <article class="sector-card cash-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">TB</span>
+                <div><strong>Cash / T-Bills</strong><small>Valuation 9 · Quality 9 · Waiting for confirmation</small></div>
+                <b>16%</b>
+              </div>
+              <div class="weight-track"><i style="width: 64%"></i></div>
+            </article>
+          </div>
+          <p class="score-note">
+            Scores are 1-10. Policy measures support and durability; trend references internal trend framework and U.S. risk appetite;
+            valuation reflects margin of safety; quality reflects earnings, cash flow, and leadership.
+          </p>
+        </div>
+      </section>
+
+      <section id="companies" class="section companies-section">
+        <div class="section-heading">
+          <p class="eyebrow">Company Watchlist</p>
+          <h2>Six-Theme Company Watchlist</h2>
+          <p>
+            Companies are ranked by market capitalization, approximate 10-year price appreciation,
+            historical drawdown, and fundamental quality. For research tracking only.
+          </p>
+        </div>
+
+        <div class="company-tabs" aria-label="Sector categories"></div>
+        <div class="company-toolbar" aria-label="Company sorting tools">
+          <span>Sort</span>
+          <button class="sort-button is-active" type="button" data-sort="score">Composite</button>
+          <button class="sort-button" type="button" data-sort="marketCap">Market Cap</button>
+          <button class="sort-button" type="button" data-sort="tenYear">10Y Return</button>
+          <button class="sort-button" type="button" data-sort="drawdown">Lower Drawdown</button>
+        </div>
+        <p class="company-data-note">
+          Approximate research data for 2016.05-2026.05. Market cap is estimated in USD; 10-year return is price-based;
+          max drawdown measures peak-to-trough loss over the sample. Companies with shorter histories are marked accordingly.
+        </p>
+
+        <div class="company-workbench">
+          <div class="company-list" aria-live="polite"></div>
+          <aside class="live-chart-panel">
+            <div class="panel-header">
+              <span>Live Price Chart</span>
+              <strong id="activeSymbolLabel">NASDAQ:AAPL</strong>
+            </div>
+            <div id="tradingview-chart" class="tradingview-chart"></div>
+            <p class="chart-note">
+              Charts and quotes are powered by TradingView widgets and may be real-time or delayed depending on exchange data access.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="product" class="section portfolio-section">
+        <div class="section-heading">
+          <p class="eyebrow">Model Portfolio</p>
+          <h2>Policy Alpha Model Portfolio Allocation</h2>
+          <p>
+            A model allocation designed around a blue-chip core, policy-driven growth sleeves,
+            U.S. market exposure as a risk barometer, and cash/T-bills for optionality.
+          </p>
+        </div>
+
+        <div class="product-layout">
+          <aside class="product-summary">
+            <div class="product-brief">
+              <span>Base Model</span>
+              <h3>80% Equity Offense + 20% Defensive Buffer</h3>
+              <p>Blue chips stabilize the book, policy growth adds upside, U.S. beta signals risk appetite, and T-bills preserve optionality.</p>
+            </div>
+            <div class="allocation-stack" aria-label="Portfolio allocation bar">
+              <i class="stack-core" style="width: 30%"></i>
+              <i class="stack-growth" style="width: 25%"></i>
+              <i class="stack-resource" style="width: 10%"></i>
+              <i class="stack-health" style="width: 10%"></i>
+              <i class="stack-global" style="width: 15%"></i>
+              <i class="stack-cash" style="width: 10%"></i>
+            </div>
+            <div class="allocation-legend">
+              <span><i class="stack-core"></i>Core Blue Chips 30%</span>
+              <span><i class="stack-growth"></i>Policy Growth 25%</span>
+              <span><i class="stack-resource"></i>Resource Cycle 10%</span>
+              <span><i class="stack-health"></i>Healthcare Defense 10%</span>
+              <span><i class="stack-global"></i>U.S. Market 15%</span>
+              <span><i class="stack-cash"></i>Cash / T-Bills 10%</span>
+            </div>
+            <div class="product-kpis">
+              <div><span>Mandate</span><strong>Trend Growth</strong></div>
+              <div><span>Monthly Review</span><strong>Rebalance Discipline</strong></div>
+              <div><span>Execution</span><strong>Internal Filter</strong></div>
+            </div>
+          </aside>
+
+          <div class="sleeve-grid">
+            <article class="sleeve-card core">
+              <div><span>01</span><strong>Core Blue-Chip Sleeve</strong></div>
+              <b>30%</b>
+              <p>High-quality leaders across technology, staples, financials, and industrials anchor portfolio stability.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>BRK.B, MSFT, COST, JPM</dd>
+                <dt>Entry Trigger</dt><dd>Fair valuation and price reclaiming the internal long-term trend band</dd>
+                <dt>Cut Trigger</dt><dd>Fundamental deterioration or single-name weight above 15%</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card growth">
+              <div><span>02</span><strong>Policy Growth Sleeve</strong></div>
+              <b>25%</b>
+              <p>Innovation tech, EVs, AI compute, and advanced manufacturing provide policy-linked upside.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>NVDA, TSM, TSLA, BYD, AVGO</dd>
+                <dt>Entry Trigger</dt><dd>Policy catalyst plus improving index-level risk appetite</dd>
+                <dt>Cut Trigger</dt><dd>Valuation exhaustion, trend break, or policy thesis failure</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card resource">
+              <div><span>03</span><strong>Lithium &amp; Resource Cycle</strong></div>
+              <b>10%</b>
+              <p>Lithium, battery metals, and diversified miners add upstream cyclicality to the energy transition book.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>ALB, SQM, RIO, BHP, PLS.AX</dd>
+                <dt>Entry Trigger</dt><dd>Commodity prices stabilize and inventory cycle turns from destocking to restocking</dd>
+                <dt>Cut Trigger</dt><dd>Falling lithium prices, supply release, or breach of drawdown discipline</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card health">
+              <div><span>04</span><strong>Healthcare Defense</strong></div>
+              <b>10%</b>
+              <p>Pharma, devices, and health services offset volatility from high-beta growth sleeves.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>LLY, NVO, UNH, JNJ, TMO</dd>
+                <dt>Entry Trigger</dt><dd>Market volatility rises while healthcare fundamentals remain resilient</dd>
+                <dt>Cut Trigger</dt><dd>Drug policy risk or deceleration in core products</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card global">
+              <div><span>05</span><strong>U.S. Market Exposure</strong></div>
+              <b>15%</b>
+              <p>S&amp;P 500, Nasdaq 100, and related ETFs act as the portfolio's risk-appetite benchmark.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>SPY, VOO, QQQ, IWM</dd>
+                <dt>Entry Trigger</dt><dd>S&amp;P and Nasdaq pass the internal market-structure filter</dd>
+                <dt>Cut Trigger</dt><dd>Rising rates, tighter dollar liquidity, or index breakdown</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card cash">
+              <div><span>06</span><strong>Cash &amp; T-Bill Buffer</strong></div>
+              <b>10%</b>
+              <p>Dry powder for trend breaks, policy waiting periods, and staged re-entry after drawdowns.</p>
+              <dl>
+                <dt>Representative Names</dt><dd>BIL, SGOV, money-market funds, cash</dd>
+                <dt>Entry Trigger</dt><dd>Equity exposure overheats or model shifts to Risk Off</dd>
+                <dt>Cut Trigger</dt><dd>High-quality assets become undervalued and trend confirms</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+
+        <div class="regime-grid">
+          <article>
+            <h3>Risk On</h3>
+            <p>When U.S. indices reclaim key averages and policy themes broaden, equity exposure can rise to 85%-90%.</p>
+          </article>
+          <article>
+            <h3>Neutral</h3>
+            <p>In range-bound markets, keep 70%-80% equity exposure and size cyclical/high-beta positions conservatively.</p>
+          </article>
+          <article>
+            <h3>Risk Off</h3>
+            <p>When key indices fail the internal market-structure filter, reduce equity exposure to 45%-60% and increase cash/T-bill and defensive sleeves.</p>
+          </article>
+        </div>
+
+        <p class="allocation-footnote">
+          Model allocation for personal research only. Not a fund prospectus, asset management service, investment advice, or return guarantee.
+        </p>
+      </section>
+
+      <section id="value-portfolio" class="section value-section">
+        <div class="section-heading">
+          <p class="eyebrow">Value Optimized Portfolio</p>
+          <h2>Value-Oriented Optimization Model</h2>
+          <p>
+            The objective is not to chase the highest past winners. It is to combine moats, cash flow,
+            dividends or buybacks, and risk-adjusted constraints over an approximate 10-year sample.
+          </p>
+        </div>
+
+        <div class="value-layout">
+          <aside class="value-method">
+            <h3>Optimization Framework</h3>
+            <ul>
+              <li>Sample window: May 2016-May 2026, approximately 10 years of daily prices</li>
+              <li>Objective: maximize risk-adjusted return while penalizing drawdown</li>
+              <li>Single-name cap: 15% to avoid over-concentration in backtest winners</li>
+              <li>Cash/T-bill floor: 5% for trend breaks and re-entry optionality</li>
+              <li>Sector cap: 30% to limit single-theme concentration</li>
+            </ul>
+            <p>
+              The model is designed as a reproducible research template: weights can be recalculated
+              from clean daily price data using the same constraints, objective function, and risk limits.
+            </p>
+          </aside>
+
+          <div class="optimized-table" role="table" aria-label="Value investment optimized portfolio">
+            <div class="table-row table-head" role="row">
+              <span>Asset</span>
+              <span>Weight</span>
+              <span>Role</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Berkshire Hathaway · BRK.B</span>
+              <strong>15%</strong>
+              <span>Value core, insurance float, long-term capital allocation</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Microsoft · MSFT</span>
+              <strong>14%</strong>
+              <span>High-quality cash flow, enterprise software, cloud platform</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Costco · COST</span>
+              <strong>10%</strong>
+              <span>Membership retail moat and resilient demand</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>JPMorgan Chase · JPM</span>
+              <strong>9%</strong>
+              <span>Banking leader, rate-cycle leverage, dividends and buybacks</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>UnitedHealth · UNH</span>
+              <strong>9%</strong>
+              <span>Healthcare services platform with defensive growth</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Visa · V</span>
+              <strong>8%</strong>
+              <span>Payment network, asset-light high-margin model</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Exxon Mobil · XOM</span>
+              <strong>7%</strong>
+              <span>Energy cash flow, inflation and resource-cycle hedge</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Procter & Gamble · PG</span>
+              <strong>7%</strong>
+              <span>Staples, brand pricing power, defensive sleeve</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Johnson & Johnson · JNJ</span>
+              <strong>6%</strong>
+              <span>Healthcare blue chip, lower-volatility dividend asset</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Home Depot · HD</span>
+              <strong>5%</strong>
+              <span>Home improvement leader tied to maintenance demand</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Coca-Cola · KO</span>
+              <strong>5%</strong>
+              <span>Global brand with stable cash flow and dividends</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Cash / T-Bills · BIL or money-market funds</span>
+              <strong>5%</strong>
+              <span>Drawdown buffer and dry powder for undervaluation plus trend confirmation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="backtest-grid">
+          <article>
+            <span>Target Annualized Range</span>
+            <strong>~13%-15%</strong>
+            <p>Biased toward quality value and cash-flow assets; return comes from compounding, not short-term trading.</p>
+          </article>
+          <article>
+            <span>Annualized Volatility</span>
+            <strong>~15%-17%</strong>
+            <p>Lower than a pure growth book, but still equity-like risk.</p>
+          </article>
+          <article>
+            <span>Drawdown Control</span>
+            <strong>Target &lt;30%</strong>
+            <p>When indices break the internal long-term trend model, reduce high-valuation and cyclical exposure first.</p>
+          </article>
+          <article>
+            <span>Rebalance Discipline</span>
+            <strong>Quarterly + Triggered</strong>
+            <p>Review valuation and fundamentals quarterly; rebalance when a single name deviates materially from target.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="risk" class="section risk-section">
+        <div class="risk-copy">
+          <p class="eyebrow">Risk Control</p>
+          <h2>Control Drawdown Before Seeking Upside</h2>
+          <p>
+            Risk management is treated as a portfolio operating system: exposure is reduced mechanically
+            when drawdown, trend, or thesis risk breaches pre-defined thresholds.
+          </p>
+        </div>
+        <div class="risk-dashboard">
+          <div class="risk-limits">
+            <div><span>Sector Cap</span><strong>30%</strong><small>Policy-growth sleeves combined</small></div>
+            <div><span>Single-Name Cap</span><strong>15%</strong><small>Above this enters rebalance review</small></div>
+            <div><span>Review Trigger</span><strong>-12%</strong><small>Pause adds and reassess exposure</small></div>
+            <div><span>Capital Defense</span><strong>-20%</strong><small>Reduce equity to 45%-60%</small></div>
+          </div>
+          <div class="risk-matrix">
+            <h3>Risk Action Matrix</h3>
+            <div class="matrix-row matrix-head">
+              <span>Trigger</span>
+              <span>Action</span>
+              <span>Target Exposure</span>
+            </div>
+            <div class="matrix-row">
+              <span>Before Entry</span>
+              <span>Document thesis, target weight, stop level, and review date</span>
+              <strong>No chase</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Portfolio -12%</span>
+              <span>Pause adds; reduce high-beta and weak-trend exposure first</span>
+              <strong>Equity 65%-75%</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Index Breaks Internal Trend Band</span>
+              <span>Reduce policy growth and resource cycle; keep blue-chip core</span>
+              <strong>Equity 45%-60%</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Policy or Fundamental Failure</span>
+              <span>Exit the affected theme; do not average down mechanically</span>
+              <strong>Theme to zero</strong>
+            </div>
+            <div class="matrix-row">
+              <span>Trend Reconfirmed</span>
+              <span>Add back in three tranches: blue chips, growth, then cyclicals</span>
+              <strong>Equity 80%-90%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="disclaimer" class="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>
+          This website is for personal investment research, market observation, and methodology presentation only.
+          It does not constitute investment advice, fund solicitation, private offering, discretionary management,
+          return guarantee, or an offer to buy or sell any financial product.
+        </p>
+        <p>
+          Markets involve risk. Historical performance, model signals, policy analysis, and sector views do not indicate future results.
+          Visitors should make independent decisions based on their own financial circumstances and consult licensed professionals where appropriate.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Policy Alpha Research</span>
+      <span>Research by Elena Zhang</span>
+      <a href="#disclaimer">Risk Disclosure</a>
+      <div class="language-selector" aria-label="Language selector">
+        <span>Language</span>
+        <a class="is-active" href="index.html" lang="en">English</a>
+        <a href="zh.html" lang="zh-CN">中文</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260520-internal-framework"></script>
+  </body>
+</html>

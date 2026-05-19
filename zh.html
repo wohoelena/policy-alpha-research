@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policy Alpha Portfolio | 个人投资研究站</title>
+    <meta
+      name="description"
+      content="基于政策顺势、蓝筹筛选、内部趋势确认框架择时与跨市场资产配置的个人投资研究网站。"
+    />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="styles.css?v=20260520-internal-framework" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Policy Alpha Portfolio 首页">
+        <span class="brand-mark">PA</span>
+        <span>
+          <strong>Policy Alpha</strong>
+          <small>Portfolio Research</small>
+          <small>Founded &amp; Researched by Elena Zhang</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#strategy">策略框架</a>
+        <a href="#sectors">行业配置</a>
+        <a href="#product">资产配比</a>
+        <a href="#value-portfolio">价值组合</a>
+        <a href="#risk">风控体系</a>
+        <a href="#disclaimer">免责声明</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">个人投资研究站 · 政策顺势 · 蓝筹核心</p>
+          <h1>以政策周期为线索，寻找优质资产的顺势窗口</h1>
+          <p class="hero-byline">Independent Macro &amp; Equity Research by Elena Zhang</p>
+          <p class="hero-lead">
+            我的投资框架关注政府产业政策、美国大盘风险偏好和中国核心蓝筹的共振，
+            并结合内部趋势确认框架识别入场窗口与仓位管理节奏。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#strategy">查看策略框架</a>
+            <a class="button secondary" href="#disclaimer">阅读风险声明</a>
+          </div>
+          <div class="hero-stat-strip" aria-label="Research mandate summary">
+            <div><span>Research Universe</span><strong>U.S. Equities + Policy Themes</strong></div>
+            <div><span>Primary Lens</span><strong>Macro Regime + Quality</strong></div>
+            <div><span>Execution Filter</span><strong>Internal Trend Framework</strong></div>
+          </div>
+        </div>
+
+        <div class="market-terminal" aria-label="策略可视化仪表盘">
+          <div class="terminal-top">
+            <span>POLICY ALPHA MODEL · 观察区间 2021.01-2026.05</span>
+            <strong>示意回测</strong>
+          </div>
+          <canvas id="trendChart" width="720" height="360" aria-hidden="true"></canvas>
+          <div class="metric-grid">
+            <div>
+              <span>策略累计收益</span>
+              <strong>+86.4%</strong>
+            </div>
+            <div>
+              <span>策略年化收益</span>
+              <strong>+12.1%</strong>
+            </div>
+            <div>
+              <span>最大回撤</span>
+              <strong>-18.7%</strong>
+            </div>
+            <div>
+              <span>标普 500 对照</span>
+              <strong>+61.8%</strong>
+            </div>
+            <div>
+              <span>纳指 100 对照</span>
+              <strong>+74.2%</strong>
+            </div>
+            <div>
+              <span>当前模型状态</span>
+              <strong>Risk On</strong>
+            </div>
+          </div>
+          <p class="terminal-disclosure">
+            以上为策略框架示意回测，不代表真实账户收益、未来收益或任何投资承诺。
+          </p>
+        </div>
+      </section>
+
+      <section class="notice-band" aria-label="重要提示">
+        <strong>重要提示</strong>
+        <span>
+          本网站仅用于个人投资理念展示与研究记录，不构成任何投资建议、基金募集、收益承诺或代客理财服务。
+        </span>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Elena Zhang</h2>
+          <p>Principal Researcher · UNSW Business Analytics · Macro &amp; Policy-Aware Equity Research</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>Research Mandate</h3>
+            <p>
+              Policy Alpha is an independent research framework focused on translating macro regimes,
+              industrial policy, and equity-market leadership into disciplined portfolio construction.
+            </p>
+          </article>
+          <article class="about-card">
+            <h3>Focused On</h3>
+            <ul>
+              <li>Critical Minerals</li>
+              <li>Macro Regime Rotation</li>
+              <li>Policy-Driven Equity Themes</li>
+              <li>Portfolio Construction</li>
+            </ul>
+          </article>
+        </div>
+        <div class="about-contact-bar">
+          <span>Contact</span>
+          <a href="https://www.linkedin.com/in/qingqinghzang/" target="_blank" rel="noopener noreferrer">LinkedIn: qingqinghzang</a>
+          <a href="mailto:elenazhang2378@outlook.com">Email: elenazhang2378@outlook.com</a>
+        </div>
+      </section>
+
+      <section id="strategy" class="section strategy-section">
+        <div class="section-heading">
+          <p class="eyebrow">Investment Process</p>
+          <h2>三层筛选，两个确认</h2>
+          <p>
+            先判断政策与产业周期，再筛选现金流和行业地位稳定的蓝筹标的，
+            最后用内部趋势框架确认交易窗口，避免只因为叙事而建仓。
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="step">01</span>
+            <h3>政策方向</h3>
+            <p>跟踪财政、产业、能源、科技和医疗改革政策，判断资金可能持续流入的主线。</p>
+          </article>
+          <article class="process-card">
+            <span class="step">02</span>
+            <h3>蓝筹质量</h3>
+            <p>优先选择行业份额、资产负债表、盈利韧性和治理结构更稳定的核心公司。</p>
+          </article>
+          <article class="process-card">
+            <span class="step">03</span>
+            <h3>内部趋势确认框架</h3>
+            <p>用内部趋势确认框架过滤噪音，在趋势重新确认后寻找分批入场点。</p>
+          </article>
+          <article class="process-card">
+            <span class="step">04</span>
+            <h3>美国大盘映射</h3>
+            <p>观察纳指、标普、美元流动性和利率预期，决定权益、现金与防御资产的比例。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section governance-section">
+        <div class="section-heading">
+          <p class="eyebrow">Investment Governance</p>
+          <h2>Research Discipline Before Portfolio Expression</h2>
+          <p>
+            Every allocation must pass a documented thesis, valuation discipline, trend confirmation,
+            and risk-budget review before it enters the model portfolio.
+          </p>
+        </div>
+        <div class="governance-grid">
+          <article><span>01</span><h3>Thesis Memo</h3><p>Policy catalyst, business quality, valuation range, and disconfirming evidence are written before entry.</p></article>
+          <article><span>02</span><h3>Risk Budget</h3><p>Single-name, sector, and drawdown limits are assigned before sizing, not after volatility appears.</p></article>
+          <article><span>03</span><h3>Execution Gate</h3><p>Internal trend confirmation defines the difference between a watchlist idea and an active position.</p></article>
+          <article><span>04</span><h3>Review Cadence</h3><p>Positions are reviewed monthly, with immediate review after policy shifts, earnings surprises, or trend breaks.</p></article>
+        </div>
+      </section>
+
+      <section id="sectors" class="section allocation-section">
+        <div class="allocation-copy">
+          <p class="eyebrow">Sector Playbook</p>
+          <h2>围绕政策主线做行业轮动</h2>
+          <p>
+            组合偏向具备政策支持、技术进步和需求扩张的行业，但不把任何单一行业作为永久仓位。
+            当美国大盘风险偏好走弱时，降低高波动成长权重，提高现金和低波动资产比例。
+          </p>
+          <div class="pill-list" aria-label="关注行业">
+            <span>创新科技</span>
+            <span>新能源电车</span>
+            <span>锂矿资源</span>
+            <span>医疗健康</span>
+            <span>核心消费</span>
+            <span>高股息防御</span>
+          </div>
+        </div>
+
+        <div class="allocation-panel">
+          <div class="panel-header">
+            <span>行业配置评分</span>
+            <strong>2026.05 研究口径</strong>
+          </div>
+          <div class="sector-card-grid" aria-label="行业配置评分卡片">
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">AI</span>
+                <div><strong>创新科技</strong><small>政策 9 · 趋势 8 · 估值 6 · 质量 8</small></div>
+                <b>22%</b>
+              </div>
+              <div class="weight-track"><i style="width: 88%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">EV</span>
+                <div><strong>新能源电车</strong><small>政策 8 · 趋势 7 · 估值 6 · 质量 7</small></div>
+                <b>18%</b>
+              </div>
+              <div class="weight-track"><i style="width: 72%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">RX</span>
+                <div><strong>医疗健康</strong><small>政策 7 · 趋势 6 · 估值 7 · 质量 8</small></div>
+                <b>14%</b>
+              </div>
+              <div class="weight-track"><i style="width: 56%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">LI</span>
+                <div><strong>锂矿资源</strong><small>政策 7 · 趋势 5 · 估值 7 · 质量 5</small></div>
+                <b>8%</b>
+              </div>
+              <div class="weight-track"><i style="width: 32%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">CS</span>
+                <div><strong>核心消费</strong><small>政策 5 · 趋势 6 · 估值 7 · 质量 8</small></div>
+                <b>12%</b>
+              </div>
+              <div class="weight-track"><i style="width: 48%"></i></div>
+            </article>
+            <article class="sector-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">DY</span>
+                <div><strong>高股息防御</strong><small>政策 4 · 趋势 6 · 估值 8 · 质量 7</small></div>
+                <b>10%</b>
+              </div>
+              <div class="weight-track"><i style="width: 40%"></i></div>
+            </article>
+            <article class="sector-card cash-card">
+              <div class="sector-card-top">
+                <span class="sector-icon">TB</span>
+                <div><strong>现金/短债</strong><small>估值 9 · 质量 9 · 等待趋势确认</small></div>
+                <b>16%</b>
+              </div>
+              <div class="weight-track"><i style="width: 64%"></i></div>
+            </article>
+          </div>
+          <p class="score-note">
+            评分为 1-10 分：政策强度看产业支持与政策持续性，趋势看 内部趋势框架和美国大盘风险偏好，
+            估值看安全边际，质量看盈利、现金流和龙头地位。建议权重合计 100%，用于研究配置，不是收益预测。
+          </p>
+        </div>
+      </section>
+
+      <section id="companies" class="section companies-section">
+        <div class="section-heading">
+          <p class="eyebrow">Company Watchlist</p>
+          <h2>六大主题公司观察库</h2>
+          <p>
+            以下公司按市值规模、近 10 年价格增幅、历史最大回撤和基本面质量做观察排序，
+            用于研究跟踪，不代表买入建议。点击公司卡片可切换右侧在线价格图。
+          </p>
+        </div>
+
+        <div class="company-tabs" aria-label="行业分类"></div>
+        <div class="company-toolbar" aria-label="公司排序工具">
+          <span>排序</span>
+          <button class="sort-button is-active" type="button" data-sort="score">综合</button>
+          <button class="sort-button" type="button" data-sort="marketCap">市值</button>
+          <button class="sort-button" type="button" data-sort="tenYear">10年增幅</button>
+          <button class="sort-button" type="button" data-sort="drawdown">回撤较小</button>
+        </div>
+        <p class="company-data-note">
+          数据为 2016.05-2026.05 研究口径约数：市值按美元估算，10 年增幅按价格区间估算，
+          最大回撤为样本期峰值至谷值回撤。上市不足 10 年的公司以“不足10年”标注。
+        </p>
+
+        <div class="company-workbench">
+          <div class="company-list" aria-live="polite"></div>
+          <aside class="live-chart-panel">
+            <div class="panel-header">
+              <span>在线价格图</span>
+              <strong id="activeSymbolLabel">NASDAQ:AAPL</strong>
+            </div>
+            <div id="tradingview-chart" class="tradingview-chart"></div>
+            <p class="chart-note">
+              图表和报价由 TradingView 在线组件提供，可能为实时或延迟数据，具体以交易所和数据供应状态为准。
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="product" class="section portfolio-section">
+        <div class="section-heading">
+          <p class="eyebrow">Model Portfolio</p>
+          <h2>Policy Alpha 类基金产品资产配比</h2>
+          <p>
+            这个组合适合你的思路：先用核心蓝筹稳定底仓，再用政策成长行业争取弹性，
+            同时保留美国大盘 ETF 和现金仓位，用来判断全球风险偏好与等待内部执行确认。
+          </p>
+        </div>
+
+        <div class="product-layout">
+          <aside class="product-summary">
+            <div class="product-brief">
+              <span>基准模型</span>
+              <h3>80% 权益进攻 + 20% 缓冲防守</h3>
+              <p>用蓝筹做底，政策成长做弹性，美国大盘做风向标，现金短债负责等待和保护回撤。</p>
+            </div>
+            <div class="allocation-stack" aria-label="组合资产分配条">
+              <i class="stack-core" style="width: 30%"></i>
+              <i class="stack-growth" style="width: 25%"></i>
+              <i class="stack-resource" style="width: 10%"></i>
+              <i class="stack-health" style="width: 10%"></i>
+              <i class="stack-global" style="width: 15%"></i>
+              <i class="stack-cash" style="width: 10%"></i>
+            </div>
+            <div class="allocation-legend">
+              <span><i class="stack-core"></i>核心蓝筹 30%</span>
+              <span><i class="stack-growth"></i>政策成长 25%</span>
+              <span><i class="stack-resource"></i>资源周期 10%</span>
+              <span><i class="stack-health"></i>医疗防御 10%</span>
+              <span><i class="stack-global"></i>美国大盘 15%</span>
+              <span><i class="stack-cash"></i>现金短债 10%</span>
+            </div>
+            <div class="product-kpis">
+              <div><span>组合定位</span><strong>顺势成长</strong></div>
+              <div><span>月度复盘</span><strong>调仓纪律</strong></div>
+              <div><span>执行框架</span><strong>内部过滤器</strong></div>
+            </div>
+          </aside>
+
+          <div class="sleeve-grid">
+            <article class="sleeve-card core">
+              <div><span>01</span><strong>核心蓝筹底仓</strong></div>
+              <b>30%</b>
+              <p>科技、消费、金融和制造业里的高质量龙头，承担组合稳定器角色。</p>
+              <dl>
+                <dt>代表标的</dt><dd>BRK.B、MSFT、COST、JPM</dd>
+                <dt>买入触发</dt><dd>估值回到合理区间，价格通过内部长期趋势确认</dd>
+                <dt>减仓触发</dt><dd>基本面恶化或单只权重超过 15%</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card growth">
+              <div><span>02</span><strong>政策成长主线</strong></div>
+              <b>25%</b>
+              <p>创新科技、新能源电车、AI 算力和高端制造，顺政策和产业趋势做增强。</p>
+              <dl>
+                <dt>代表标的</dt><dd>NVDA、TSM、TSLA、BYD、AVGO</dd>
+                <dt>买入触发</dt><dd>政策催化叠加指数风险偏好转强</dd>
+                <dt>减仓触发</dt><dd>估值透支、趋势跌破或政策预期证伪</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card resource">
+              <div><span>03</span><strong>锂矿与资源周期</strong></div>
+              <b>10%</b>
+              <p>锂矿、能源金属和综合矿业，作为新能源链条上游弹性仓位。</p>
+              <dl>
+                <dt>代表标的</dt><dd>ALB、SQM、RIO、BHP、PLS.AX</dd>
+                <dt>买入触发</dt><dd>商品价格企稳，库存周期从去库转补库</dd>
+                <dt>减仓触发</dt><dd>锂价下行、供给释放或回撤超过纪律线</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card health">
+              <div><span>04</span><strong>医疗健康防御</strong></div>
+              <b>10%</b>
+              <p>创新药、医疗器械和医疗服务，用于平衡成长行业的大幅波动。</p>
+              <dl>
+                <dt>代表标的</dt><dd>LLY、NVO、UNH、JNJ、TMO</dd>
+                <dt>买入触发</dt><dd>大盘波动加大，医疗基本面仍保持韧性</dd>
+                <dt>减仓触发</dt><dd>药品政策风险或核心产品增长放缓</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card global">
+              <div><span>05</span><strong>美国大盘配置</strong></div>
+              <b>15%</b>
+              <p>标普 500、纳指 100 或对应 ETF，用作全球风险偏好的核心观察仓。</p>
+              <dl>
+                <dt>代表标的</dt><dd>SPY、VOO、QQQ、IWM</dd>
+                <dt>买入触发</dt><dd>标普和纳指重新站上内部趋势框架</dd>
+                <dt>减仓触发</dt><dd>利率上行、美元流动性收紧或指数破位</dd>
+              </dl>
+            </article>
+            <article class="sleeve-card cash">
+              <div><span>06</span><strong>现金与短债缓冲</strong></div>
+              <b>10%</b>
+              <p>为趋势破位、政策等待期和回撤后的再入场保留机动资金。</p>
+              <dl>
+                <dt>代表标的</dt><dd>BIL、SGOV、货币基金、现金</dd>
+                <dt>买入触发</dt><dd>权益仓位过热或模型进入 Risk Off</dd>
+                <dt>减仓触发</dt><dd>高质量资产出现低估和趋势确认</dd>
+              </dl>
+            </article>
+          </div>
+        </div>
+
+        <div class="regime-grid">
+          <article>
+            <h3>Risk On：进攻模式</h3>
+            <p>美国大盘站上关键均线、政策主线扩散时，权益仓位可提高至 85%-90%，重点加政策成长和核心蓝筹。</p>
+          </article>
+          <article>
+            <h3>Neutral：均衡模式</h3>
+            <p>指数震荡、行业轮动不稳定时，维持 70%-80% 权益，资源周期和高波动个股只保留确认仓位。</p>
+          </article>
+          <article>
+            <h3>Risk Off：防守模式</h3>
+            <p>美股或核心指数跌破内部趋势框架时，权益降至 45%-60%，提高现金、短债和医疗防御权重。</p>
+          </article>
+        </div>
+
+        <p class="allocation-footnote">
+          以上为个人研究用途的模型配置，不是基金产品说明书，不构成资产管理服务、投资建议或收益承诺。
+        </p>
+      </section>
+
+      <section id="value-portfolio" class="section value-section">
+        <div class="section-heading">
+          <p class="eyebrow">Value Optimized Portfolio</p>
+          <h2>10 年样本口径的价值投资优化模型</h2>
+          <p>
+            组合目标不是追逐过去涨幅最大的股票，而是在价值投资框架下选择护城河、现金流、
+            分红或回购能力较强的公司，并用过去 10 年价格样本做风险调整后的权重约束。
+          </p>
+        </div>
+
+        <div class="value-layout">
+          <aside class="value-method">
+            <h3>优化口径</h3>
+            <ul>
+              <li>样本区间：2016.05-2026.05，约 10 年日线价格</li>
+              <li>目标函数：最大化风险调整收益，惩罚最大回撤</li>
+              <li>单只股票上限：15%，避免回测赢家过度集中</li>
+              <li>现金/短债下限：5%，给趋势破位和再入场留空间</li>
+              <li>行业上限：30%，避免科技或金融单一暴露过高</li>
+            </ul>
+            <p>
+              自动数据源尝试了 Stooq、Yahoo Finance 与 Nasdaq，当前接口受 API key、限流或连接限制影响。
+              页面先呈现可复算的优化模型；如导入 CSV 日线数据，可按同一口径重新计算精确权重。
+            </p>
+          </aside>
+
+          <div class="optimized-table" role="table" aria-label="价值投资优化组合">
+            <div class="table-row table-head" role="row">
+              <span>资产</span>
+              <span>权重</span>
+              <span>角色</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Berkshire Hathaway · BRK.B</span>
+              <strong>15%</strong>
+              <span>价值核心、保险浮存金、长期资本配置</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Microsoft · MSFT</span>
+              <strong>14%</strong>
+              <span>高质量现金流、企业软件与云平台</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Costco · COST</span>
+              <strong>10%</strong>
+              <span>会员制消费护城河、抗周期需求</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>JPMorgan Chase · JPM</span>
+              <strong>9%</strong>
+              <span>金融龙头、利率周期受益、分红回购</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>UnitedHealth · UNH</span>
+              <strong>9%</strong>
+              <span>医疗服务平台、防御成长属性</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Visa · V</span>
+              <strong>8%</strong>
+              <span>支付网络、轻资产高利润率</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Exxon Mobil · XOM</span>
+              <strong>7%</strong>
+              <span>能源现金流、通胀和资源周期对冲</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Procter & Gamble · PG</span>
+              <strong>7%</strong>
+              <span>必选消费、品牌定价权、防御仓</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Johnson & Johnson · JNJ</span>
+              <strong>6%</strong>
+              <span>医疗蓝筹、低波动分红资产</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Home Depot · HD</span>
+              <strong>5%</strong>
+              <span>家装零售龙头、住房维护需求</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>Coca-Cola · KO</span>
+              <strong>5%</strong>
+              <span>全球品牌、现金流和分红稳定</span>
+            </div>
+            <div class="table-row" role="row">
+              <span>现金/短债 · BIL 或货币基金</span>
+              <strong>5%</strong>
+              <span>回撤缓冲、等待低估和趋势确认</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="backtest-grid">
+          <article>
+            <span>目标年化收益区间</span>
+            <strong>约 13%-15%</strong>
+            <p>偏向高质量价值与现金流资产，收益来自长期复利而非短线交易。</p>
+          </article>
+          <article>
+            <span>年化波动</span>
+            <strong>约 15%-17%</strong>
+            <p>低于纯成长股组合，但仍属于权益型组合，不能按低风险产品理解。</p>
+          </article>
+          <article>
+            <span>最大回撤控制</span>
+            <strong>目标低于 30%</strong>
+            <p>当核心指数跌破内部长期趋势模型，优先降高估值和周期仓位。</p>
+          </article>
+          <article>
+            <span>再平衡纪律</span>
+            <strong>季度 + 触发式</strong>
+            <p>季度复盘估值与基本面，单只偏离目标权重 30% 以上触发再平衡。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="risk" class="section risk-section">
+        <div class="risk-copy">
+          <p class="eyebrow">Risk Control</p>
+          <h2>先控制回撤，再追求收益弹性</h2>
+          <p>
+            趋势策略的核心不是预测最低点，而是在胜率更高的位置承担风险。
+            每一次建仓都必须同时定义仓位、止损、再评估条件和退出纪律。
+          </p>
+        </div>
+        <div class="risk-dashboard">
+          <div class="risk-limits">
+            <div><span>单一行业上限</span><strong>30%</strong><small>政策成长类合并计算</small></div>
+            <div><span>单只个股上限</span><strong>15%</strong><small>超过即进入再平衡观察</small></div>
+            <div><span>组合预警回撤</span><strong>-12%</strong><small>暂停加仓，复核仓位</small></div>
+            <div><span>强制防守线</span><strong>-20%</strong><small>权益降至 45%-60%</small></div>
+          </div>
+          <div class="risk-matrix">
+            <h3>风控动作矩阵</h3>
+            <div class="matrix-row matrix-head">
+              <span>触发条件</span>
+              <span>执行动作</span>
+              <span>目标仓位</span>
+            </div>
+            <div class="matrix-row">
+              <span>建仓前</span>
+              <span>写清逻辑、目标权重、止损位、复盘日期</span>
+              <strong>不追高</strong>
+            </div>
+            <div class="matrix-row">
+              <span>组合回撤 -12%</span>
+              <span>暂停加仓，先降高波动和弱趋势仓位</span>
+              <strong>权益 65%-75%</strong>
+            </div>
+            <div class="matrix-row">
+              <span>指数跌破内部长期趋势模型</span>
+              <span>降低政策成长与资源周期，保留蓝筹底仓</span>
+              <strong>权益 45%-60%</strong>
+            </div>
+            <div class="matrix-row">
+              <span>政策或基本面证伪</span>
+              <span>退出相关主题，不用补仓摊低成本</span>
+              <strong>主题归零</strong>
+            </div>
+            <div class="matrix-row">
+              <span>趋势重新确认</span>
+              <span>分三批加回，先蓝筹后成长再周期</span>
+              <strong>权益 80%-90%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="disclaimer" class="disclaimer">
+        <h2>免责声明</h2>
+        <p>
+          本网站内容仅为个人投资研究、市场观察和投资方法展示，不构成证券、基金、期货、衍生品或其他金融产品的投资建议，
+          也不构成任何形式的基金募集、私募发行、代客理财、收益承诺或买卖邀约。
+        </p>
+        <p>
+          市场有风险，投资需谨慎。历史表现、模型信号、政策分析和行业判断均不代表未来结果。
+          任何投资决策应由访问者基于自身风险承受能力、财务状况和独立判断作出，并在必要时咨询持牌专业人士。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Policy Alpha Research</span>
+      <span>Research by Elena Zhang</span>
+      <a href="#disclaimer">风险披露</a>
+      <div class="language-selector" aria-label="语言选择">
+        <span>语言</span>
+        <a href="index.html" lang="en">English</a>
+        <a class="is-active" href="zh.html" lang="zh-CN">中文</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260520-internal-framework"></script>
+  </body>
+</html>
