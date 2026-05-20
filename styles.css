@@ -652,6 +652,81 @@ h2 {
   font-weight: 900;
 }
 
+.about-contact-bar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.about-contact-bar .contact-button {
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: var(--gold);
+  color: #07090b;
+  white-space: nowrap;
+}
+
+.inquiry-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(16, 32, 42, 0.06);
+}
+
+.inquiry-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.inquiry-form span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  width: 100%;
+  border: 1px solid rgba(214, 168, 79, 0.28);
+  border-radius: 6px;
+  padding: 11px 12px;
+  background: rgba(7, 9, 11, 0.75);
+  color: var(--ink);
+  font: inherit;
+}
+
+.inquiry-form textarea {
+  resize: vertical;
+}
+
+.inquiry-form .form-full {
+  grid-column: 1 / -1;
+}
+
+.inquiry-form .contact-button {
+  justify-self: start;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--gold);
+  color: #07090b;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+}
+
+.hidden-field {
+  display: none;
+}
+
 .governance-section {
   background: rgba(8, 11, 14, 0.9);
 }
@@ -1639,7 +1714,8 @@ h2 {
   }
 
   .hero-stat-strip,
-  .governance-grid {
+  .governance-grid,
+  .inquiry-form {
     grid-template-columns: 1fr;
   }
 

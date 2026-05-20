@@ -432,6 +432,23 @@ renderSortButtons();
 renderCompanies();
 renderTradingViewChart(activeSymbol);
 
+document.querySelectorAll(".email-form").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const name = data.get("name");
+    const email = data.get("email");
+    const inquiryType = data.get("inquiry_type");
+    const message = data.get("message");
+    const subject = "Policy Alpha Research Inquiry";
+    const body = isChinesePage
+      ? `Policy Alpha 研究交流请求\n\n姓名：${name}\n邮箱：${email}\n合作方式：${inquiryType}\n专业交流内容：${message}`
+      : `Policy Alpha Research Inquiry\n\nName: ${name}\nEmail: ${email}\nInquiry Type: ${inquiryType}\nMessage: ${message}`;
+
+    window.location.href = `mailto:elenazhang2378@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+});
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
