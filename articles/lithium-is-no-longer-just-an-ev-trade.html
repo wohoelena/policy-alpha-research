@@ -112,7 +112,6 @@
           <div class="article-share-tools">
             <button class="button primary share-article-button" type="button">Share Article</button>
             <button class="button secondary save-site-button" type="button" data-save-url="https://policyalpharesearch.com/index.html#insights">Save Site</button>
-            <button class="button secondary xhs-share-button" type="button" data-share-image="../assets/social/lithium-story-card.png" data-share-file="policy-alpha-lithium-xiaohongshu.png">Xiaohongshu Card</button>
           </div>
         </header>
 
@@ -315,42 +314,6 @@
           }
           await navigator.clipboard.writeText(window.location.href);
           button.textContent = "Link Copied";
-          window.setTimeout(() => {
-            button.textContent = originalText;
-          }, 1800);
-        });
-      });
-
-      document.querySelectorAll(".xhs-share-button").forEach((button) => {
-        button.addEventListener("click", async () => {
-          const originalText = button.textContent;
-          const imagePath = button.dataset.shareImage;
-          try {
-            const imageUrl = new URL(imagePath, window.location.href);
-            const response = await fetch(imageUrl.href);
-            const blob = await response.blob();
-            const file = new File([blob], button.dataset.shareFile || "policy-alpha-xiaohongshu-card.png", { type: blob.type || "image/png" });
-            const imageShareData = {
-              title: document.title,
-              text: `Policy Alpha Research ${window.location.href}`,
-              files: [file],
-            };
-            if (navigator.share && navigator.canShare && navigator.canShare(imageShareData)) {
-              await navigator.share(imageShareData);
-              return;
-            }
-            const link = document.createElement("a");
-            link.href = imagePath;
-            link.download = button.dataset.shareFile || "policy-alpha-story-card.png";
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-            await navigator.clipboard?.writeText(window.location.href);
-            button.textContent = "Card Ready";
-          } catch (error) {
-            await navigator.clipboard?.writeText(window.location.href);
-            button.textContent = "Link Copied";
-          }
           window.setTimeout(() => {
             button.textContent = originalText;
           }, 1800);

@@ -2330,7 +2330,7 @@ h2 {
 
   .article-share-tools {
     position: static;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
     gap: 6px;
     margin-top: 22px;
