@@ -444,6 +444,8 @@ h1 {
 }
 
 .button {
+  appearance: none;
+  cursor: pointer;
   display: inline-flex;
   min-height: 46px;
   align-items: center;

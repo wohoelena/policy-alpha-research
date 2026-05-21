@@ -2,6 +2,12 @@ const canvas = document.getElementById("trendChart");
 const ctx = canvas.getContext("2d");
 const isChinesePage = document.documentElement.lang.toLowerCase().startsWith("zh");
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+
 const strategyPoints = [100, 108, 101, 119, 127, 116, 132, 148, 139, 154, 163, 151, 168, 174, 181, 169, 176, 188, 181, 186.4];
 const sp500Points = [100, 106, 102, 112, 118, 113, 122, 130, 126, 136, 143, 138, 150, 155, 158, 149, 154, 162, 158, 161.8];
 const nasdaqPoints = [100, 112, 106, 126, 134, 121, 139, 152, 145, 158, 168, 154, 171, 179, 184, 166, 171, 181, 174, 174.2];
@@ -446,6 +452,52 @@ document.querySelectorAll(".email-form").forEach((form) => {
       : `Policy Alpha Research Inquiry\n\nName: ${name}\nEmail: ${email}\nInquiry Type: ${inquiryType}\nMessage: ${message}`;
 
     window.location.href = `mailto:elenazhang2378@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+});
+
+let deferredInstallPrompt = null;
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+});
+
+async function copySaveUrl(url) {
+  if (!navigator.clipboard) return false;
+  try {
+    await navigator.clipboard.writeText(url);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function saveSiteMessage(copied) {
+  const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (isChinesePage) {
+    if (isAppleMobile) return "请点击浏览器分享按钮，然后选择“添加到主屏幕”。";
+    return copied
+      ? "网站地址已复制。你也可以在浏览器菜单中选择“添加到主屏幕”或收藏本页。"
+      : "请在浏览器菜单中选择“添加到主屏幕”或收藏本页。";
+  }
+  if (isAppleMobile) return "Tap the browser Share button, then choose Add to Home Screen.";
+  return copied
+    ? "The site link has been copied. You can also use your browser menu to Add to Home Screen or bookmark this page."
+    : "Use your browser menu to Add to Home Screen or bookmark this page.";
+}
+
+document.querySelectorAll(".save-site-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      return;
+    }
+
+    const saveUrl = button.dataset.saveUrl || window.location.href;
+    const copied = await copySaveUrl(saveUrl);
+    window.alert(saveSiteMessage(copied));
   });
 });
 
