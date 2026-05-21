@@ -4,7 +4,9 @@ const isChinesePage = document.documentElement.lang.toLowerCase().startsWith("zh
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    });
   });
 }
 
@@ -477,13 +479,13 @@ function saveSiteMessage(copied) {
   if (isChinesePage) {
     if (isAppleMobile) return "请点击浏览器分享按钮，然后选择“添加到主屏幕”。";
     return copied
-      ? "网站地址已复制。你也可以在浏览器菜单中选择“添加到主屏幕”或收藏本页。"
-      : "请在浏览器菜单中选择“添加到主屏幕”或收藏本页。";
+      ? "网站地址已复制。安卓 Chrome 如未弹出安装窗口，请刷新页面后再点一次；也可以点右上角菜单，选择“安装应用”或“添加到主屏幕”。"
+      : "安卓 Chrome 如未弹出安装窗口，请刷新页面后再点一次；也可以点右上角菜单，选择“安装应用”或“添加到主屏幕”。";
   }
   if (isAppleMobile) return "Tap the browser Share button, then choose Add to Home Screen.";
   return copied
-    ? "The site link has been copied. You can also use your browser menu to Add to Home Screen or bookmark this page."
-    : "Use your browser menu to Add to Home Screen or bookmark this page.";
+    ? "The site link has been copied. On Android Chrome, refresh once and tap this button again, or use the browser menu to choose Install app or Add to Home screen."
+    : "On Android Chrome, refresh once and tap this button again, or use the browser menu to choose Install app or Add to Home screen.";
 }
 
 document.querySelectorAll(".save-site-button").forEach((button) => {
