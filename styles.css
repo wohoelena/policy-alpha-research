@@ -2181,9 +2181,15 @@ h2 {
 
 @media (max-width: 720px) {
   .site-header {
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 60;
     align-items: flex-start;
     flex-direction: column;
+    gap: 10px;
+    padding: 10px 16px;
+    backdrop-filter: blur(18px);
+    background: rgba(7, 9, 11, 0.96);
   }
 
   .nav {
@@ -2192,6 +2198,20 @@ h2 {
     overflow-x: auto;
     padding-bottom: 2px;
     white-space: nowrap;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+
+  .brand strong {
+    font-size: 16px;
+  }
+
+  .brand small:last-child {
+    display: none;
   }
 
   h1 {
@@ -2301,7 +2321,6 @@ h2 {
 
   .article-hero {
     min-height: 0;
-    padding-top: 58px;
     padding-right: 0;
   }
 
@@ -2310,28 +2329,24 @@ h2 {
   }
 
   .article-share-tools {
-    position: absolute;
-    top: 0;
-    right: 0;
-    grid-template-columns: 1fr 1fr;
-    width: min(100%, 340px);
+    position: static;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
     gap: 6px;
-    margin-top: 0;
+    margin-top: 22px;
+    padding: 8px;
+    border: 1px solid rgba(214, 168, 79, 0.18);
+    border-radius: 8px;
+    background: rgba(16, 20, 24, 0.92);
   }
 
   .article-share-tools .button {
+    min-height: 38px;
     width: 100%;
     justify-content: center;
-  }
-
-  .download-menu {
-    grid-column: 1 / -1;
-  }
-
-  .download-menu,
-  .download-menu summary,
-  .download-menu a {
-    width: 100%;
+    padding: 0 8px;
+    font-size: 11px;
+    white-space: nowrap;
   }
 
   .methodology-table-head {
