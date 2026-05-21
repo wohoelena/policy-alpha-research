@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#07090b"/>
+  <path d="M0 0h1200v630H0z" fill="url(#g)"/>
+  <rect x="56" y="56" width="1088" height="518" rx="20" fill="none" stroke="#d6a84f" stroke-width="2" opacity=".55"/>
+  <rect x="84" y="84" width="92" height="92" rx="14" fill="#050607"/>
+  <image href="../policy-alpha-logo.png" x="84" y="84" width="92" height="92" preserveAspectRatio="xMidYMid slice"/>
+  <text x="204" y="118" fill="#d6a84f" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="3">POLICY ALPHA 观察</text>
+  <text x="204" y="158" fill="#9ca3a6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22">战略材料 · 2026 年 5 月</text>
+  <text x="84" y="302" fill="#f4f0e6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="74" font-weight="900">锂不再只是</text>
+  <text x="84" y="398" fill="#f4f0e6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="74" font-weight="900">电动车交易</text>
+  <text x="84" y="474" fill="#d6a84f" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">电网安全 · 产业政策 · 供应链韧性</text>
+  <text x="84" y="532" fill="#9ca3a6" font-family="Inter, Arial, sans-serif" font-size="24">Elena Zhang · Policy Alpha Research</text>
+  <text x="846" y="532" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">policyalpharesearch.com</text>
+  <defs>
+    <radialGradient id="g" cx=".78" cy=".18" r=".82">
+      <stop offset="0" stop-color="#d6a84f" stop-opacity=".16"/>
+      <stop offset=".48" stop-color="#11161b" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#07090b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#07090b"/>
+  <path d="M0 0h1080v1920H0z" fill="url(#g)"/>
+  <rect x="70" y="76" width="940" height="1768" rx="28" fill="none" stroke="#d6a84f" stroke-width="3" opacity=".55"/>
+  <rect x="108" y="118" width="132" height="132" rx="18" fill="#050607"/>
+  <image href="../policy-alpha-logo.png" x="108" y="118" width="132" height="132" preserveAspectRatio="xMidYMid slice"/>
+  <text x="108" y="340" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="4">POLICY ALPHA</text>
+  <text x="108" y="386" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="4">INSIGHTS</text>
+  <text x="108" y="548" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900">Lithium</text>
+  <text x="108" y="652" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900">Is No Longer</text>
+  <text x="108" y="756" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900">Just an</text>
+  <text x="108" y="860" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900">EV Trade</text>
+  <rect x="108" y="990" width="630" height="3" fill="#d6a84f"/>
+  <text x="108" y="1102" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Strategic Materials</text>
+  <text x="108" y="1170" fill="#9ca3a6" font-family="Inter, Arial, sans-serif" font-size="34">Grid Security</text>
+  <text x="108" y="1226" fill="#9ca3a6" font-family="Inter, Arial, sans-serif" font-size="34">Industrial Policy</text>
+  <text x="108" y="1282" fill="#9ca3a6" font-family="Inter, Arial, sans-serif" font-size="34">Supply-Chain Resilience</text>
+  <text x="108" y="1668" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Elena Zhang</text>
+  <text x="108" y="1722" fill="#9ca3a6" font-family="Inter, Arial, sans-serif" font-size="30">Policy Alpha Research · May 2026</text>
+  <text x="108" y="1786" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">policyalpharesearch.com</text>
+  <defs>
+    <radialGradient id="g" cx=".76" cy=".14" r=".86">
+      <stop offset="0" stop-color="#d6a84f" stop-opacity=".17"/>
+      <stop offset=".48" stop-color="#11161b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#07090b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

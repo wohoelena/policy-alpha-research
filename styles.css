@@ -1761,6 +1761,17 @@ h2 {
   line-height: 1.55;
 }
 
+.article-share-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.article-share-tools .button {
+  min-height: 44px;
+}
+
 .article-summary,
 .article-body,
 .article-footer-note,
@@ -2114,6 +2125,11 @@ h2 {
 
   .article-shell {
     padding-top: 34px;
+  }
+
+  .article-share-tools .button {
+    width: 100%;
+    justify-content: center;
   }
 
   .site-footer {

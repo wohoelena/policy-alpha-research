@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#07090b"/>
+  <path d="M0 0h1080v1920H0z" fill="url(#g)"/>
+  <rect x="70" y="76" width="940" height="1768" rx="28" fill="none" stroke="#d6a84f" stroke-width="3" opacity=".55"/>
+  <rect x="108" y="118" width="132" height="132" rx="18" fill="#050607"/>
+  <image href="../policy-alpha-logo.png" x="108" y="118" width="132" height="132" preserveAspectRatio="xMidYMid slice"/>
+  <text x="108" y="342" fill="#d6a84f" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="3">POLICY ALPHA 观察</text>
+  <text x="108" y="562" fill="#f4f0e6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="96" font-weight="900">锂不再只是</text>
+  <text x="108" y="684" fill="#f4f0e6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="96" font-weight="900">电动车</text>
+  <text x="108" y="806" fill="#f4f0e6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="96" font-weight="900">交易</text>
+  <rect x="108" y="952" width="630" height="3" fill="#d6a84f"/>
+  <text x="108" y="1066" fill="#d6a84f" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="800">战略材料</text>
+  <text x="108" y="1138" fill="#9ca3a6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="36">电网安全</text>
+  <text x="108" y="1198" fill="#9ca3a6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="36">产业政策</text>
+  <text x="108" y="1258" fill="#9ca3a6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="36">供应链韧性</text>
+  <text x="108" y="1668" fill="#f4f0e6" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Elena Zhang</text>
+  <text x="108" y="1722" fill="#9ca3a6" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30">Policy Alpha Research · 2026 年 5 月</text>
+  <text x="108" y="1786" fill="#d6a84f" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">policyalpharesearch.com</text>
+  <defs>
+    <radialGradient id="g" cx=".76" cy=".14" r=".86">
+      <stop offset="0" stop-color="#d6a84f" stop-opacity=".17"/>
+      <stop offset=".48" stop-color="#11161b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#07090b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
