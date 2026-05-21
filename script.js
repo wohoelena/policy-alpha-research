@@ -476,13 +476,24 @@ async function copySaveUrl(url) {
 
 function saveSiteMessage(copied) {
   const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isHarmonyOrHuawei = /HarmonyOS|HUAWEI|Huawei|HONOR|ArkWeb|Petal/i.test(navigator.userAgent);
   if (isChinesePage) {
     if (isAppleMobile) return "请点击浏览器分享按钮，然后选择“添加到主屏幕”。";
+    if (isHarmonyOrHuawei) {
+      return copied
+        ? "网站地址已复制。如当前浏览器无法添加到主屏幕，请使用 Chrome、Edge 或系统浏览器菜单中的“添加到桌面”功能。"
+        : "如当前浏览器无法添加到主屏幕，请使用 Chrome、Edge 或系统浏览器菜单中的“添加到桌面”功能。";
+    }
     return copied
       ? "网站地址已复制。安卓 Chrome 如未弹出安装窗口，请刷新页面后再点一次；也可以点右上角菜单，选择“安装应用”或“添加到主屏幕”。"
       : "安卓 Chrome 如未弹出安装窗口，请刷新页面后再点一次；也可以点右上角菜单，选择“安装应用”或“添加到主屏幕”。";
   }
   if (isAppleMobile) return "Tap the browser Share button, then choose Add to Home Screen.";
+  if (isHarmonyOrHuawei) {
+    return copied
+      ? "The site link has been copied. If your browser does not support Add to Home Screen, please try Chrome, Edge, or your system browser's Add to desktop option."
+      : "If your browser does not support Add to Home Screen, please try Chrome, Edge, or your system browser's Add to desktop option.";
+  }
   return copied
     ? "The site link has been copied. On Android Chrome, refresh once and tap this button again, or use the browser menu to choose Install app or Add to Home screen."
     : "On Android Chrome, refresh once and tap this button again, or use the browser menu to choose Install app or Add to Home screen.";
