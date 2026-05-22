@@ -2501,6 +2501,10 @@ body {
   background: rgba(7, 9, 11, 0.9);
 }
 
+.site-header .language-switch {
+  display: none !important;
+}
+
 .hero,
 .allocation-section,
 .companies-section,

@@ -6,9 +6,13 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch(() => {
       navigator.serviceWorker.register("sw.js").catch(() => {});
+    }).then((registration) => {
+      registration?.update?.();
     });
   });
 }
+
+document.querySelectorAll(".site-header .language-switch").forEach((item) => item.remove());
 
 const strategyPoints = [100, 108, 101, 119, 127, 116, 132, 148, 139, 154, 163, 151, 168, 174, 181, 169, 176, 188, 181, 186.4];
 const sp500Points = [100, 106, 102, 112, 118, 113, 122, 130, 126, 136, 143, 138, 150, 155, 158, 149, 154, 162, 158, 161.8];
