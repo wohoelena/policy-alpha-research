@@ -15,7 +15,10 @@
     <link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/index.html" />
     <link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh.html" />
     <link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Policy Alpha Research Feed" href="https://policyalpharesearch.com/feed.xml" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:site_name" content="Policy Alpha Research" />
     <meta property="og:title" content="Policy Alpha Research | 政策宏观与权益研究" />
     <meta property="og:description" content="关注关键矿产、战略资产、行业轮动、组合构建和风险治理的独立研究网站。" />
@@ -46,22 +49,39 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Policy Alpha Research",
-        "url": "https://policyalpharesearch.com/zh.html",
-        "inLanguage": "zh-CN",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Policy Alpha Research",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://policyalpharesearch.com/#organization",
+            "name": "Policy Alpha Research",
+            "url": "https://policyalpharesearch.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Elena Zhang"
+            },
+            "description": "政策宏观与权益研究，关注关键矿产、战略资产、行业轮动、组合构建和风险治理。"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://policyalpharesearch.com/#website",
+            "name": "Policy Alpha Research",
+            "url": "https://policyalpharesearch.com/zh.html",
+            "inLanguage": "zh-CN",
+            "publisher": {
+              "@id": "https://policyalpharesearch.com/#organization"
+            },
+            "description": "政策宏观与权益研究，关注关键矿产、战略资产、行业轮动、组合构建和风险治理。"
           }
-        },
-        "description": "政策宏观与权益研究，关注关键矿产、战略资产、行业轮动、组合构建和风险治理。"
+        ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260522-clean-share" />
+    <link rel="stylesheet" href="styles.css?v=20260522-chart-fallback" />
   </head>
   <body>
     <header class="site-header">
@@ -86,6 +106,7 @@
         <a href="#risk">风控体系</a>
         <a href="#about">关于我</a>
         <a href="#disclaimer">免责声明</a>
+        <a class="language-switch" href="index.html">English</a>
       </nav>
     </header>
 
@@ -799,6 +820,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260522-insight-alert"></script>
+    <script src="script.js?v=20260522-chart-fallback"></script>
   </body>
 </html>

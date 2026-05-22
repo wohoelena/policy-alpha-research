@@ -275,6 +275,10 @@ function yahooQuoteUrl(quote) {
   return `https://finance.yahoo.com/quote/${encodeURIComponent(quote)}`;
 }
 
+function companyForSymbol(symbol) {
+  return companyGroups.flatMap((group) => group.companies).find((company) => company[2] === symbol);
+}
+
 function renderCompanyTabs() {
   const tabs = document.querySelector(".company-tabs");
   if (!tabs) return;
@@ -394,7 +398,27 @@ function renderTradingViewChart(symbol) {
   if (!target) return;
 
   if (label) label.textContent = symbol;
+  target.classList.remove("has-live-chart");
   target.innerHTML = "";
+
+  const company = companyForSymbol(symbol);
+  const quote = company?.[3] || symbol.split(":").pop();
+  const metrics = getCompanyMetric(quote);
+  const fallback = document.createElement("div");
+  fallback.className = "chart-fallback";
+  fallback.innerHTML = `
+    <span>${isChinesePage ? "本地研究视图" : "Local Research View"}</span>
+    <h3>${company ? (isChinesePage ? company[1] : company[0]) : symbol}</h3>
+    <p>${isChinesePage ? "外部行情图表可能因网络或地区限制无法加载。以下为本地研究口径指标，不构成投资建议。" : "External live charts may be unavailable due to network or regional restrictions. The metrics below are local research estimates and not investment advice."}</p>
+    <div class="chart-fallback-grid">
+      <div><small>${isChinesePage ? "市值" : "Market Cap"}</small><strong>${formatMarketCap(metrics.marketCap)}</strong></div>
+      <div><small>${isChinesePage ? "10年增幅" : "10Y Return"}</small><strong>${formatTenYear(metrics.tenYear)}</strong></div>
+      <div><small>${isChinesePage ? "最大回撤" : "Max Drawdown"}</small><strong>-${metrics.drawdown}%</strong></div>
+      <div><small>${isChinesePage ? "质量评分" : "Quality Score"}</small><strong>${metrics.score}/100</strong></div>
+    </div>
+    <a href="${yahooQuoteUrl(quote)}" target="_blank" rel="noopener noreferrer">${isChinesePage ? "打开外部行情页" : "Open External Quote"}</a>
+  `;
+  target.appendChild(fallback);
 
   const widget = document.createElement("div");
   widget.className = "tradingview-widget-container__widget";
@@ -432,7 +456,23 @@ function renderTradingViewChart(symbol) {
     lineType: 0,
     dateRanges: ["1d|1", "1m|30", "3m|60", "12m|1D", "60m|1W"],
   });
+  script.addEventListener("error", () => {
+    target.classList.remove("has-live-chart");
+  });
   target.appendChild(script);
+
+  const chartCheck = window.setInterval(() => {
+    if (!target.isConnected) {
+      window.clearInterval(chartCheck);
+      return;
+    }
+    if (target.querySelector("iframe")) {
+      target.classList.add("has-live-chart");
+      window.clearInterval(chartCheck);
+    }
+  }, 600);
+
+  window.setTimeout(() => window.clearInterval(chartCheck), 6000);
 }
 
 renderCompanyTabs();

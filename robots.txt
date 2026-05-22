@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://policyalpharesearch.com/sitemap.xml
+Feed: https://policyalpharesearch.com/feed.xml
+LLMs: https://policyalpharesearch.com/llms.txt

@@ -34,6 +34,12 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
   </url>
   <url>
+    <loc>https://policyalpharesearch.com/feed.xml</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://policyalpharesearch.com/methodology.html</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>

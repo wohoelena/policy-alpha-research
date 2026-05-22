@@ -15,7 +15,9 @@
     <link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/index.html" />
     <link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh.html" />
     <link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Policy Alpha Research Feed" href="https://policyalpharesearch.com/feed.xml" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Policy Alpha Research" />
     <meta property="og:title" content="Policy Alpha Research" />
     <meta property="og:description" content="Independent policy-aware macro and equity research on strategic assets, sector rotation, and portfolio construction." />
@@ -46,22 +48,39 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Policy Alpha Research",
-        "url": "https://policyalpharesearch.com/",
-        "inLanguage": "en",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Policy Alpha Research",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://policyalpharesearch.com/#organization",
+            "name": "Policy Alpha Research",
+            "url": "https://policyalpharesearch.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png",
+              "width": 512,
+              "height": 512
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Elena Zhang"
+            },
+            "description": "Independent policy-aware macro and equity research focused on strategic assets, sector rotation, portfolio construction, and risk governance."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://policyalpharesearch.com/#website",
+            "name": "Policy Alpha Research",
+            "url": "https://policyalpharesearch.com/",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://policyalpharesearch.com/#organization"
+            },
+            "description": "Independent policy-aware macro and equity research focused on strategic assets, sector rotation, and portfolio construction."
           }
-        },
-        "description": "Independent policy-aware macro and equity research focused on strategic assets, sector rotation, and portfolio construction."
+        ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260522-clean-share" />
+    <link rel="stylesheet" href="styles.css?v=20260522-chart-fallback" />
   </head>
   <body>
     <header class="site-header">
@@ -86,6 +105,7 @@
         <a href="#risk">Risk</a>
         <a href="#about">About</a>
         <a href="#disclaimer">Disclaimer</a>
+        <a class="language-switch" href="zh.html">中文</a>
       </nav>
     </header>
 
@@ -826,6 +846,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260522-insight-alert"></script>
+    <script src="script.js?v=20260522-chart-fallback"></script>
   </body>
 </html>

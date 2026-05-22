@@ -1,0 +1,32 @@
+# Policy Alpha Research
+
+Policy Alpha Research is an independent macro and equity research platform focused on policy-aware investing, strategic assets, sector rotation, portfolio construction, and risk governance.
+
+## Site
+
+- Website: https://policyalpharesearch.com/
+- English homepage: https://policyalpharesearch.com/index.html
+- Chinese homepage: https://policyalpharesearch.com/zh.html
+- Research notes: https://policyalpharesearch.com/articles.html
+- Chinese research notes: https://policyalpharesearch.com/zh-articles.html
+- Methodology: https://policyalpharesearch.com/methodology.html
+
+## Core Research Themes
+
+- Policy-driven capital flows
+- Critical minerals and strategic materials
+- AI infrastructure and autonomous agents
+- Energy security and grid resilience
+- Healthcare policy and defensive growth
+- Portfolio construction and risk governance
+
+## Current Research Notes
+
+- The Next AI Race Won't Be Won by the Smartest Model: https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html
+- 下一场 AI 竞赛，不只属于最聪明的模型: https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html
+- Lithium Is No Longer Just an EV Trade: https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html
+- 锂不再只是电动车交易: https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html
+
+## Important Notice
+
+Policy Alpha Research is for informational and educational purposes only. It does not provide personal financial advice, securities recommendations, fund solicitation, return guarantees, or asset management services.
