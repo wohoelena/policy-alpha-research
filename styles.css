@@ -250,13 +250,6 @@ h2 {
   background: #07090b;
 }
 
-.language-switch {
-  margin-left: auto;
-  border: 1px solid rgba(214, 168, 79, 0.35);
-  border-radius: 4px;
-  padding: 8px 10px;
-  color: var(--gold);
-}
 
 * {
   box-sizing: border-box;
@@ -2703,14 +2696,6 @@ body {
   background: #07090b;
 }
 
-.language-switch {
-  border: 1px solid rgba(214, 168, 79, 0.35);
-  border-radius: 4px;
-  padding: 8px 10px;
-  background: rgba(214, 168, 79, 0.08);
-  color: var(--gold);
-  white-space: nowrap;
-}
 
 .company-metrics span {
   border: 1px solid rgba(214, 168, 79, 0.2);
