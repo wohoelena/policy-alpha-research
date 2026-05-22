@@ -1,5 +1,5 @@
 const canvas = document.getElementById("trendChart");
-const ctx = canvas.getContext("2d");
+const ctx = canvas ? canvas.getContext("2d") : null;
 const isChinesePage = document.documentElement.lang.toLowerCase().startsWith("zh");
 
 if ("serviceWorker" in navigator) {
@@ -513,6 +513,73 @@ document.querySelectorAll(".save-site-button").forEach((button) => {
     window.alert(saveSiteMessage(copied));
   });
 });
+
+const latestInsight = isChinesePage
+  ? {
+      id: "ai-infrastructure-20260522",
+      label: "New Insight",
+      title: "下一场 AI 竞赛，不只属于最聪明的模型",
+      summary: "AI 智能体正在把战略瓶颈从模型智能，推向算力、能源、协调系统和企业基础设施。",
+      primary: "阅读文章",
+      secondary: "稍后再看",
+      url: "articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+    }
+  : {
+      id: "ai-infrastructure-20260522",
+      label: "New Insight",
+      title: "The Next AI Race Won't Be Won by the Smartest Model",
+      summary: "AI agents are shifting the strategic bottleneck toward compute, energy, coordination, and enterprise infrastructure.",
+      primary: "Read Note",
+      secondary: "Later",
+      url: "articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+    };
+
+function showInsightUpdate() {
+  if (!document.body || window.location.hash === "#insights") return;
+  const storageKey = `policy-alpha-seen-${latestInsight.id}-${isChinesePage ? "zh" : "en"}`;
+  if (window.localStorage?.getItem(storageKey) === "1") return;
+
+  const overlay = document.createElement("div");
+  overlay.className = "insight-update";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-label", latestInsight.label);
+  overlay.innerHTML = `
+    <div class="insight-update-panel">
+      <button class="insight-update-close" type="button" aria-label="${isChinesePage ? "关闭" : "Close"}">×</button>
+      <span>${latestInsight.label}</span>
+      <h2>${latestInsight.title}</h2>
+      <p>${latestInsight.summary}</p>
+      <div class="insight-update-actions">
+        <a class="button primary" href="${latestInsight.url}">${latestInsight.primary}</a>
+        <button class="button quiet" type="button">${latestInsight.secondary}</button>
+      </div>
+    </div>
+  `;
+
+  const close = () => {
+    window.localStorage?.setItem(storageKey, "1");
+    overlay.classList.remove("is-visible");
+    window.setTimeout(() => overlay.remove(), 180);
+  };
+
+  overlay.querySelector(".insight-update-close").addEventListener("click", close);
+  overlay.querySelector(".insight-update-actions .button.quiet").addEventListener("click", close);
+  overlay.querySelector(".insight-update-actions a").addEventListener("click", () => {
+    window.localStorage?.setItem(storageKey, "1");
+  });
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) close();
+  });
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && overlay.isConnected) close();
+  }, { once: true });
+
+  document.body.appendChild(overlay);
+  window.setTimeout(() => overlay.classList.add("is-visible"), 50);
+}
+
+window.setTimeout(showInsightUpdate, 1200);
 
 const observer = new IntersectionObserver(
   (entries) => {

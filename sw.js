@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v1";
+const CACHE_NAME = "policy-alpha-research-v2";
 const CORE_ASSETS = [
   "/",
   "/index.html",
@@ -16,6 +16,8 @@ const CORE_ASSETS = [
   "/assets/app-icon-512.png",
   "/assets/social/lithium-share-card.png",
   "/assets/social/zh-lithium-share-card.png",
+  "/assets/social/ai-infrastructure-share-card.png",
+  "/assets/social/zh-ai-infrastructure-share-card.png",
 ];
 
 self.addEventListener("install", (event) => {

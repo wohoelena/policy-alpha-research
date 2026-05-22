@@ -1804,6 +1804,90 @@ h2 {
   font-size: 12px;
 }
 
+.insight-update {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: end center;
+  padding: 22px;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, background 180ms ease;
+}
+
+.insight-update.is-visible {
+  background: rgba(0, 0, 0, 0.46);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.insight-update-panel {
+  position: relative;
+  width: min(520px, 100%);
+  border: 1px solid rgba(214, 168, 79, 0.42);
+  border-radius: 8px;
+  padding: 28px;
+  background:
+    linear-gradient(135deg, rgba(214, 168, 79, 0.09), rgba(5, 6, 7, 0.98) 42%),
+    #050607;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+  transform: translateY(16px);
+  transition: transform 180ms ease;
+}
+
+.insight-update.is-visible .insight-update-panel {
+  transform: translateY(0);
+}
+
+.insight-update-panel span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.insight-update-panel h2 {
+  max-width: 420px;
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(26px, 5vw, 38px);
+  line-height: 1.08;
+}
+
+.insight-update-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.insight-update-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.insight-update-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 50%;
+  background: rgba(16, 20, 24, 0.72);
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .download-menu {
   position: relative;
   z-index: 2;
