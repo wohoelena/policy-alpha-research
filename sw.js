@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v5";
+const CACHE_NAME = "policy-alpha-research-v7";
 const CORE_ASSETS = [
   "/",
   "/index.html",
@@ -7,8 +7,8 @@ const CORE_ASSETS = [
   "/zh-articles.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260522-no-top-language",
-  "/script.js?v=20260522-no-top-language",
+  "/styles.css?v=20260522-seo-structure",
+  "/script.js?v=20260522-zh-insight-title",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -43,12 +43,30 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
+  const request = event.request;
+  const isPageRequest =
+    request.mode === "navigate" ||
+    (request.headers.get("accept") || "").includes("text/html");
+
+  if (isPageRequest) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("/index.html"))),
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    caches.match(request).then((cached) => {
       if (cached) return cached;
-      return fetch(event.request).then((response) => {
+      return fetch(request).then((response) => {
         const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
         return response;
       });
     }),

@@ -5,7 +5,7 @@ Policy Alpha Research is an independent macro and equity research platform focus
 ## Site
 
 - Website: https://policyalpharesearch.com/
-- English homepage: https://policyalpharesearch.com/index.html
+- English homepage: https://policyalpharesearch.com/
 - Chinese homepage: https://policyalpharesearch.com/zh.html
 - Research notes: https://policyalpharesearch.com/articles.html
 - Chinese research notes: https://policyalpharesearch.com/zh-articles.html
