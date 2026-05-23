@@ -1817,34 +1817,6 @@ h2 {
   padding: clamp(40px, 6vw, 84px) clamp(20px, 5vw, 72px);
 }
 
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  min-height: 36px;
-  margin: 0 0 22px;
-  padding: 8px 13px;
-  border: 1px solid rgba(214, 168, 79, 0.28);
-  border-radius: 999px;
-  background: rgba(6, 8, 10, 0.74);
-  color: var(--gold);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.back-link:hover {
-  border-color: rgba(214, 168, 79, 0.7);
-  color: var(--paper);
-  transform: translateY(-1px);
-}
-
-.page-back-link {
-  margin: clamp(22px, 4vw, 42px) clamp(20px, 5vw, 72px) -18px;
-}
-
 .article-hero {
   position: relative;
   min-height: 420px;
