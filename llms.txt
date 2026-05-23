@@ -9,6 +9,8 @@ Policy Alpha Research is an independent macro and equity research platform focus
 - Chinese homepage: https://policyalpharesearch.com/zh.html
 - Research notes: https://policyalpharesearch.com/articles.html
 - Chinese research notes: https://policyalpharesearch.com/zh-articles.html
+- Research themes: https://policyalpharesearch.com/themes.html
+- Chinese research themes: https://policyalpharesearch.com/zh-themes.html
 - Methodology: https://policyalpharesearch.com/methodology.html
 
 ## Core Research Themes
