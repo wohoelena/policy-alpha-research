@@ -1,8 +1,9 @@
+import { readFileSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = "/Users/elenazhang/Documents/Codex/2026-05-19/new-chat";
-const version = "20260525-lang-globe";
+const version = "20260525-complete-insight-body";
 
 const languages = {
   "zh-hant": {
@@ -517,7 +518,7 @@ ${l.frameworkSteps.map((step, i) => `<article class="process-card"><span class="
 function insightCard(langKey, article) {
   const l = languages[langKey];
   return `<article class="insight-card featured-insight">
-          <div class="insight-meta"><span>${article.series}</span><strong>May 2026</strong></div>
+          <div class="insight-meta"><span>${articleSeries(langKey, article)}</span><strong>${dateLabel(langKey)}</strong></div>
           <h3>${articleTitle(langKey, article)}</h3>
           <p>${article.decks[langKey]}</p>
           <a class="button primary" href="articles/${langKey}-${article.slug}.html">${l.read}</a>
@@ -585,9 +586,9 @@ function articlePage(langKey, article) {
       <article class="article-shell">
         <header class="article-hero">
           <p class="eyebrow">Policy Alpha Insights</p>
-          <p class="series-kicker">${article.series}</p>
+          <p class="series-kicker">${articleSeries(langKey, article)}</p>
           <h1>${articleTitle(langKey, article)}</h1>
-          <div class="article-meta-line"><span>Policy Alpha Research</span><span>Elena Zhang</span><span>May 2026</span></div>
+          <div class="article-meta-line"><span>Policy Alpha Research</span><span>Elena Zhang</span><span>${dateLabel(langKey)}</span></div>
           <p class="article-dek">${article.decks[langKey]}</p>
         </header>
         <section class="article-summary">
@@ -607,7 +608,7 @@ function articlePage(langKey, article) {
           <p>${sections[0][1]}</p>
         </section>
         <section class="article-content">
-          ${[...sections, ...articleSupplementalSections(langKey, article)].map(([title, body]) => `<h2>${title}</h2><p>${body}</p>`).join("\n")}
+          ${completeArticleBody(langKey, article)}
         </section>
         <section class="article-summary">
           <h2>${labels.data}</h2>
@@ -641,6 +642,140 @@ function articlePage(langKey, article) {
     ${footer(langKey).replace('src="script.js', 'src="../script.js')}
   </body>
 </html>`;
+}
+
+function completeArticleBody(langKey, article) {
+  const sourceFile = langKey === "zh-hant"
+    ? `zh-${article.slug}.html`
+    : `${article.slug}.html`;
+  const raw = extractMainBody(sourceFile);
+  if (langKey === "zh-hant") {
+    return toTraditionalChinese(raw);
+  }
+  const intro = {
+    ja: "以下は情報の完全性を保つため、英語原文の本文をそのまま掲載しています。翻訳版の要約と合わせて参照してください。",
+    ko: "아래 본문은 정보의 완전성을 위해 영어 원문 전문을 함께 제공합니다. 위의 현지어 요약과 함께 참고하십시오.",
+    de: "Zur Wahrung der inhaltlichen Vollständigkeit folgt unten der vollständige englische Originaltext. Bitte lesen Sie ihn zusammen mit der übersetzten Zusammenfassung.",
+    fr: "Pour préserver l’intégralité du contenu, le texte complet original en anglais est fourni ci-dessous, à lire avec la synthèse traduite.",
+  }[langKey];
+  return `<div class="research-note-panel"><p>${intro}</p></div>
+          ${raw}`;
+}
+
+function extractMainBody(fileName) {
+  const html = readFileSync(path.join(root, "articles", fileName), "utf8");
+  const match = html.match(/<section class="article-body">([\s\S]*?)<\/section>/);
+  if (!match) {
+    throw new Error(`Unable to extract article body from ${fileName}`);
+  }
+  return match[1].trim();
+}
+
+function toTraditionalChinese(html) {
+  const replacements = [
+    ["价值观", "價值觀"],
+    ["价值", "價值"],
+    ["资本", "資本"],
+    ["市场", "市場"],
+    ["准入", "准入"],
+    ["过滤", "過濾"],
+    ["机制", "機制"],
+    ["结构", "結構"],
+    ["投资", "投資"],
+    ["组合", "組合"],
+    ["企业", "企業"],
+    ["供应链", "供應鏈"],
+    ["供应商", "供應商"],
+    ["融资", "融資"],
+    ["成本", "成本"],
+    ["机构", "機構"],
+    ["持仓", "持倉"],
+    ["长期", "長期"],
+    ["估值", "估值"],
+    ["即将", "即將"],
+    ["挤压", "擠壓"],
+    ["不对称", "不對稱"],
+    ["负担", "負擔"],
+    ["它们", "它們"],
+    ["足够", "足夠"],
+    ["规模", "規模"],
+    ["轻松", "輕鬆"],
+    ["合规", "合規"],
+    ["体系", "體系"],
+    ["完整", "完整"],
+    ["问题", "問題"],
+    ["讨论", "討論"],
+    ["认为", "認為"],
+    ["虽然", "雖然"],
+    ["但是", "但是"],
+    ["通过", "透過"],
+    ["实现", "實現"],
+    ["调整", "調整"],
+    ["变成", "變成"],
+    ["这种", "這種"],
+    ["这些", "這些"],
+    ["这里", "這裡"],
+    ["这个", "這個"],
+    ["不是", "不是"],
+    ["对", "對"],
+    ["开", "開"],
+    ["会", "會"],
+    ["与", "與"],
+    ["为", "為"],
+    ["来", "來"],
+    ["监管", "監管"],
+    ["规则", "規則"],
+    ["披露", "披露"],
+    ["数据", "數據"],
+    ["运营", "營運"],
+    ["经营", "經營"],
+    ["基础设施", "基礎設施"],
+    ["政策", "政策"],
+    ["欧盟", "歐盟"],
+    ["绿色", "綠色"],
+    ["债券", "債券"],
+    ["标准", "標準"],
+    ["范围", "範圍"],
+    ["公司", "公司"],
+    ["影响", "影響"],
+    ["要求", "要求"],
+    ["国际", "國際"],
+    ["跨境", "跨境"],
+    ["参与", "參與"],
+    ["阶段", "階段"],
+    ["正在", "正在"],
+    ["成为", "成為"],
+    ["转向", "轉向"],
+    ["筛选", "篩選"],
+    ["分化", "分化"],
+    ["风险", "風險"],
+    ["执行", "執行"],
+    ["进行", "進行"],
+    ["行业", "行業"],
+    ["产业", "產業"],
+    ["财务", "財務"],
+    ["现金流", "現金流"],
+    ["竞争", "競爭"],
+    ["客户", "客戶"],
+    ["采购", "採購"],
+    ["关系", "關係"],
+    ["质量", "質量"],
+    ["选择", "選擇"],
+    ["进入", "進入"],
+    ["超过", "超過"],
+    ["风险", "風險"],
+    ["观点", "觀點"],
+    ["叙事", "敘事"],
+    ["电动车", "電動車"],
+    ["电网", "電網"],
+    ["智能体", "智能體"],
+    ["计算", "計算"],
+    ["网络", "網路"],
+    ["资料", "資料"],
+    ["能源", "能源"],
+    ["锂", "鋰"],
+  ];
+  return replacements.reduce((text, [from, to]) => text.replaceAll(from, to), html);
 }
 
 function articleHeader(langKey, article) {
@@ -680,7 +815,18 @@ function buildHrefMap(type) {
 }
 
 function articleTitle(langKey, article) {
-  if (langKey === "zh-hant") return article.zh.replaceAll("价值", "價值").replaceAll("正在", "正在").replaceAll("成为", "成為").replaceAll("电动车", "電動車").replaceAll("下一场", "下一場").replaceAll("竞赛", "競賽").replaceAll("聪明", "聰明").replaceAll("锂", "鋰").replaceAll("不再", "不再");
+  if (langKey === "zh-hant") return article.zh
+    .replaceAll("价值观", "價值觀")
+    .replaceAll("价值", "價值")
+    .replaceAll("资本", "資本")
+    .replaceAll("过滤器", "過濾器")
+    .replaceAll("成为", "成為")
+    .replaceAll("电动车", "電動車")
+    .replaceAll("下一场", "下一場")
+    .replaceAll("竞赛", "競賽")
+    .replaceAll("属于", "屬於")
+    .replaceAll("聪明", "聰明")
+    .replaceAll("锂", "鋰");
   if (langKey === "ja") {
     if (article.slug.startsWith("esg")) return "ESG はもはや価値観の枠組みではなく、資本アクセスのフィルターである";
     if (article.slug.startsWith("the-next-ai")) return "次の AI 競争は最も賢いモデルだけでは勝てない";
@@ -702,6 +848,43 @@ function articleTitle(langKey, article) {
     return "Le lithium n’est plus seulement un thème véhicules électriques";
   }
   return article.en;
+}
+
+function articleSeries(langKey, article) {
+  const seriesMap = {
+    "ESG & Capital Markets Series": {
+      "zh-hant": "ESG 與資本市場系列",
+      ja: "ESG・資本市場シリーズ",
+      ko: "ESG 및 자본시장 시리즈",
+      de: "ESG- und Kapitalmarktserie",
+      fr: "Série ESG et marchés de capitaux",
+    },
+    "AI Infrastructure Series": {
+      "zh-hant": "AI 基礎設施系列",
+      ja: "AI インフラシリーズ",
+      ko: "AI 인프라 시리즈",
+      de: "KI-Infrastrukturserie",
+      fr: "Série infrastructure IA",
+    },
+    "Critical Minerals Series": {
+      "zh-hant": "關鍵礦產系列",
+      ja: "重要鉱物シリーズ",
+      ko: "핵심 광물 시리즈",
+      de: "Serie kritische Rohstoffe",
+      fr: "Série minéraux critiques",
+    },
+  };
+  return seriesMap[article.series]?.[langKey] || article.series;
+}
+
+function dateLabel(langKey) {
+  return ({
+    "zh-hant": "2026 年 5 月",
+    ja: "2026年5月",
+    ko: "2026년 5월",
+    de: "Mai 2026",
+    fr: "Mai 2026",
+  })[langKey] || "May 2026";
 }
 
 function summaryLabel(langKey) {
