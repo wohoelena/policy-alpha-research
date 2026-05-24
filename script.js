@@ -560,22 +560,22 @@ document.querySelectorAll(".save-site-button").forEach((button) => {
 
 const latestInsight = isChinesePage
   ? {
-      id: "ai-infrastructure-20260522",
+      id: "esg-capital-access-20260524",
       label: "New Insight",
-      title: "下一场 AI 竞赛，不只属于最聪明的模型",
-      summary: "AI 智能体正在把战略瓶颈从模型智能，推向算力、能源、协调系统和企业基础设施。",
+      title: "ESG 不再只是价值观框架，它正在成为资本准入过滤器",
+      summary: "ESG 正在成为横跨监管、供应链、融资成本和机构资本的市场准入系统。",
       primary: "阅读文章",
       secondary: "稍后再看",
-      url: "articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      url: "articles/zh-esg-is-no-longer-a-values-framework.html",
     }
   : {
-      id: "ai-infrastructure-20260522",
+      id: "esg-capital-access-20260524",
       label: "New Insight",
-      title: "The Next AI Race Won't Be Won by the Smartest Model",
-      summary: "AI agents are shifting the strategic bottleneck toward compute, energy, coordination, and enterprise infrastructure.",
+      title: "ESG Is No Longer a Values Framework. It Is a Capital Access Filter.",
+      summary: "ESG is becoming a market access system across regulation, supply chains, financing cost, and institutional capital.",
       primary: "Read Note",
       secondary: "Later",
-      url: "articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      url: "articles/esg-is-no-longer-a-values-framework.html",
     };
 
 function showInsightUpdate() {

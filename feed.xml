@@ -7,13 +7,24 @@
     <link>https://policyalpharesearch.com/articles.html</link>
     <description>Independent policy-aware macro and equity research on strategic assets, AI infrastructure, critical minerals, sector rotation, and portfolio construction.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 22 May 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://policyalpharesearch.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://policyalpharesearch.com/assets/app-icon-512.png</url>
       <title>Policy Alpha Research</title>
       <link>https://policyalpharesearch.com/</link>
     </image>
+    <item>
+      <title>ESG Is No Longer a Values Framework. It Is a Capital Access Filter.</title>
+      <link>https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</link>
+      <guid isPermaLink="true">https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</guid>
+      <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
+      <category>ESG and Capital Markets</category>
+      <category>CSRD</category>
+      <category>CBAM</category>
+      <category>Supply Chains</category>
+      <description>ESG is becoming a market access system across regulation, supply chains, financing cost, and institutional capital.</description>
+    </item>
     <item>
       <title>The Next AI Race Won't Be Won by the Smartest Model</title>
       <link>https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html</link>

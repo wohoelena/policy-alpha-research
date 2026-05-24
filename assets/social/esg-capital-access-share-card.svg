@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050607"/>
+      <stop offset="0.58" stop-color="#10110e"/>
+      <stop offset="1" stop-color="#2b2314"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d6a84f"/>
+      <stop offset="1" stop-color="#f4d27a"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="955" cy="128" r="196" fill="#d6a84f" opacity="0.08" filter="url(#soft)"/>
+  <text x="58" y="92" fill="#d6a84f" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800">PA</text>
+  <text x="136" y="84" fill="#d6a84f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800">POLICY ALPHA INSIGHTS</text>
+  <text x="136" y="122" fill="#9fa7aa" font-family="Arial, Helvetica, sans-serif" font-size="18">ESG &amp; Capital Markets Research</text>
+  <text x="920" y="84" fill="#d6a84f" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800">ISSUE 003</text>
+  <text x="920" y="120" fill="#9fa7aa" font-family="Arial, Helvetica, sans-serif" font-size="17">2026.05</text>
+  <text x="112" y="286" fill="#f1efe6" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">ESG Is No Longer a</text>
+  <text x="112" y="360" fill="#f1efe6" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Values Framework</text>
+  <text x="112" y="434" fill="url(#gold)" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="800">It Is a Capital Access Filter</text>
+  <text x="58" y="564" fill="#9fa7aa" font-family="Arial, Helvetica, sans-serif" font-size="16">Elena Zhang · Policy Alpha Research</text>
+  <text x="830" y="564" fill="#d6a84f" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800">policyalpharesearch.com</text>
+</svg>

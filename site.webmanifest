@@ -1,9 +1,9 @@
 {
-  "id": "/index.html",
+  "id": "/",
   "name": "Policy Alpha",
   "short_name": "Policy Alpha",
   "description": "Independent macro and policy-aware equity research by Elena Zhang.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#07090b",

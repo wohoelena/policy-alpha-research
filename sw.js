@@ -1,7 +1,6 @@
-const CACHE_NAME = "policy-alpha-research-v12";
+const CACHE_NAME = "policy-alpha-research-v16";
 const CORE_ASSETS = [
   "/",
-  "/index.html",
   "/zh.html",
   "/articles.html",
   "/zh-articles.html",
@@ -9,8 +8,8 @@ const CORE_ASSETS = [
   "/zh-themes.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260524-home-nav",
-  "/script.js?v=20260524-home-nav",
+  "/styles.css?v=20260524-sector-contrast",
+  "/script.js?v=20260524-sector-contrast",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -24,6 +23,8 @@ const CORE_ASSETS = [
   "/assets/social/zh-lithium-share-card.png",
   "/assets/social/ai-infrastructure-share-card.png",
   "/assets/social/zh-ai-infrastructure-share-card.png",
+  "/assets/social/esg-capital-access-share-card.png",
+  "/assets/social/zh-esg-capital-access-share-card.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -58,7 +59,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
           return response;
         })
-        .catch(() => caches.match(request).then((cached) => cached || caches.match("/index.html"))),
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("/"))),
     );
     return;
   }
