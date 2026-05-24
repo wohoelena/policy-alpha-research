@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v21";
+const CACHE_NAME = "policy-alpha-research-v23";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -18,8 +18,8 @@ const CORE_ASSETS = [
   "/zh-themes.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260524-multilang",
-  "/script.js?v=20260524-multilang",
+  "/styles.css?v=20260524-multilingual-reviewed",
+  "/script.js?v=20260524-multilingual-reviewed",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
