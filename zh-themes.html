@@ -67,7 +67,7 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260524-sector-contrast" />
+    <link rel="stylesheet" href="styles.css?v=20260524-language-dropdown-v2" />
   </head>
   <body>
     <header class="site-header">
@@ -90,6 +90,18 @@
         <a href="zh-methodology.html">研究方法</a>
         <a href="zh.html#about">关于我</a>
       </nav>
+      <details class="language-switch">
+        <summary aria-label="Language selector"><span>简体中文</span></summary>
+        <div class="language-menu" role="listbox" aria-label="Language options">
+          <a href="themes.html" lang="en">English</a>
+          <a class="is-active" href="zh-themes.html" lang="zh-CN">简体中文</a>
+          <a href="#" lang="zh-Hant" data-language-coming-soon="繁體中文">繁體中文</a>
+          <a href="#" lang="ja" data-language-coming-soon="日本語">日本語</a>
+          <a href="#" lang="ko" data-language-coming-soon="한국어">한국어</a>
+          <a href="#" lang="de" data-language-coming-soon="Deutsch">Deutsch</a>
+          <a href="#" lang="fr" data-language-coming-soon="Français">Français</a>
+        </div>
+      </details>
     </header>
 
     <main id="top">
@@ -159,5 +171,6 @@
         <a class="is-active" href="zh-themes.html" lang="zh-CN">中文</a>
       </div>
     </footer>
+    <script src="script.js?v=20260524-language-dropdown-v2"></script>
   </body>
 </html>

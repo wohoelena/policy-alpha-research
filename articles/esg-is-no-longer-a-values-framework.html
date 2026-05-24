@@ -109,7 +109,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="../styles.css?v=20260524-sector-contrast" />
+    <link rel="stylesheet" href="../styles.css?v=20260524-language-dropdown-v2" />
   </head>
   <body>
     <header class="site-header">
@@ -133,6 +133,18 @@
         <a href="../articles.html">Archive</a>
         <a href="../#disclaimer">Disclaimer</a>
       </nav>
+      <details class="language-switch">
+        <summary aria-label="Language selector"><span>English</span></summary>
+        <div class="language-menu" role="listbox" aria-label="Language options">
+          <a class="is-active" href="esg-is-no-longer-a-values-framework.html" lang="en">English</a>
+          <a href="zh-esg-is-no-longer-a-values-framework.html" lang="zh-CN">简体中文</a>
+          <a href="#" lang="zh-Hant" data-language-coming-soon="繁體中文">繁體中文</a>
+          <a href="#" lang="ja" data-language-coming-soon="日本語">日本語</a>
+          <a href="#" lang="ko" data-language-coming-soon="한국어">한국어</a>
+          <a href="#" lang="de" data-language-coming-soon="Deutsch">Deutsch</a>
+          <a href="#" lang="fr" data-language-coming-soon="Français">Français</a>
+        </div>
+      </details>
     </header>
 
     <main id="top">
@@ -498,5 +510,6 @@
         });
       });
     </script>
+    <script src="../script.js?v=20260524-language-dropdown-v2"></script>
   </body>
 </html>

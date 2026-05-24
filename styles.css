@@ -290,6 +290,7 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto;
   gap: 12px;
 }
 
@@ -331,9 +332,18 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  flex: 1 1 auto;
   gap: 24px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
   color: #34454e;
   font-size: 14px;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav a {
@@ -342,6 +352,79 @@ a {
 
 .nav a:hover {
   color: var(--teal);
+}
+
+.language-switch {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.language-switch summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 118px;
+  padding: 8px 12px;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 999px;
+  background: rgba(9, 12, 15, 0.72);
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.language-switch summary::-webkit-details-marker {
+  display: none;
+}
+
+.language-switch summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.18s ease;
+}
+
+.language-switch[open] summary::after {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 80;
+  display: grid;
+  min-width: 172px;
+  padding: 8px;
+  border: 1px solid rgba(214, 168, 79, 0.22);
+  border-radius: 10px;
+  background: rgba(7, 9, 11, 0.98);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+}
+
+.language-menu a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--muted);
+}
+
+.language-menu a:hover {
+  background: rgba(214, 168, 79, 0.1);
+  color: var(--gold);
+}
+
+.language-menu a.is-active {
+  background: var(--gold);
+  color: #07090b;
 }
 
 .hero {
@@ -2471,6 +2554,21 @@ h2 {
     white-space: nowrap;
   }
 
+  .language-switch {
+    align-self: flex-start;
+    font-size: 11px;
+  }
+
+  .language-switch summary {
+    min-width: 108px;
+    padding: 7px 11px;
+  }
+
+  .language-menu {
+    right: auto;
+    left: 0;
+  }
+
   .brand-mark {
     width: 36px;
     height: 36px;
@@ -2694,10 +2792,6 @@ body {
 .site-header {
   border-bottom-color: rgba(214, 168, 79, 0.22);
   background: rgba(7, 9, 11, 0.9);
-}
-
-.site-header .language-switch {
-  display: none !important;
 }
 
 .hero,

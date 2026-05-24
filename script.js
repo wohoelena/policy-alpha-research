@@ -12,7 +12,22 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-document.querySelectorAll(".site-header .language-switch").forEach((item) => item.remove());
+document.querySelectorAll("[data-language-coming-soon]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = link.dataset.languageComingSoon || link.textContent.trim();
+    const message = isChinesePage
+      ? `${language}版本正在准备中。当前正式版本为 English 和 简体中文。`
+      : `${language} edition is being prepared. English and Simplified Chinese are currently available.`;
+    alert(message);
+  });
+});
+
+document.addEventListener("click", (event) => {
+  document.querySelectorAll(".language-switch[open]").forEach((menu) => {
+    if (!menu.contains(event.target)) menu.removeAttribute("open");
+  });
+});
 
 const strategyPoints = [100, 108, 101, 119, 127, 116, 132, 148, 139, 154, 163, 151, 168, 174, 181, 169, 176, 188, 181, 186.4];
 const sp500Points = [100, 106, 102, 112, 118, 113, 122, 130, 126, 136, 143, 138, 150, 155, 158, 149, 154, 162, 158, 161.8];
@@ -543,20 +558,22 @@ function saveSiteMessage(copied) {
     : "On Android Chrome, refresh once and tap this button again, or use the browser menu to choose Install app or Add to Home screen.";
 }
 
-document.querySelectorAll(".save-site-button").forEach((button) => {
-  button.addEventListener("click", async () => {
-    if (deferredInstallPrompt) {
-      deferredInstallPrompt.prompt();
-      await deferredInstallPrompt.userChoice;
-      deferredInstallPrompt = null;
-      return;
-    }
+if (!document.querySelector(".article-shell")) {
+  document.querySelectorAll(".save-site-button").forEach((button) => {
+    button.addEventListener("click", async () => {
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        await deferredInstallPrompt.userChoice;
+        deferredInstallPrompt = null;
+        return;
+      }
 
-    const saveUrl = button.dataset.saveUrl || window.location.href;
-    const copied = await copySaveUrl(saveUrl);
-    window.alert(saveSiteMessage(copied));
+      const saveUrl = button.dataset.saveUrl || window.location.href;
+      const copied = await copySaveUrl(saveUrl);
+      window.alert(saveSiteMessage(copied));
+    });
   });
-});
+}
 
 const latestInsight = isChinesePage
   ? {
