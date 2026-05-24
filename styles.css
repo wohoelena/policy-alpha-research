@@ -369,7 +369,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-width: 118px;
+  min-width: 128px;
   padding: 8px 12px;
   border: 1px solid rgba(214, 168, 79, 0.24);
   border-radius: 999px;
@@ -377,6 +377,17 @@ a {
   color: var(--ink);
   cursor: pointer;
   list-style: none;
+}
+
+.language-switch summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  background: var(--gold);
+  opacity: 0.92;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%2024%2024%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%2710%27/%3E%3Cpath%20d%3D%27M2%2012h20M12%202a15.3%2015.3%200%200%201%204%2010%2015.3%2015.3%200%200%201-4%2010%2015.3%2015.3%200%200%201-4-10%2015.3%2015.3%200%200%201%204-10z%27/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%2024%2024%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20stroke%3D%27black%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%2710%27/%3E%3Cpath%20d%3D%27M2%2012h20M12%202a15.3%2015.3%200%200%201%204%2010%2015.3%2015.3%200%200%201-4%2010%2015.3%2015.3%200%200%201-4-10%2015.3%2015.3%200%200%201%204-10z%27/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .language-switch summary::-webkit-details-marker {
@@ -472,8 +483,45 @@ h1 {
 
 .hero-actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-save-action {
+  appearance: none;
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(214, 168, 79, 0.2);
+  border-radius: 999px;
+  padding: 6px 11px;
+  background: rgba(214, 168, 79, 0.04);
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.hero-save-action span {
+  display: grid;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(214, 168, 79, 0.14);
+  color: var(--gold);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.hero-save-action:hover {
+  border-color: rgba(214, 168, 79, 0.42);
+  color: var(--gold);
+  background: rgba(214, 168, 79, 0.08);
 }
 
 .hero-stat-strip {

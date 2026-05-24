@@ -2,7 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = "/Users/elenazhang/Documents/Codex/2026-05-19/new-chat";
-const version = "20260524-multilingual-reviewed";
+const version = "20260525-lang-globe";
 
 const languages = {
   "zh-hant": {
@@ -29,6 +29,7 @@ const languages = {
     about: "Policy Alpha Research 是一個獨立宏觀與權益研究平台，致力於識別由政策變化、產業轉型與資本輪動推動的長週期投資主題。平台由 Elena Zhang 創立，結合政策分析、行業映射與市場確認，研究結構性敘事如何在市場共識形成之前演化。",
     disclaimer: "本頁為翻譯研究版本，僅供資訊與教育用途。內容不構成個人化投資建議、證券推薦、招股文件或任何金融產品建議。",
     read: "閱讀文章",
+    save: "收藏網站",
     archiveTitle: "研究札記",
     archiveLead: "關於政策週期、戰略資產、行業輪動與長期資本配置的研究札記。",
     themesTitle: "Policy Alpha 的長期主題框架",
@@ -61,6 +62,7 @@ const languages = {
     about: "Policy Alpha Research は、政策変化、産業変革、資本ローテーションによって形成される長期投資テーマを特定する独立系マクロ・株式リサーチプラットフォームです。Elena Zhang が創設し、政策分析、セクター・マッピング、市場確認を組み合わせて、構造的な市場ナラティブの進化を研究します。",
     disclaimer: "本ページは翻訳されたリサーチ版です。情報提供および教育目的のみであり、個別の投資助言、証券の売買推奨、目論見書または金融商品の説明資料ではありません。",
     read: "記事を読む",
+    save: "サイトを保存",
     archiveTitle: "リサーチノート",
     archiveLead: "政策レジーム、戦略資産、セクターローテーション、長期資本配分に関するリサーチノート。",
     themesTitle: "Policy Alpha の長期テーマ体系",
@@ -93,6 +95,7 @@ const languages = {
     about: "Policy Alpha Research는 정책 변화, 산업 전환, 자본 순환이 만드는 장기 투자 테마를 식별하는 독립 매크로 및 주식 리서치 플랫폼입니다. Elena Zhang이 설립했으며 정책 분석, 섹터 매핑, 시장 확인을 결합해 구조적 내러티브가 시장 컨센서스 이전에 어떻게 발전하는지 연구합니다.",
     disclaimer: "이 페이지는 번역된 리서치 버전입니다. 정보 제공 및 교육 목적만을 위한 것이며 개인화된 투자 조언, 증권 매매 권유, 투자설명서 또는 금융상품 권유가 아닙니다.",
     read: "글 읽기",
+    save: "사이트 저장",
     archiveTitle: "리서치 노트",
     archiveLead: "정책 체제, 전략 자산, 섹터 로테이션, 장기 자본 배분에 관한 리서치 노트.",
     themesTitle: "Policy Alpha의 장기 테마 프레임워크",
@@ -125,6 +128,7 @@ const languages = {
     about: "Policy Alpha Research ist eine unabhängige Plattform für Makro- und Aktienresearch. Der Fokus liegt auf langfristigen Investmentthemen, die durch politische Veränderungen, industrielle Transformation und Kapitalrotation entstehen. Die von Elena Zhang gegründete Plattform kombiniert Politikanalyse, Sektor-Mapping und Marktbestätigung, um strukturelle Narrative vor dem Marktkonsens zu untersuchen.",
     disclaimer: "Diese Seite ist eine übersetzte Research-Fassung. Sie dient ausschließlich Informations- und Bildungszwecken und stellt keine persönliche Anlageberatung, Wertpapierempfehlung, Prospektunterlage oder Finanzproduktempfehlung dar.",
     read: "Artikel lesen",
+    save: "Site speichern",
     archiveTitle: "Research Notes",
     archiveLead: "Research Notes zu politischen Regimen, strategischen Assets, Sektorrotation und langfristiger Kapitalallokation.",
     themesTitle: "Langfristige Themenstruktur von Policy Alpha",
@@ -157,6 +161,7 @@ const languages = {
     about: "Policy Alpha Research est une plateforme indépendante de recherche macro et actions visant à identifier les thèmes d’investissement de longue durée issus des changements de politique, de la transformation industrielle et de la rotation du capital. Fondée par Elena Zhang, la plateforme combine analyse des politiques, cartographie sectorielle et confirmation de marché pour étudier l’évolution des récits structurels avant le consensus.",
     disclaimer: "Cette page est une version de recherche traduite. Elle est fournie uniquement à des fins d’information et d’éducation et ne constitue ni un conseil en investissement personnalisé, ni une recommandation sur titres, ni un prospectus, ni une recommandation de produit financier.",
     read: "Lire l’article",
+    save: "Enregistrer le site",
     archiveTitle: "Notes de recherche",
     archiveLead: "Notes sur les régimes politiques, les actifs stratégiques, la rotation sectorielle et l’allocation du capital à long terme.",
     themesTitle: "Cadre des thèmes de long terme de Policy Alpha",
@@ -329,6 +334,64 @@ const articleBody = {
   },
 };
 
+const articleLabels = {
+  "zh-hant": {
+    scope: "研究範圍",
+    map: "框架地圖",
+    thesis: "核心論點",
+    data: "需要追蹤的數據",
+    risks: "觀點風險",
+    final: "最後思考",
+    related: "相關研究",
+    sources: "參考來源",
+    disclaimerTitle: "免責聲明",
+  },
+  ja: {
+    scope: "リサーチ範囲",
+    map: "フレームワーク・マップ",
+    thesis: "中核仮説",
+    data: "注目すべきデータ",
+    risks: "見方に対するリスク",
+    final: "最後に",
+    related: "関連リサーチ",
+    sources: "参考資料",
+    disclaimerTitle: "免責事項",
+  },
+  ko: {
+    scope: "리서치 범위",
+    map: "프레임워크 맵",
+    thesis: "핵심 논지",
+    data: "확인할 주요 데이터",
+    risks: "관점에 대한 리스크",
+    final: "마지막 생각",
+    related: "관련 리서치",
+    sources: "참고 자료",
+    disclaimerTitle: "면책 고지",
+  },
+  de: {
+    scope: "Research Scope",
+    map: "Framework Map",
+    thesis: "Kernthese",
+    data: "Wichtige Datenpunkte",
+    risks: "Risiken der Sichtweise",
+    final: "Abschließender Gedanke",
+    related: "Verwandtes Research",
+    sources: "Ausgewählte Quellen",
+    disclaimerTitle: "Disclaimer",
+  },
+  fr: {
+    scope: "Périmètre de recherche",
+    map: "Carte du cadre d’analyse",
+    thesis: "Thèse centrale",
+    data: "Données à suivre",
+    risks: "Risques pour la thèse",
+    final: "Conclusion",
+    related: "Recherches liées",
+    sources: "Sources sélectionnées",
+    disclaimerTitle: "Avertissement",
+  },
+};
+
 function languageMenu(langKey, currentHref) {
   const items = [
     ["en", "English", currentHref.en],
@@ -414,6 +477,7 @@ function homePage(langKey) {
           <div class="hero-actions">
             <a class="button primary" href="${l.articles}">${l.archiveTitle}</a>
             <a class="button secondary" href="${l.themes}">${l.focusTitle}</a>
+            <button class="hero-save-action save-site-button" type="button" data-save-url="https://policyalpharesearch.com/${l.home}"><span aria-hidden="true">+</span>${l.save}</button>
           </div>
         </div>
         <div class="market-terminal">
@@ -511,6 +575,7 @@ function methodologyPage(langKey) {
 
 function articlePage(langKey, article) {
   const l = languages[langKey];
+  const labels = articleLabels[langKey];
   const fileName = `${langKey}-${article.slug}.html`;
   const sections = articleBody[article.slug][langKey];
   return `${head(langKey, `${articleTitle(langKey, article)} | Policy Alpha Research`, article.decks[langKey], `articles/${fileName}`).replace('href="styles.css', 'href="../styles.css').replace('href="assets/', 'href="../assets/').replace('href="site.webmanifest', 'href="../site.webmanifest')}
@@ -529,8 +594,46 @@ function articlePage(langKey, article) {
           <h2>${summaryLabel(langKey)}</h2>
           <ul>${article.bullets[langKey].map((item) => `<li>${item}</li>`).join("")}</ul>
         </section>
+        <section class="article-summary research-note-panel">
+          <h2>${labels.scope}</h2>
+          <p>${article.decks[langKey]}</p>
+        </section>
+        <section class="article-summary">
+          <h2>${labels.map}</h2>
+          <div class="framework-map">${articleFramework(langKey, article)}</div>
+        </section>
+        <section class="article-summary research-note-panel">
+          <h2>${labels.thesis}</h2>
+          <p>${sections[0][1]}</p>
+        </section>
         <section class="article-content">
-          ${sections.map(([title, body]) => `<h2>${title}</h2><p>${body}</p>`).join("\n")}
+          ${[...sections, ...articleSupplementalSections(langKey, article)].map(([title, body]) => `<h2>${title}</h2><p>${body}</p>`).join("\n")}
+        </section>
+        <section class="article-summary">
+          <h2>${labels.data}</h2>
+          <ul>${articleDataPoints(langKey, article)}</ul>
+        </section>
+        <section class="article-summary">
+          <h2>${labels.risks}</h2>
+          <ul>${articleRisks(langKey, article)}</ul>
+        </section>
+        <section class="article-summary research-note-panel">
+          <h2>${labels.final}</h2>
+          <p>${sections[sections.length - 1][1]}</p>
+        </section>
+        <section class="article-footer-note">
+          <h2>${labels.related}</h2>
+          <ul>${relatedResearch(langKey, article)}</ul>
+        </section>
+        <section class="article-references">
+          <h2>${labels.sources}</h2>
+          <ul>
+            <li><a href="https://policyalpharesearch.com/articles/${article.slug}.html">Policy Alpha Research original English note</a></li>
+            <li><a href="https://policyalpharesearch.com/articles/zh-${article.slug}.html">Policy Alpha Research simplified Chinese note</a></li>
+          </ul>
+        </section>
+        <section class="article-disclaimer">
+          <h2>${labels.disclaimerTitle}</h2>
           <p>${l.disclaimer}</p>
         </section>
       </article>
@@ -603,6 +706,99 @@ function articleTitle(langKey, article) {
 
 function summaryLabel(langKey) {
   return ({ "zh-hant": "核心要點", ja: "要点", ko: "핵심 요점", de: "Kernaussagen", fr: "Points clés" })[langKey];
+}
+
+function articleFramework(langKey, article) {
+  const maps = {
+    "zh-hant": ["政策與監管信號", "行業與供應鏈映射", "資本市場確認", "長期組合含義"],
+    ja: ["政策・規制シグナル", "セクターと供給網のマッピング", "資本市場による確認", "長期ポートフォリオへの示唆"],
+    ko: ["정책 및 규제 신호", "섹터와 공급망 매핑", "자본시장 확인", "장기 포트폴리오 시사점"],
+    de: ["Politik- und Regulierungssignal", "Sektor- und Lieferketten-Mapping", "Kapitalmarktbestätigung", "Langfristige Portfolioimplikation"],
+    fr: ["Signal politique et réglementaire", "Cartographie sectorielle et chaîne d’approvisionnement", "Confirmation par les marchés de capitaux", "Implications de portefeuille à long terme"],
+  };
+  return maps[langKey].map((item, index) => `<span>${index + 1}. ${item}</span>`).join("");
+}
+
+function articleDataPoints(langKey, article) {
+  const bySlug = {
+    "esg-is-no-longer-a-values-framework": {
+      "zh-hant": ["CSRD 覆蓋範圍與供應商披露要求", "CBAM 行業成本與碳價格變化", "綠色債券與永續貸款利差", "機構持倉與 ESG 排除名單變化"],
+      ja: ["CSRD の対象範囲とサプライヤー開示要求", "CBAM 対象セクターのコストと炭素価格", "グリーンボンドとサステナビリティ連動ローンのスプレッド", "機関投資家の保有と ESG 除外リストの変化"],
+      ko: ["CSRD 적용 범위와 공급업체 공시 요구", "CBAM 대상 산업 비용과 탄소 가격", "그린본드 및 지속가능성 연계 대출 스프레드", "기관 보유와 ESG 제외 목록 변화"],
+      de: ["CSRD-Abdeckung und Lieferantendatenanforderungen", "CBAM-Kosten und CO2-Preise in betroffenen Sektoren", "Spreads von Green Bonds und Sustainability-Linked Loans", "Institutionelle Beteiligungen und ESG-Ausschlusslisten"],
+      fr: ["Périmètre CSRD et exigences de données fournisseurs", "Coûts CBAM et prix du carbone dans les secteurs concernés", "Spreads des obligations vertes et prêts liés à la durabilité", "Détention institutionnelle et listes d’exclusion ESG"],
+    },
+    "the-next-ai-race-wont-be-won-by-the-smartest-model": {
+      "zh-hant": ["推理算力需求與 GPU 利用率", "資料中心電力負載與電網連接時間", "企業自動化工作流採用率", "網安、記憶體、網路與雲端資本開支"],
+      ja: ["推論計算需要と GPU 利用率", "データセンター電力負荷と系統接続期間", "企業の自動化ワークフロー採用率", "サイバーセキュリティ、メモリ、ネットワーク、クラウド投資"],
+      ko: ["추론 컴퓨팅 수요와 GPU 활용률", "데이터센터 전력 부하와 전력망 연결 기간", "기업 자동화 워크플로 채택률", "사이버보안, 메모리, 네트워크, 클라우드 투자"],
+      de: ["Inferenz-Compute-Nachfrage und GPU-Auslastung", "Rechenzentrumsstromlast und Netzanschlusszeiten", "Adoption von Automatisierungs-Workflows in Unternehmen", "Cybersecurity, Speicher, Netzwerke und Cloud-Capex"],
+      fr: ["Demande d’inférence et taux d’utilisation GPU", "Charge électrique des centres de données et délais de connexion au réseau", "Adoption des workflows d’automatisation en entreprise", "Cybersécurité, mémoire, réseaux et investissements cloud"],
+    },
+    "lithium-is-no-longer-just-an-ev-trade": {
+      "zh-hant": ["碳酸鋰與氫氧化鋰價格", "儲能裝機與電網投資", "關鍵礦產政策與戰略儲備", "礦企資本開支、現金成本與融資能力"],
+      ja: ["炭酸リチウムと水酸化リチウムの価格", "蓄電導入量と電力網投資", "重要鉱物政策と戦略備蓄", "鉱山会社の設備投資、キャッシュコスト、資金調達力"],
+      ko: ["탄산리튬 및 수산화리튬 가격", "에너지 저장 설치량과 전력망 투자", "핵심 광물 정책과 전략 비축", "광산 기업의 자본 지출, 현금 비용, 자금 조달 능력"],
+      de: ["Preise für Lithiumcarbonat und Lithiumhydroxid", "Speicherzubau und Netzinvestitionen", "Politik zu kritischen Rohstoffen und strategische Reserven", "Capex, Cash Costs und Finanzierungskraft der Produzenten"],
+      fr: ["Prix du carbonate et de l’hydroxyde de lithium", "Déploiement du stockage et investissements réseau", "Politiques sur les minéraux critiques et réserves stratégiques", "Capex, coûts cash et capacité de financement des producteurs"],
+    },
+  };
+  return bySlug[article.slug][langKey].map((item) => `<li>${item}</li>`).join("");
+}
+
+function articleSupplementalSections(langKey, article) {
+  const text = {
+    "zh-hant": {
+      market: ["市場含義", `${article.decks[langKey]} 對市場而言，關鍵不只是主題本身，而是資本是否開始把它納入更長週期的定價框架。當政策、需求、供應鏈和資本成本同時指向同一方向時，市場敘事往往會從短期交易轉為結構性配置。`],
+      portfolio: ["組合含義", "在組合層面，這類主題不應被當作單一事件交易，而應根據估值、質量、資金流與風險預算分層處理。研究重點是找到具備長期競爭力、資產負債表韌性和政策相關性的公司，而不是追逐最熱門的短期標的。"],
+      watch: ["政策觀察", "需要持續觀察財政支持、監管口徑、產業補貼、跨境限制、供應鏈安全和機構資本配置變化。政策方向不必每天變化，但當政策語境逐步轉向結構性支持時，資本市場往往會重新評估相關行業。"],
+      discipline: ["研究紀律", "即使長期主題成立，入場價格、倉位大小和風險控制仍然決定最終回報。Policy Alpha 的研究框架強調先建立邏輯，再等待市場確認，避免把宏大敘事誤判為立即買入信號。"],
+    },
+    ja: {
+      market: ["市場への含意", `${article.decks[langKey]} 市場にとって重要なのはテーマそのものだけではなく、資本がそれをより長いサイクルの価格形成に組み込み始めるかどうかです。政策、需要、供給網、資本コストが同じ方向を向くと、ナラティブは短期取引から構造的な資産配分へ移行しやすくなります。`],
+      portfolio: ["ポートフォリオへの含意", "ポートフォリオでは、この種のテーマを単発イベントとして扱うべきではありません。バリュエーション、企業品質、資金フロー、リスク予算に分解して考える必要があります。注目すべきは、長期競争力、財務耐久性、政策との関連性を持つ企業です。"],
+      watch: ["政策ウォッチ", "財政支援、規制の方向性、産業補助金、越境制限、供給網の安全保障、機関投資家の資金配分を継続的に確認する必要があります。政策は毎日変化する必要はありませんが、構造的支援へ語調が移る時、市場は関連セクターを再評価します。"],
+      discipline: ["リサーチ規律", "長期テーマが正しくても、エントリー価格、ポジションサイズ、リスク管理が最終リターンを決めます。Policy Alpha の枠組みは、まず投資ロジックを定義し、その後に市場確認を待つことを重視します。"],
+    },
+    ko: {
+      market: ["시장 시사점", `${article.decks[langKey]} 시장에서 중요한 것은 테마 자체만이 아니라 자본이 이를 더 긴 사이클의 가격 결정 프레임에 반영하기 시작하는지입니다. 정책, 수요, 공급망, 자본 비용이 같은 방향을 가리킬 때 단기 거래 내러티브는 구조적 배분 테마로 전환될 수 있습니다.`],
+      portfolio: ["포트폴리오 시사점", "포트폴리오 관점에서 이런 테마는 단일 이벤트 거래가 아니라 밸류에이션, 기업 퀄리티, 자금 흐름, 리스크 예산으로 나누어 접근해야 합니다. 핵심은 장기 경쟁력, 재무 회복력, 정책 관련성을 가진 기업을 찾는 것입니다."],
+      watch: ["정책 관찰", "재정 지원, 규제 방향, 산업 보조금, 국경 간 제한, 공급망 안보, 기관 자금 배분 변화를 지속적으로 봐야 합니다. 정책이 매일 바뀔 필요는 없지만 구조적 지원 쪽으로 언어가 바뀌면 시장은 관련 섹터를 재평가할 수 있습니다."],
+      discipline: ["리서치 규율", "장기 테마가 맞더라도 진입 가격, 포지션 크기, 리스크 관리가 최종 수익률을 결정합니다. Policy Alpha 프레임워크는 먼저 논리를 정리하고 이후 시장 확인을 기다리는 접근을 강조합니다."],
+    },
+    de: {
+      market: ["Marktimplikationen", `${article.decks[langKey]} Für den Markt zählt nicht nur das Thema selbst, sondern ob Kapital beginnt, es in einen längerfristigen Bewertungsrahmen einzupreisen. Wenn Politik, Nachfrage, Lieferketten und Kapitalkosten in dieselbe Richtung weisen, kann sich ein kurzfristiges Narrativ zu einer strukturellen Allokation entwickeln.`],
+      portfolio: ["Portfolioimplikationen", "Auf Portfolioebene sollte ein solches Thema nicht als einzelner Ereignistrade behandelt werden. Es sollte nach Bewertung, Unternehmensqualität, Kapitalflüssen und Risikobudget zerlegt werden. Entscheidend sind Unternehmen mit dauerhafter Wettbewerbsposition, Bilanzresilienz und politischer Relevanz."],
+      watch: ["Policy Watch", "Zu beobachten sind fiskalische Unterstützung, Regulierung, Industrieanreize, grenzüberschreitende Beschränkungen, Lieferkettensicherheit und institutionelle Kapitalallokation. Politik muss sich nicht täglich ändern; entscheidend ist, ob sich die Sprache in Richtung struktureller Unterstützung bewegt."],
+      discipline: ["Research-Disziplin", "Selbst wenn ein langfristiges Thema richtig ist, bestimmen Einstiegspreis, Positionsgröße und Risikomanagement den Ertrag. Der Policy-Alpha-Prozess verlangt zuerst eine klare These und anschließend Marktbestätigung, statt große Narrative automatisch als Kaufsignal zu behandeln."],
+    },
+    fr: {
+      market: ["Implications de marché", `${article.decks[langKey]} Pour le marché, l’enjeu n’est pas seulement le thème lui-même, mais le moment où le capital commence à l’intégrer dans un cadre de valorisation de plus longue durée. Quand politique, demande, chaîne d’approvisionnement et coût du capital convergent, un récit de court terme peut devenir une allocation structurelle.`],
+      portfolio: ["Implications de portefeuille", "Dans un portefeuille, ce type de thème ne doit pas être traité comme un simple événement. Il doit être analysé selon la valorisation, la qualité des entreprises, les flux de capitaux et le budget de risque. Les entreprises les plus pertinentes combinent position concurrentielle durable, solidité financière et pertinence politique."],
+      watch: ["Suivi des politiques publiques", "Il faut suivre le soutien budgétaire, la régulation, les incitations industrielles, les restrictions transfrontalières, la sécurité des chaînes d’approvisionnement et l’allocation du capital institutionnel. Les politiques n’ont pas besoin de changer chaque jour ; le signal important est le glissement vers un soutien structurel."],
+      discipline: ["Discipline de recherche", "Même lorsqu’un thème de long terme est valide, le prix d’entrée, la taille de position et la gestion du risque déterminent le rendement. Le cadre Policy Alpha privilégie une thèse claire puis une confirmation de marché, plutôt qu’une réaction automatique aux grands récits."],
+    },
+  };
+  const sectionMap = text[langKey];
+  return [sectionMap.market, sectionMap.portfolio, sectionMap.watch, sectionMap.discipline];
+}
+
+function articleRisks(langKey, article) {
+  const risks = {
+    "zh-hant": ["政策執行延後或監管口徑反覆", "市場已提前定價主要利好", "利率、流動性或風險偏好削弱長期主題估值"],
+    ja: ["政策実行の遅れ、または規制方針の変更", "市場が主要な追い風をすでに織り込んでいる可能性", "金利、流動性、リスク選好が長期テーマの評価を圧迫する可能性"],
+    ko: ["정책 집행 지연 또는 규제 방향 변화", "시장이 주요 호재를 이미 선반영했을 가능성", "금리, 유동성, 위험 선호 변화가 장기 테마 밸류에이션을 압박할 가능성"],
+    de: ["Verzögerte politische Umsetzung oder wechselnde Regulierung", "Der Markt könnte zentrale Rückenwinde bereits eingepreist haben", "Zinsen, Liquidität oder Risikobereitschaft können Bewertungsmultiples belasten"],
+    fr: ["Retard de mise en œuvre des politiques ou changement réglementaire", "Le marché peut avoir déjà intégré les principaux soutiens", "Taux, liquidité ou appétit pour le risque peuvent peser sur les valorisations de long terme"],
+  };
+  return risks[langKey].map((item) => `<li>${item}</li>`).join("");
+}
+
+function relatedResearch(langKey, article) {
+  return articleBase
+    .filter((item) => item.slug !== article.slug)
+    .map((item) => `<li><a href="${langKey}-${item.slug}.html">${articleTitle(langKey, item)}</a></li>`)
+    .join("");
 }
 
 function sectionLabel(langKey, n) {
