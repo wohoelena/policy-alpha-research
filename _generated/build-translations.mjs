@@ -3,7 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = "/Users/elenazhang/Documents/Codex/2026-05-19/new-chat";
-const version = "20260525-hero-stage-one";
+const version = "20260525-research-notes-stage-two";
 
 const languages = {
   "zh-hant": {
@@ -518,9 +518,12 @@ ${l.frameworkSteps.map((step, i) => `<article class="process-card"><span class="
 function insightCard(langKey, article) {
   const l = languages[langKey];
   return `<article class="insight-card featured-insight">
+          <span class="research-badge">${researchBadge(langKey)}</span>
           <div class="insight-meta"><span>${articleSeries(langKey, article)}</span><strong>${dateLabel(langKey)}</strong></div>
           <h3>${articleTitle(langKey, article)}</h3>
           <p>${article.decks[langKey]}</p>
+          <div class="thesis-preview">${thesisPreview(langKey, article)}</div>
+          <div class="theme-tags" aria-label="Connected themes">${articleThemeTags(langKey, article).map((item) => `<span>${item}</span>`).join("")}</div>
           <a class="button primary" href="articles/${langKey}-${article.slug}.html">${l.read}</a>
         </article>`;
 }
@@ -625,6 +628,10 @@ function articlePage(langKey, article) {
         <section class="article-footer-note">
           <h2>${labels.related}</h2>
           <ul>${relatedResearch(langKey, article)}</ul>
+        </section>
+        <section class="article-connected-themes">
+          <h2>${connectedThemesLabel(langKey)}</h2>
+          <div class="connected-themes">${articleThemeTags(langKey, article).map((item) => `<a href="../${l.themes}">${item}</a>`).join("")}</div>
         </section>
         <section class="article-references">
           <h2>${labels.sources}</h2>
@@ -875,6 +882,80 @@ function articleSeries(langKey, article) {
     },
   };
   return seriesMap[article.series]?.[langKey] || article.series;
+}
+
+function researchBadge(langKey) {
+  return ({
+    "zh-hant": "研究札記",
+    ja: "リサーチノート",
+    ko: "리서치 노트",
+    de: "Research Note",
+    fr: "Note de recherche",
+  })[langKey] || "Research Note";
+}
+
+function connectedThemesLabel(langKey) {
+  return ({
+    "zh-hant": "關聯主題",
+    ja: "関連テーマ",
+    ko: "연결된 테마",
+    de: "Verbundene Themen",
+    fr: "Thèmes liés",
+  })[langKey] || "Connected Themes";
+}
+
+function thesisPreview(langKey, article) {
+  const previews = {
+    "esg-is-no-longer-a-values-framework": {
+      "zh-hant": "核心判斷：ESG 正從價值觀語言轉向資本准入與供應鏈兼容性過濾器。",
+      ja: "Short thesis: ESG is moving from values language into a capital access and supply-chain compatibility filter.",
+      ko: "Short thesis: ESG is moving from values language into a capital access and supply-chain compatibility filter.",
+      de: "Short thesis: ESG is moving from values language into a capital access and supply-chain compatibility filter.",
+      fr: "Short thesis: ESG is moving from values language into a capital access and supply-chain compatibility filter.",
+    },
+    "the-next-ai-race-wont-be-won-by-the-smartest-model": {
+      "zh-hant": "核心判斷：下一輪 AI 瓶頸可能在執行基礎設施，而不只在模型智能。",
+      ja: "Short thesis: the next AI bottleneck may sit in execution infrastructure rather than model intelligence alone.",
+      ko: "Short thesis: the next AI bottleneck may sit in execution infrastructure rather than model intelligence alone.",
+      de: "Short thesis: the next AI bottleneck may sit in execution infrastructure rather than model intelligence alone.",
+      fr: "Short thesis: the next AI bottleneck may sit in execution infrastructure rather than model intelligence alone.",
+    },
+    "lithium-is-no-longer-just-an-ev-trade": {
+      "zh-hant": "核心判斷：鋰正在從電動車代理變量，轉向戰略材料與電網安全主題。",
+      ja: "Short thesis: lithium is being repriced as a strategic materials theme, not only an EV adoption proxy.",
+      ko: "Short thesis: lithium is being repriced as a strategic materials theme, not only an EV adoption proxy.",
+      de: "Short thesis: lithium is being repriced as a strategic materials theme, not only an EV adoption proxy.",
+      fr: "Short thesis: lithium is being repriced as a strategic materials theme, not only an EV adoption proxy.",
+    },
+  };
+  return previews[article.slug]?.[langKey] || article.decks[langKey];
+}
+
+function articleThemeTags(langKey, article) {
+  const tags = {
+    "esg-is-no-longer-a-values-framework": {
+      "zh-hant": ["ESG", "資本准入", "供應鏈", "監管"],
+      ja: ["ESG", "Capital Access", "Supply Chains", "Regulation"],
+      ko: ["ESG", "Capital Access", "Supply Chains", "Regulation"],
+      de: ["ESG", "Capital Access", "Supply Chains", "Regulation"],
+      fr: ["ESG", "Capital Access", "Supply Chains", "Regulation"],
+    },
+    "the-next-ai-race-wont-be-won-by-the-smartest-model": {
+      "zh-hant": ["AI 基礎設施", "算力", "電力需求", "企業系統"],
+      ja: ["AI Infrastructure", "Compute", "Power Demand", "Enterprise Systems"],
+      ko: ["AI Infrastructure", "Compute", "Power Demand", "Enterprise Systems"],
+      de: ["AI Infrastructure", "Compute", "Power Demand", "Enterprise Systems"],
+      fr: ["AI Infrastructure", "Compute", "Power Demand", "Enterprise Systems"],
+    },
+    "lithium-is-no-longer-just-an-ev-trade": {
+      "zh-hant": ["關鍵礦產", "鋰", "電網安全", "產業政策"],
+      ja: ["Critical Minerals", "Lithium", "Grid Security", "Industrial Policy"],
+      ko: ["Critical Minerals", "Lithium", "Grid Security", "Industrial Policy"],
+      de: ["Critical Minerals", "Lithium", "Grid Security", "Industrial Policy"],
+      fr: ["Critical Minerals", "Lithium", "Grid Security", "Industrial Policy"],
+    },
+  };
+  return tags[article.slug]?.[langKey] || [];
 }
 
 function dateLabel(langKey) {
