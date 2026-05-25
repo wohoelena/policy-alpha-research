@@ -2375,6 +2375,310 @@ h2 {
   font-size: 12px;
 }
 
+.deep-research-hero::after {
+  content: "NVDA";
+  position: absolute;
+  right: 0;
+  top: 32px;
+  color: rgba(214, 168, 79, 0.08);
+  font-size: clamp(74px, 12vw, 156px);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.article-metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 920px;
+  margin-top: 28px;
+}
+
+.article-metric-strip div,
+.key-figures-grid div,
+.watch-signal-grid div {
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(214, 168, 79, 0.1), transparent 48%),
+    rgba(12, 15, 18, 0.94);
+}
+
+.article-metric-strip span,
+.article-metric-strip small,
+.key-figures-grid span {
+  display: block;
+}
+
+.article-metric-strip span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-metric-strip strong,
+.key-figures-grid strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1;
+}
+
+.article-metric-strip small,
+.key-figures-grid span {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.valuation-panel,
+.full-report-card {
+  margin: 32px 0;
+  border: 1px solid rgba(214, 168, 79, 0.28);
+  border-radius: 8px;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(214, 168, 79, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(19, 24, 29, 0.98), rgba(7, 9, 11, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.valuation-panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.valuation-panel-header strong {
+  color: var(--gold);
+}
+
+.valuation-track {
+  position: relative;
+  height: 112px;
+  margin: 34px 0 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(214, 168, 79, 0.24));
+}
+
+.range-zone,
+.price-marker,
+.valuation-point {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.range-zone {
+  height: 22px;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: rgba(135, 214, 183, 0.5);
+}
+
+.price-marker {
+  width: 3px;
+  height: 92px;
+  background: #f3cf74;
+}
+
+.price-marker::before {
+  content: "Current price";
+  position: absolute;
+  left: 8px;
+  top: -2px;
+  white-space: nowrap;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.price-marker em,
+.valuation-point em {
+  position: absolute;
+  left: 8px;
+  bottom: -2px;
+  color: var(--ink);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.valuation-point {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.valuation-point small {
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  width: 96px;
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.valuation-point em {
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+.valuation-axis {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(240, 235, 222, 0.52);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.valuation-panel p {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.risk-stack {
+  display: grid;
+  gap: 14px;
+  margin: 26px 0;
+}
+
+.risk-item {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 16px;
+  border: 1px solid rgba(214, 168, 79, 0.22);
+  border-radius: 8px;
+  padding: 18px;
+  background: rgba(214, 168, 79, 0.055);
+}
+
+.risk-item > span {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(214, 168, 79, 0.34);
+  border-radius: 50%;
+  color: var(--gold);
+  font-family: var(--display-font);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.risk-item small {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.risk-item h3,
+.watch-signal-grid h3 {
+  margin: 6px 0 8px;
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.risk-item p,
+.watch-signal-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.research-quote {
+  margin: 40px 0;
+  border: 1px solid rgba(214, 168, 79, 0.35);
+  border-radius: 8px;
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(214, 168, 79, 0.16), rgba(10, 13, 16, 0.98));
+  color: var(--ink);
+}
+
+.research-quote strong {
+  display: block;
+  font-family: var(--display-font);
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 0.98;
+}
+
+.research-quote span {
+  display: block;
+  margin-top: 18px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.key-figures-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0 10px;
+}
+
+.watch-signal-grid,
+.full-report-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.full-report-card {
+  max-width: 920px;
+  align-items: center;
+}
+
+.full-report-card h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: clamp(30px, 4vw, 52px);
+}
+
+.full-report-card p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.full-report-card .report-actions {
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
 .insight-update {
   position: fixed;
   inset: 0;
@@ -3139,6 +3443,55 @@ h2 {
     padding: 0 8px;
     font-size: 11px;
     white-space: nowrap;
+  }
+
+  .deep-research-hero::after {
+    top: 6px;
+    right: 2px;
+    font-size: 72px;
+  }
+
+  .article-metric-strip,
+  .key-figures-grid,
+  .watch-signal-grid,
+  .full-report-card {
+    grid-template-columns: 1fr;
+  }
+
+  .valuation-panel {
+    overflow-x: hidden;
+    padding: 18px;
+  }
+
+  .valuation-track {
+    height: 140px;
+    margin-top: 26px;
+  }
+
+  .valuation-point small {
+    width: 72px;
+    font-size: 10px;
+  }
+
+  .valuation-point em {
+    font-size: 11px;
+  }
+
+  .price-marker::before {
+    top: 4px;
+    font-size: 10px;
+  }
+
+  .risk-item {
+    grid-template-columns: 1fr;
+  }
+
+  .research-quote {
+    padding: 24px;
+  }
+
+  .full-report-card .report-actions {
+    justify-content: stretch;
   }
 
   .related-grid {

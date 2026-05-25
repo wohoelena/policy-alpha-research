@@ -7,7 +7,7 @@
     <link>https://policyalpharesearch.com/articles.html</link>
     <description>Independent policy-aware macro and equity research on strategic assets, AI infrastructure, critical minerals, sector rotation, and portfolio construction.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 24 May 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://policyalpharesearch.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://policyalpharesearch.com/assets/app-icon-512.png</url>
@@ -15,7 +15,18 @@
       <link>https://policyalpharesearch.com/</link>
     </image>
     <item>
-      <title>ESG Is No Longer a Values Framework. It Is a Capital Access Filter.</title>
+      <title>NVIDIA at the Tollgate</title>
+      <link>https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</link>
+      <guid isPermaLink="true">https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</guid>
+      <pubDate>Tue, 26 May 2026 00:00:00 GMT</pubDate>
+      <category>Deep Research</category>
+      <category>NVIDIA</category>
+      <category>AI Infrastructure</category>
+      <category>Valuation</category>
+      <description>The AI infrastructure cycle has a price, and the market already knows it.</description>
+    </item>
+    <item>
+      <title>ESG Is Dead. Long Live ESG.</title>
       <link>https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</link>
       <guid isPermaLink="true">https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</guid>
       <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>

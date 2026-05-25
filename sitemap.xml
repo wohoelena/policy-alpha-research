@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://policyalpharesearch.com/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://policyalpharesearch.com/zh.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/" />
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://policyalpharesearch.com/zh-articles.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
@@ -70,6 +70,19 @@
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/methodology.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-methodology.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</loc>

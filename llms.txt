@@ -25,8 +25,10 @@ Policy Alpha Research is an independent macro and equity research platform focus
 
 ## Current Research Notes
 
-- ESG Is No Longer a Values Framework. It Is a Capital Access Filter.: https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html
-- ESG 不再只是价值观框架，它正在成为资本准入过滤器: https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html
+- NVIDIA at the Tollgate: https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html
+- Full NVIDIA research report: https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf
+- ESG Is Dead. Long Live ESG.: https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html
+- ESG 已死，但 ESG 仍在扩张: https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html
 - The Next AI Race Won't Be Won by the Smartest Model: https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html
 - 下一场 AI 竞赛，不只属于最聪明的模型: https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html
 - Lithium Is No Longer Just an EV Trade: https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html

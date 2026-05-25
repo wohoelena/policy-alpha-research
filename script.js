@@ -577,22 +577,22 @@ if (!document.querySelector(".article-shell")) {
 
 const latestInsight = isChinesePage
   ? {
-      id: "esg-dead-long-live-esg-20260525",
+      id: "nvidia-at-the-tollgate-20260526",
       label: "New Insight",
-      title: "ESG 已死，但 ESG 仍在扩张",
-      summary: "标签正在退潮，基础设施却仍在扩张。这种分化，可能定义未来十年的资本配置逻辑。",
-      primary: "阅读文章",
+      title: "NVIDIA at the Tollgate",
+      summary: "AI 基础设施周期有价格，而市场已经知道。完整估值报告已同步发布。",
+      primary: "阅读英文原文",
       secondary: "稍后再看",
-      url: "articles/zh-esg-is-no-longer-a-values-framework.html",
+      url: "articles/nvidia-at-the-tollgate.html",
     }
   : {
-      id: "esg-dead-long-live-esg-20260525",
+      id: "nvidia-at-the-tollgate-20260526",
       label: "New Insight",
-      title: "ESG Is Dead. Long Live ESG.",
-      summary: "The label is retreating. The infrastructure is expanding. That distinction may define the next decade of capital allocation.",
+      title: "NVIDIA at the Tollgate",
+      summary: "The AI infrastructure cycle has a price — and the market already knows it. Full valuation report now available.",
       primary: "Read Note",
       secondary: "Later",
-      url: "articles/esg-is-no-longer-a-values-framework.html",
+      url: "articles/nvidia-at-the-tollgate.html",
     };
 
 function showInsightUpdate() {

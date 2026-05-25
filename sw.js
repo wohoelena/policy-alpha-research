@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v37";
+const CACHE_NAME = "policy-alpha-research-v38";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -14,12 +14,13 @@ const CORE_ASSETS = [
   "/ko-articles.html",
   "/de-articles.html",
   "/fr-articles.html",
+  "/articles/nvidia-at-the-tollgate.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260525-stage-three-modules",
-  "/script.js?v=20260525-stage-three-modules",
+  "/styles.css?v=20260526-nvidia-insight",
+  "/script.js?v=20260526-nvidia-insight",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -35,6 +36,8 @@ const CORE_ASSETS = [
   "/assets/social/zh-ai-infrastructure-share-card.png",
   "/assets/social/esg-capital-access-share-card.png",
   "/assets/social/zh-esg-capital-access-share-card.png",
+  "/assets/social/nvidia-tollgate-share-card.png",
+  "/reports/nvidia-research-elena-zhang.pdf",
 ];
 
 self.addEventListener("install", (event) => {
