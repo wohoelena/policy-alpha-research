@@ -3116,14 +3116,15 @@ body {
 }
 
 .focus-taxonomy span {
-  border: 1px solid rgba(214, 168, 79, 0.28);
+  border: 1px solid rgba(214, 168, 79, 0.46);
   border-radius: 999px;
   padding: 10px 14px;
-  background: rgba(214, 168, 79, 0.08);
-  color: var(--ink);
+  background: rgba(214, 168, 79, 0.14);
+  color: #f7ead0;
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.36);
 }
 
 .framework-section {

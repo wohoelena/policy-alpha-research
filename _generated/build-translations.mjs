@@ -3,7 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = "/Users/elenazhang/Documents/Codex/2026-05-19/new-chat";
-const version = "20260525-complete-insight-body";
+const version = "20260525-focus-readable";
 
 const languages = {
   "zh-hant": {
