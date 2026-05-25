@@ -26,6 +26,7 @@ Policy Alpha Research is an independent macro and equity research platform focus
 ## Current Research Notes
 
 - NVIDIA at the Tollgate: https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html
+- NVIDIA at the Tollgate 中文版: https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html
 - Full NVIDIA research report: https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf
 - ESG Is Dead. Long Live ESG.: https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html
 - ESG 已死，但 ESG 仍在扩张: https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NVIDIA at the Tollgate | AI 基础设施估值研究</title>
+    <meta
+      name="description"
+      content="Policy Alpha Research 关于 NVIDIA、AI 基础设施资本开支周期、估值纪律、风险信号和完整 PDF 报告的中文研究札记。"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Elena Zhang" />
+    <meta name="keywords" content="NVIDIA 估值, NVDA DCF, AI 基础设施, 云厂商资本开支, AI 算力, Policy Alpha Research, Elena Zhang" />
+    <link rel="image_src" href="https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png" />
+    <link rel="canonical" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <link rel="alternate" type="application/rss+xml" title="Policy Alpha Research Feed" href="https://policyalpharesearch.com/feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="Policy Alpha Research" />
+    <meta property="og:url" content="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <meta property="og:title" content="NVIDIA at the Tollgate" />
+    <meta property="og:description" content="AI 基础设施周期有价格，而市场已经知道。" />
+    <meta property="og:image" content="https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png" />
+    <meta property="og:image:secure_url" content="https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta itemprop="name" content="NVIDIA at the Tollgate" />
+    <meta itemprop="description" content="AI 基础设施周期有价格，而市场已经知道。" />
+    <meta itemprop="image" content="https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png" />
+    <meta property="article:author" content="Elena Zhang" />
+    <meta property="article:published_time" content="2026-05-26" />
+    <meta property="article:section" content="Deep Research" />
+    <meta property="article:tag" content="NVIDIA" />
+    <meta property="article:tag" content="AI 基础设施" />
+    <meta property="article:tag" content="估值" />
+    <meta property="article:tag" content="云厂商资本开支" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NVIDIA at the Tollgate" />
+    <meta name="twitter:description" content="关于 NVIDIA、AI 基础设施资本开支、估值纪律和可观察风险信号的 Policy Alpha 中文札记。" />
+    <meta name="twitter:image" content="https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets/app-icon-180.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta name="theme-color" content="#07090b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Policy Alpha" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVQCG843N0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-EVQCG843N0");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "NVIDIA at the Tollgate",
+        "description": "AI 基础设施周期有价格，而市场已经知道。",
+        "image": "https://policyalpharesearch.com/assets/social/zh-nvidia-tollgate-share-card.png",
+        "datePublished": "2026-05-26",
+        "dateModified": "2026-05-26",
+        "author": {
+          "@type": "Person",
+          "name": "Elena Zhang"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Policy Alpha Research",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png"
+          }
+        },
+        "mainEntityOfPage": "https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html",
+        "isBasedOn": "https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Policy Alpha Research",
+            "item": "https://policyalpharesearch.com/zh.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "研究札记",
+            "item": "https://policyalpharesearch.com/zh-articles.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "NVIDIA at the Tollgate",
+            "item": "https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html"
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="../styles.css?v=20260526-nvidia-zh" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../zh.html#top" aria-label="Policy Alpha Research 首页">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="../assets/policy-alpha-logo.png" alt="" />
+        </span>
+        <span>
+          <strong>Policy Alpha</strong>
+          <small>宏观与权益研究</small>
+          <small>独立研究：Elena Zhang</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="../zh.html#top">首页</a>
+        <a href="../zh.html#strategy">策略框架</a>
+        <a href="../zh.html#research-library">研究报告</a>
+        <a href="../zh.html#insights">观察</a>
+        <a href="../zh-themes.html">研究主题</a>
+        <a href="../zh-methodology.html">研究方法</a>
+        <a href="../zh-articles.html">归档</a>
+        <a href="../zh.html#disclaimer">免责声明</a>
+      </nav>
+      <details class="language-switch">
+        <summary aria-label="Language selector"><span>简体中文</span></summary>
+        <div class="language-menu" role="listbox" aria-label="Language options">
+          <a href="nvidia-at-the-tollgate.html" lang="en">English</a>
+          <a class="is-active" href="zh-nvidia-at-the-tollgate.html" lang="zh-CN">简体中文</a>
+          <a href="../zh-hant-articles.html" lang="zh-Hant">繁體中文</a>
+          <a href="../ja-articles.html" lang="ja">日本語</a>
+          <a href="../ko-articles.html" lang="ko">한국어</a>
+          <a href="../de-articles.html" lang="de">Deutsch</a>
+          <a href="../fr-articles.html" lang="fr">Français</a>
+        </div>
+      </details>
+    </header>
+
+    <main id="top">
+      <article class="article-shell">
+        <header class="article-hero deep-research-hero">
+          <p class="eyebrow">Policy Alpha Research</p>
+          <p class="series-kicker">深度研究系列 · 2026 年 5 月</p>
+          <h1>NVIDIA at the Tollgate</h1>
+          <div class="article-meta-line">
+            <span>Elena Zhang</span>
+            <span>2026 年 5 月</span>
+            <span>持有 / 中性</span>
+          </div>
+          <p class="article-dek">
+            AI 基础设施周期有价格，而市场已经知道。
+          </p>
+          <div class="article-share-tools">
+            <button class="button primary share-article-button" type="button">分享文章</button>
+            <a class="button secondary" href="../reports/nvidia-research-elena-zhang.pdf" target="_blank" rel="noopener">查看完整报告</a>
+            <button class="button secondary save-site-button" type="button" data-save-url="https://policyalpharesearch.com/zh.html#insights">收藏网站</button>
+          </div>
+        </header>
+
+        <section class="article-metric-strip" aria-label="NVIDIA 核心数据">
+          <div><span>FY2026 Revenue</span><strong>$215.9B</strong><small>FY2023 为 $27.0B</small></div>
+          <div><span>Q1 FY2027 Revenue</span><strong>$81.6B</strong><small>同比增长 85%</small></div>
+          <div><span>Q2 FY2027 Guide</span><strong>$91.0B</strong><small>不含中国数据中心算力收入</small></div>
+          <div><span>Base DCF Midpoint</span><strong>$191.8</strong><small>相对 $215.33 市价</small></div>
+        </section>
+
+        <section class="article-summary">
+          <h2>核心要点</h2>
+          <ul>
+            <li>NVIDIA 现在被市场定价为 AI 基础设施资本开支周期的代理变量，而不只是传统半导体公司。</li>
+            <li>当前市场价格高于基础情景 DCF 中点，更接近乐观延续情景。</li>
+            <li>核心风险不是 AI 需求消失，而是需求结构、出口管制、客户议价能力或算力效率变化，比市场预期更快地影响 NVIDIA。</li>
+          </ul>
+        </section>
+
+        <section class="article-summary research-note-panel">
+          <h2>研究范围</h2>
+          <p>
+            本文是完整 NVIDIA 研究报告的浓缩版。完整 PDF 包含估值模型、DCF 敏感性分析、
+            可比公司估值、风险地图和可观察信号框架。
+          </p>
+        </section>
+
+        <section class="article-framework-chart" aria-label="NVIDIA 投资框架">
+          <h2>框架地图</h2>
+          <div class="mini-flow">
+            <span>AI 资本开支周期</span>
+            <span>NVIDIA 收费站</span>
+            <span>DCF 估值纪律</span>
+            <span>风险信号</span>
+            <span>持有 / 中性</span>
+          </div>
+        </section>
+
+        <section class="article-body">
+          <h2>核心判断</h2>
+          <p>
+            NVIDIA 已经超越传统半导体公司的分析框架。市场现在把它视为全球 AI 基础设施资本开支周期的定价代理：
+            它不只是芯片公司，而是关于 AI 建设周期能够持续多久、利润率能够维持多高、以及供应与政策扰动能否被持续消化的一种前瞻性押注。
+          </p>
+          <p>
+            这种定位背后的财务变化极其显著。FY2023 至 FY2026，NVIDIA 年收入从 $27.0 billion 增至 $215.9 billion，
+            经营利润率从 15.6% 扩张至 60.4%。自由现金流（经营现金流减资本开支）从 $3.8 billion 增至 $96.7 billion。
+            仅 Q1 FY2027，NVIDIA 就实现 $81.6 billion 收入，Q2 指引为 $91.0 billion，且该指引明确不包含中国数据中心算力收入。
+          </p>
+          <p>
+            这一细节具有很强的分析意义。NVIDIA 正在接近单季 $100 billion 收入水平，而其最大被排除市场仍未计入。
+            增长引擎主要来自非中国云厂商需求、主权 AI 基础设施项目，以及企业 AI 部署的早期阶段。
+          </p>
+          <p>
+            问题并不是 NVIDIA 是否是一家优秀公司。它显然是。真正的问题是：为了证明当前价格合理，哪些条件必须继续成立？
+          </p>
+
+          <h2>估值已经隐含了什么</h2>
+          <p>
+            按当前市场价格计算，NVIDIA 约高于我们基础情景 DCF 中点 $191.8 每股约 12%。这个差距不足以直接定义为泡沫，
+            但足以说明市场定价已经处在基础情景与乐观情景之间，而不是基础情景本身。
+          </p>
+
+          <div class="valuation-panel" aria-label="DCF 内在价值区间与当前市场价格">
+            <div class="valuation-panel-header">
+              <span>DCF 内在价值区间 vs. 当前市场价格</span>
+              <strong>WACC 10.9% · Beta 1.50</strong>
+            </div>
+            <div class="valuation-track">
+              <span class="range-zone" style="left: 52.6%; width: 10.8%;"></span>
+              <span class="price-marker" style="left: 75.1%;"><em>$215.33</em></span>
+              <span class="valuation-point" style="left: 3.5%;"><em>$114.9</em><small>悲观</small></span>
+              <span class="valuation-point" style="left: 52.8%;"><em>$184.3</em><small>基础 Gordon</small></span>
+              <span class="valuation-point" style="left: 63.5%;"><em>$199.3</em><small>基础 12x EV</small></span>
+              <span class="valuation-point" style="left: 91.3%;"><em>$238.2</em><small>乐观</small></span>
+            </div>
+            <div class="valuation-axis">
+              <span>$100</span><span>$130</span><span>$160</span><span>$190</span><span>$220</span><span>$250</span>
+            </div>
+            <p>
+              当前价格 $215.33 位于基础情景中点 $191.8 之上，更接近乐观情景。这并不意味着股价一定是泡沫，
+              而是意味着市场已经在为一个持续且高利润的周期定价，而不是为保守中枢情景定价。
+            </p>
+          </div>
+
+          <p>
+            相对估值也指向同样结论。NVIDIA 约以 28x FY2027E EBITDA 交易，高于半导体可比公司和其 AI 超级周期前的历史均值。
+            约 32x 远期自由现金流意味着，每一美元年化 FCF 被赋予约 32 美元企业价值。这要求自由现金流继续高速增长，
+            或者未来估值倍数压缩。两条路径都不支持在当前价格上过度兴奋。
+          </p>
+
+          <h2>风险结构</h2>
+          <p>
+            核心风险不是 AI 需求消失。更重要的风险是需求结构发生变化，并且这种变化会以较快速度直接影响 NVIDIA。
+          </p>
+
+          <div class="risk-stack">
+            <div class="risk-item">
+              <span>01</span>
+              <div>
+                <small>高 · 近端</small>
+                <h3>中国与出口管制</h3>
+                <p>
+                  H20 事件清楚展示了机制：一款原本为满足现有出口管制门槛而设计的产品，可能因为监管变化而迅速失去商业意义，
+                  供应链尚未反应就形成库存损失。中国现在是明确的模型变量，而不是地缘政治脚注。
+                </p>
+              </div>
+            </div>
+            <div class="risk-item">
+              <span>02</span>
+              <div>
+                <small>高 · 中期</small>
+                <h3>云厂商资本开支相关性</h3>
+                <p>
+                  Microsoft、Google、Amazon 和 Meta 在 NVIDIA Q1 FY2027 前三大直接客户收入中合计占 54%。
+                  对 NVIDIA 而言，集中度风险未必表现为一个客户离开，而更可能表现为多家云厂商同时放缓资本开支。
+                </p>
+              </div>
+            </div>
+            <div class="risk-item">
+              <span>03</span>
+              <div>
+                <small>中 · 长期</small>
+                <h3>自研芯片带来的议价能力</h3>
+                <p>
+                  Google TPU、Amazon Trainium 和 Meta MTIA 不会立即替代 NVIDIA 的全栈优势。
+                  风险不是被完全替代，而是随着云厂商生产经验累积，NVIDIA 的利润率通过议价被逐步压缩。
+                </p>
+              </div>
+            </div>
+            <div class="risk-item">
+              <span>04</span>
+              <div>
+                <small>中 · 已被验证</small>
+                <h3>算力效率：DeepSeek 机制</h3>
+                <p>
+                  DeepSeek R1 已经证明，模型效率突破可以迅速冲击硬件叙事。关键观察信号是：
+                  主要云厂商的 AI 服务收入增长，是否继续快于 GPU 采购增长。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2>护城河真实存在，但天花板不是无限的</h2>
+          <p>
+            NVIDIA 的竞争优势更适合理解为多层堆栈，而不只是 GPU 市占率：Blackwell 和 Rubin 架构、NVLink 网络、
+            CUDA 二十年软件生态、GB200 NVL72 机柜级集成，以及深度云厂商认证。尤其 CUDA 带来的迁移成本，在近端规划周期内非常高：
+            研究人员重训、机构库迁移、性能不确定性，都会提高替代难度。这个护城河真实且深。
+          </p>
+          <p>
+            但一个近端风险是 Blackwell 到 Rubin 的产品过渡。NVIDIA 主要架构周期历史上常出现一至两个季度订单放缓窗口，
+            因为技术成熟客户会在下一代产品明确前推迟部分非必要采购。随着 Rubin 生产时间线更清晰，H2 FY2027 或 FY2028
+            出现 Blackwell 订单空窗的风险会升高。
+          </p>
+
+          <blockquote class="research-quote">
+            <strong>机会是真实的。</strong>
+            <strong>价格已经知道。</strong>
+            <span>Policy Alpha view · Elena Zhang · 2026 年 5 月</span>
+          </blockquote>
+
+          <h2>Policy Alpha View</h2>
+          <p>
+            NVIDIA 仍然是 AI 基础设施周期中质量最高的公开市场表达之一。其现金创造能力极强：
+            Q1 FY2027 单季经营现金流 $50.3 billion，超过几乎所有 S&P 500 公司全年自由现金流。
+            它的近端护城河稳固，在 AI factory stack 中的位置也很难复制。
+          </p>
+          <p>
+            但当前估值已经假设多个有利条件同时成立：云厂商资本开支维持强劲、主权 AI 需求继续扩散、
+            毛利率保持在 70% 出头至中段、产品过渡顺利、算力效率提升更多是补充硬件需求而不是替代硬件需求、
+            地缘政治风险维持可控。
+          </p>
+          <p>
+            对已有持仓者，纪律是耐心与警惕：观察可验证信号，而不是季度噪音。最重要的数据点是云厂商资本开支修正节奏、
+            NVIDIA H2 FY2027 毛利率轨迹，以及主要云厂商 AI 服务收入增长与 GPU 采购增长之间的比例。
+          </p>
+          <p>
+            对新增资金，纪律是克制。当前价格没有足够安全边际。
+          </p>
+
+          <h2>关键数据</h2>
+          <div class="key-figures-grid">
+            <div><strong>60.4%</strong><span>FY2026 经营利润率</span></div>
+            <div><strong>$96.7B</strong><span>FY2026 FCF 代理值</span></div>
+            <div><strong>54%</strong><span>Q1 FY27 前三大客户</span></div>
+            <div><strong>$95.2B</strong><span>制造承诺</span></div>
+            <div><strong>-10.9%</strong><span>相对 DCF 中点隐含下行</span></div>
+          </div>
+
+          <h2>观察信号</h2>
+          <p>
+            下调信号来得很快，一个财报电话会就可能出现资本开支推迟。上调信号则需要多个季度确认。
+            这种不对称很重要：下行风险可以快速兑现，而上行确认需要时间。
+          </p>
+          <div class="watch-signal-grid">
+            <div>
+              <h3>上调触发条件</h3>
+              <p>
+                连续两个季度云厂商资本开支指引上调，并明确披露 AI 收入增长；NVIDIA H2 FY2027 毛利率高于 75%；
+                中国出口管制放松，但目前未纳入任何模型。
+              </p>
+            </div>
+            <div>
+              <h3>下调触发条件</h3>
+              <p>
+                任一主要云厂商因 ROI 不确定性推迟 AI 资本开支；调整后毛利率低于 72%；AI 服务收入增长放缓，
+                但 GPU 采购保持不变。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="full-report-card" aria-label="完整 NVIDIA 研究报告">
+          <div>
+            <p class="eyebrow">完整研究报告</p>
+            <h2>NVIDIA 完整估值报告</h2>
+            <p>
+              包含完整估值模型、DCF 敏感性分析、可比公司估值、风险地图和可观察信号框架。
+            </p>
+          </div>
+          <div class="report-actions">
+            <a class="button primary" href="../reports/nvidia-research-elena-zhang.pdf" target="_blank" rel="noopener">查看完整报告</a>
+            <a class="button secondary" href="../reports/nvidia-research-elena-zhang.pdf" download>下载 PDF</a>
+          </div>
+        </section>
+
+        <footer class="article-footer-note">
+          <p>
+            Policy Alpha Research 发布独立宏观与权益研究，关注由政策变化、产业转型和资本轮动塑造的结构性投资主题。
+          </p>
+          <p>policyalpharesearch.com | elenazhang2378@outlook.com</p>
+        </footer>
+
+        <section class="article-connected-themes">
+          <h2>关联主题</h2>
+          <div class="connected-themes">
+            <a href="../zh-themes.html">AI 基础设施</a>
+            <a href="../zh-themes.html">半导体</a>
+            <a href="../zh-themes.html">云厂商资本开支</a>
+            <a href="../zh-themes.html">估值纪律</a>
+          </div>
+        </section>
+
+        <section class="article-related">
+          <h2>相关阅读</h2>
+          <div class="related-grid">
+            <a href="zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html">
+              <span>AI 基础设施系列</span>
+              <strong>下一场 AI 竞赛，不只属于最聪明的模型</strong>
+            </a>
+            <a href="zh-esg-is-no-longer-a-values-framework.html">
+              <span>ESG 与资本市场系列</span>
+              <strong>ESG 已死，但 ESG 仍在扩张</strong>
+            </a>
+            <a href="../zh-articles.html">
+              <span>研究归档</span>
+              <strong>浏览全部 Policy Alpha 研究札记</strong>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-references">
+          <h2>主要来源 / 参考资料</h2>
+          <ul>
+            <li><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx" target="_blank" rel="noopener">NVIDIA - First Quarter Fiscal 2027 Financial Results</a></li>
+            <li><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/" target="_blank" rel="noopener">NVIDIA - Fourth Quarter and Fiscal 2026 Financial Results</a></li>
+            <li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm" target="_blank" rel="noopener">NVIDIA FY2026 Form 10-K - SEC EDGAR</a></li>
+            <li><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html" target="_blank" rel="noopener">Aswath Damodaran - Industry Beta Data</a></li>
+            <li><a href="https://arxiv.org/abs/2501.12948" target="_blank" rel="noopener">DeepSeek-R1 technical paper</a></li>
+          </ul>
+        </section>
+
+        <section class="article-disclaimer">
+          <h2>免责声明</h2>
+          <p>
+            本文由 Elena Zhang / Policy Alpha Research 撰写，仅供信息和教育用途。本文不构成投资建议、
+            买卖任何证券的邀约或推荐，也不构成任何具体投资行动建议。作者可能持有文中讨论证券的相关仓位。
+          </p>
+          <p>
+            所有财务数据来自公开文件；估值数据为作者估算。过往表现不代表未来结果。本文观点仅代表作者本人，
+            并可能在没有另行通知的情况下发生变化。
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Policy Alpha Research</span>
+      <span>Research by Elena Zhang</span>
+      <a href="../zh.html#disclaimer">风险披露</a>
+      <div class="language-selector" aria-label="Language selector">
+        <span>Language</span>
+        <a href="nvidia-at-the-tollgate.html" lang="en">English</a>
+        <a class="is-active" href="../zh-articles.html" lang="zh-CN">中文</a>
+      </div>
+    </footer>
+    <script>
+      let deferredInstallPrompt;
+      window.addEventListener("beforeinstallprompt", (event) => {
+        event.preventDefault();
+        deferredInstallPrompt = event;
+      });
+
+      document.querySelectorAll(".share-article-button").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const originalText = button.textContent;
+          const shareUrl = "https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html";
+          const shareData = {
+            title: "NVIDIA at the Tollgate",
+            text: "AI 基础设施周期有价格，而市场已经知道。",
+            url: shareUrl,
+          };
+          if (navigator.share) {
+            await navigator.share(shareData);
+            return;
+          }
+          await navigator.clipboard.writeText(shareUrl);
+          button.textContent = "链接已复制";
+          window.setTimeout(() => {
+            button.textContent = originalText;
+          }, 1800);
+        });
+      });
+
+      document.querySelectorAll(".save-site-button").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const saveUrl = button.dataset.saveUrl || "https://policyalpharesearch.com/zh.html#insights";
+          if (deferredInstallPrompt) {
+            deferredInstallPrompt.prompt();
+            await deferredInstallPrompt.userChoice;
+            deferredInstallPrompt = null;
+            return;
+          }
+          const ua = navigator.userAgent.toLowerCase();
+          await navigator.clipboard?.writeText(saveUrl);
+          if (/iphone|ipad|ipod/.test(ua)) {
+            alert("观察页链接已复制。iPhone Safari：点击分享按钮，然后选择添加到主屏幕。");
+            return;
+          }
+          if (/android/.test(ua)) {
+            alert("观察页链接已复制。Android Chrome：打开浏览器菜单，然后选择添加到主屏幕。");
+            return;
+          }
+          alert("观察页链接已复制。电脑端可打开链接后按 Mac Command+D 或 Windows Ctrl+D 收藏。");
+        });
+      });
+    </script>
+    <script src="../script.js?v=20260526-nvidia-zh"></script>
+  </body>
+</html>

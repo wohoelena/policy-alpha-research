@@ -581,9 +581,9 @@ const latestInsight = isChinesePage
       label: "New Insight",
       title: "NVIDIA at the Tollgate",
       summary: "AI 基础设施周期有价格，而市场已经知道。完整估值报告已同步发布。",
-      primary: "阅读英文原文",
+      primary: "阅读文章",
       secondary: "稍后再看",
-      url: "articles/nvidia-at-the-tollgate.html",
+      url: "articles/zh-nvidia-at-the-tollgate.html",
     }
   : {
       id: "nvidia-at-the-tollgate-20260526",

@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v38";
+const CACHE_NAME = "policy-alpha-research-v39";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -15,6 +15,7 @@ const CORE_ASSETS = [
   "/de-articles.html",
   "/fr-articles.html",
   "/articles/nvidia-at-the-tollgate.html",
+  "/articles/zh-nvidia-at-the-tollgate.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
@@ -37,6 +38,7 @@ const CORE_ASSETS = [
   "/assets/social/esg-capital-access-share-card.png",
   "/assets/social/zh-esg-capital-access-share-card.png",
   "/assets/social/nvidia-tollgate-share-card.png",
+  "/assets/social/zh-nvidia-tollgate-share-card.png",
   "/reports/nvidia-research-elena-zhang.pdf",
 ];
 
