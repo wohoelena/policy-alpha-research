@@ -577,19 +577,19 @@ if (!document.querySelector(".article-shell")) {
 
 const latestInsight = isChinesePage
   ? {
-      id: "esg-capital-access-20260524",
+      id: "esg-dead-long-live-esg-20260525",
       label: "New Insight",
-      title: "ESG 不再只是价值观框架，它正在成为资本准入过滤器",
-      summary: "ESG 正在成为横跨监管、供应链、融资成本和机构资本的市场准入系统。",
+      title: "ESG 已死，但 ESG 仍在扩张",
+      summary: "标签正在退潮，基础设施却仍在扩张。这种分化，可能定义未来十年的资本配置逻辑。",
       primary: "阅读文章",
       secondary: "稍后再看",
       url: "articles/zh-esg-is-no-longer-a-values-framework.html",
     }
   : {
-      id: "esg-capital-access-20260524",
+      id: "esg-dead-long-live-esg-20260525",
       label: "New Insight",
-      title: "ESG Is No Longer a Values Framework. It Is a Capital Access Filter.",
-      summary: "ESG is becoming a market access system across regulation, supply chains, financing cost, and institutional capital.",
+      title: "ESG Is Dead. Long Live ESG.",
+      summary: "The label is retreating. The infrastructure is expanding. That distinction may define the next decade of capital allocation.",
       primary: "Read Note",
       secondary: "Later",
       url: "articles/esg-is-no-longer-a-values-framework.html",
@@ -597,8 +597,28 @@ const latestInsight = isChinesePage
 
 function showInsightUpdate() {
   if (!document.body || window.location.hash === "#insights") return;
-  const storageKey = `policy-alpha-seen-${latestInsight.id}-${isChinesePage ? "zh" : "en"}`;
-  if (window.localStorage?.getItem(storageKey) === "1") return;
+  const languageKey = isChinesePage ? "zh" : "en";
+  const storageKey = `policy-alpha-insight-update-seen-${languageKey}`;
+  const legacyStorageKey = `policy-alpha-seen-${latestInsight.id}-${languageKey}`;
+  const hasSeenAnyInsightUpdate = () => {
+    try {
+      if (window.localStorage?.getItem(storageKey) === "1") return true;
+      if (window.localStorage?.getItem(legacyStorageKey) === "1") return true;
+      return Object.keys(window.localStorage || {}).some(
+        (key) => key.startsWith("policy-alpha-seen-") && key.endsWith(`-${languageKey}`),
+      );
+    } catch {
+      return false;
+    }
+  };
+  const markInsightUpdateSeen = () => {
+    try {
+      window.localStorage?.setItem(storageKey, "1");
+      window.localStorage?.setItem(legacyStorageKey, "1");
+    } catch {}
+  };
+
+  if (hasSeenAnyInsightUpdate()) return;
 
   const overlay = document.createElement("div");
   overlay.className = "insight-update";
@@ -619,7 +639,7 @@ function showInsightUpdate() {
   `;
 
   const close = () => {
-    window.localStorage?.setItem(storageKey, "1");
+    markInsightUpdateSeen();
     overlay.classList.remove("is-visible");
     window.setTimeout(() => overlay.remove(), 180);
   };
@@ -627,7 +647,7 @@ function showInsightUpdate() {
   overlay.querySelector(".insight-update-close").addEventListener("click", close);
   overlay.querySelector(".insight-update-actions .button.quiet").addEventListener("click", close);
   overlay.querySelector(".insight-update-actions a").addEventListener("click", () => {
-    window.localStorage?.setItem(storageKey, "1");
+    markInsightUpdateSeen();
   });
   overlay.addEventListener("click", (event) => {
     if (event.target === overlay) close();

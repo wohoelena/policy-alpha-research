@@ -17,12 +17,12 @@
   <circle cx="955" cy="128" r="196" fill="#d6a84f" opacity="0.08" filter="url(#soft)"/>
   <text x="58" y="92" fill="#d6a84f" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="31" font-weight="800">PA</text>
   <text x="136" y="84" fill="#d6a84f" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="800">POLICY ALPHA 观察</text>
-  <text x="136" y="122" fill="#9fa7aa" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">ESG 与资本市场研究</text>
+  <text x="136" y="122" fill="#9fa7aa" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">资本市场基础设施研究</text>
   <text x="920" y="84" fill="#d6a84f" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="800">ISSUE 003</text>
   <text x="920" y="120" fill="#9fa7aa" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="17">2026.05</text>
-  <text x="112" y="306" fill="#f1efe6" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="64" font-weight="700">ESG 不再只是价值观框架</text>
-  <text x="112" y="394" fill="url(#gold)" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="42" font-weight="800">它正在成为资本准入过滤器</text>
-  <text x="112" y="462" fill="#d6a84f" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="800">监管 · 供应链 · 融资成本 · 估值分化</text>
+  <text x="112" y="294" fill="#f1efe6" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="72" font-weight="700">ESG 已死，</text>
+  <text x="112" y="382" fill="#f1efe6" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="72" font-weight="700">但 ESG 仍在扩张</text>
+  <text x="112" y="456" fill="url(#gold)" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="800">标签正在退潮 · 基础设施仍在扩张</text>
   <text x="58" y="564" fill="#9fa7aa" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">Elena Zhang · Policy Alpha Research</text>
   <text x="830" y="564" fill="#d6a84f" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="800">policyalpharesearch.com</text>
 </svg>
