@@ -81,7 +81,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260526-nvidia-insight" />
+    <link rel="stylesheet" href="styles.css?v=20260527-market-lookup" />
   </head>
   <body>
     <header class="site-header">
@@ -90,9 +90,7 @@
           <img src="assets/policy-alpha-logo.png" alt="" />
         </span>
         <span>
-          <strong>Policy Alpha</strong>
-          <small>宏观与权益研究</small>
-          <small>独立研究：Elena Zhang</small>
+          <strong>Policy Alpha Research</strong>
         </span>
       </a>
       <nav class="nav" aria-label="主导航">
@@ -467,9 +465,27 @@
           <div class="company-list" aria-live="polite"></div>
           <aside class="live-chart-panel">
             <div class="panel-header">
-              <span>在线价格图</span>
+              <span>市场查询</span>
               <strong id="activeSymbolLabel">NASDAQ:AAPL</strong>
             </div>
+            <form class="ticker-search-form market-lookup-form" aria-label="搜索股票代码并查看图表">
+              <label for="tickerSearchInput">搜索股票代码</label>
+              <div class="market-lookup-row">
+                <input
+                  id="tickerSearchInput"
+                  class="ticker-search-input"
+                  type="text"
+                  placeholder="NVDA 或 NASDAQ:NVDA"
+                  autocomplete="off"
+                />
+                <button class="button secondary" type="submit">查看图表</button>
+              </div>
+              <p class="ticker-search-hint">支持股票代码和交易所格式，例如 NVDA、TSM、ASX:BHP。</p>
+              <p class="ticker-search-error" aria-live="polite"></p>
+              <a class="market-lookup-link" id="tradingViewExternalLink" href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" target="_blank" rel="noopener noreferrer">
+                打开 TradingView
+              </a>
+            </form>
             <div id="tradingview-chart" class="tradingview-chart"></div>
             <p class="chart-note">
               图表和报价由 TradingView 在线组件提供，可能为实时或延迟数据，具体以交易所和数据供应状态为准。
@@ -1030,6 +1046,6 @@
       <span class="footer-copyright">© 2026 Policy Alpha Research · 研究：Elena Zhang</span>
     </footer>
 
-    <script src="script.js?v=20260526-nvidia-insight"></script>
+    <script src="script.js?v=20260527-tradingview-search"></script>
   </body>
 </html>

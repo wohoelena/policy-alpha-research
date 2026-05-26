@@ -1941,6 +1941,69 @@ h2 {
   padding: 18px 18px 0;
 }
 
+.market-lookup-form {
+  display: grid;
+  gap: 9px;
+  padding: 14px 18px 0;
+}
+
+.market-lookup-form label {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.market-lookup-row {
+  display: flex;
+  gap: 8px;
+}
+
+.ticker-search-input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid rgba(214, 168, 79, 0.28);
+  border-radius: 6px;
+  background: rgba(5, 6, 7, 0.78);
+  color: #f4f0e6;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.ticker-search-input::placeholder {
+  color: rgba(244, 240, 230, 0.48);
+}
+
+.market-lookup-row .button {
+  min-height: 40px;
+  padding-inline: 12px;
+  white-space: nowrap;
+}
+
+.ticker-search-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.ticker-search-error {
+  min-height: 16px;
+  margin: 0;
+  color: #d1675f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.market-lookup-link {
+  justify-self: start;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .tradingview-chart {
   min-height: 430px;
   padding: 12px;
@@ -3209,6 +3272,14 @@ h2 {
 
   .company-workbench {
     grid-template-columns: 1fr;
+  }
+
+  .market-lookup-row {
+    flex-direction: column;
+  }
+
+  .market-lookup-row .button {
+    width: 100%;
   }
 
   .about-grid {

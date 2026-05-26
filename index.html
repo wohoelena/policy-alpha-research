@@ -83,7 +83,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260526-nvidia-insight" />
+    <link rel="stylesheet" href="styles.css?v=20260527-market-lookup" />
   </head>
   <body>
     <header class="site-header">
@@ -92,9 +92,7 @@
           <img src="assets/policy-alpha-logo.png" alt="" />
         </span>
         <span>
-          <strong>Policy Alpha</strong>
-          <small>Macro &amp; Equity Research</small>
-          <small>Independent Research by Elena Zhang</small>
+          <strong>Policy Alpha Research</strong>
         </span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
@@ -489,9 +487,27 @@
           <div class="company-list" aria-live="polite"></div>
           <aside class="live-chart-panel">
             <div class="panel-header">
-              <span>Live Price Chart</span>
+              <span>Market Lookup</span>
               <strong id="activeSymbolLabel">NASDAQ:AAPL</strong>
             </div>
+            <form class="ticker-search-form market-lookup-form" aria-label="Search ticker for live chart">
+              <label for="stockInput">Search ticker</label>
+              <div class="market-lookup-row">
+                <input
+                  id="stockInput"
+                  class="ticker-search-input"
+                  type="text"
+                  placeholder="NVDA or NASDAQ:NVDA"
+                  autocomplete="off"
+                />
+                <button class="button secondary" type="submit">View Chart</button>
+              </div>
+              <p class="ticker-search-hint">Supports ticker symbols and exchange format, e.g. NVDA, TSM, ASX:BHP.</p>
+              <p class="ticker-search-error" aria-live="polite"></p>
+              <a class="market-lookup-link" id="tradingViewExternalLink" href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" target="_blank" rel="noopener noreferrer">
+                Open on TradingView
+              </a>
+            </form>
             <div id="tradingview-chart" class="tradingview-chart"></div>
             <p class="chart-note">
               Charts and quotes are powered by TradingView widgets and may be real-time or delayed depending on exchange data access.
@@ -1066,6 +1082,6 @@
       <span class="footer-copyright">© 2026 Policy Alpha Research · Research by Elena Zhang</span>
     </footer>
 
-    <script src="script.js?v=20260526-nvidia-insight"></script>
+    <script src="script.js?v=20260527-tradingview-search"></script>
   </body>
 </html>

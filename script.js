@@ -205,6 +205,37 @@ let activeGroupIndex = 0;
 let activeSymbol = companyGroups[0].companies[0][2];
 let activeSort = "score";
 
+const tickerSymbolMap = {
+  NVDA: "NASDAQ:NVDA",
+  TSLA: "NASDAQ:TSLA",
+  AAPL: "NASDAQ:AAPL",
+  ASML: "NASDAQ:ASML",
+  AVGO: "NASDAQ:AVGO",
+  MSFT: "NASDAQ:MSFT",
+  GOOGL: "NASDAQ:GOOGL",
+  AMD: "NASDAQ:AMD",
+  META: "NASDAQ:META",
+  AMZN: "NASDAQ:AMZN",
+  NFLX: "NASDAQ:NFLX",
+  INTC: "NASDAQ:INTC",
+  COST: "NASDAQ:COST",
+  QQQ: "NASDAQ:QQQ",
+  TSM: "NYSE:TSM",
+  PLTR: "NASDAQ:PLTR",
+  JPM: "NYSE:JPM",
+  V: "NYSE:V",
+  XOM: "NYSE:XOM",
+  LLY: "NYSE:LLY",
+  UNH: "NYSE:UNH",
+  JNJ: "NYSE:JNJ",
+  HD: "NYSE:HD",
+  KO: "NYSE:KO",
+  PG: "NYSE:PG",
+  BHP: "ASX:BHP",
+  SPY: "AMEX:SPY",
+  VOO: "AMEX:VOO",
+};
+
 const zhGroupNames = ["创新科技", "新能源电车", "锂矿资源", "医疗健康", "核心消费", "高股息防御"];
 
 const companyMetrics = {
@@ -294,8 +325,52 @@ function yahooQuoteUrl(quote) {
   return `https://finance.yahoo.com/quote/${encodeURIComponent(quote)}`;
 }
 
+function tradingViewSymbolUrl(symbol) {
+  const normalized = symbol.replace(":", "-");
+  return `https://www.tradingview.com/symbols/${encodeURIComponent(normalized)}/`;
+}
+
 function companyForSymbol(symbol) {
   return companyGroups.flatMap((group) => group.companies).find((company) => company[2] === symbol);
+}
+
+function normalizeTickerSymbol(value) {
+  const ticker = value.trim().toUpperCase();
+  if (!ticker) return "";
+  if (ticker.includes(":")) return ticker;
+  if (tickerSymbolMap[ticker]) return tickerSymbolMap[ticker];
+  if (/^[A-Z][A-Z0-9.-]{0,9}$/.test(ticker)) return `NASDAQ:${ticker}`;
+  return "";
+}
+
+function initTickerSearch() {
+  document.querySelectorAll(".ticker-search-form").forEach((form) => {
+    const input = form.querySelector(".ticker-search-input");
+    const error = form.querySelector(".ticker-search-error");
+    if (!input) return;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const symbol = normalizeTickerSymbol(input.value);
+
+      if (!symbol) {
+        if (error) {
+          error.textContent = isChinesePage
+            ? "未找到该股票代码，请尝试使用交易所格式，例如 NASDAQ:NVDA"
+            : "Ticker not found. Try the exchange format, for example NASDAQ:NVDA.";
+        }
+        return;
+      }
+
+      if (error) {
+        error.textContent = "";
+      }
+
+      activeSymbol = symbol;
+      renderCompanies();
+      renderTradingViewChart(symbol);
+    });
+  });
 }
 
 function renderCompanyTabs() {
@@ -414,9 +489,11 @@ function renderCompanies() {
 function renderTradingViewChart(symbol) {
   const target = document.getElementById("tradingview-chart");
   const label = document.getElementById("activeSymbolLabel");
+  const externalLink = document.getElementById("tradingViewExternalLink");
   if (!target) return;
 
   if (label) label.textContent = symbol;
+  if (externalLink) externalLink.href = tradingViewSymbolUrl(symbol);
   target.classList.remove("has-live-chart");
   target.innerHTML = "";
 
@@ -445,35 +522,23 @@ function renderTradingViewChart(symbol) {
 
   const script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
   script.async = true;
   script.text = JSON.stringify({
-    symbols: [[symbol]],
-    chartOnly: false,
+    symbol,
     width: "100%",
-    height: "420",
+    height: "430",
     locale: isChinesePage ? "zh_CN" : "en",
     colorTheme: "dark",
     autosize: true,
+    hide_side_toolbar: false,
+    details: true,
+    calendar: false,
     showVolume: true,
-    showMA: true,
-    hideDateRanges: false,
-    hideMarketStatus: false,
-    hideSymbolLogo: false,
-    scalePosition: "right",
-    scaleMode: "Normal",
-    fontFamily: "Inter, Arial, sans-serif",
-    fontSize: "10",
-    noTimeScale: false,
-    valuesTracking: "1",
-    changeMode: "price-and-percent",
-    chartType: "area",
-    maLineColor: "#d6a84f",
-    maLineWidth: 1,
-    maLength: 20,
-    lineWidth: 2,
-    lineType: 0,
-    dateRanges: ["1d|1", "1m|30", "3m|60", "12m|1D", "60m|1W"],
+    theme: "dark",
+    interval: "D",
+    allow_symbol_change: true,
+    support_host: "https://www.tradingview.com",
   });
   script.addEventListener("error", () => {
     target.classList.remove("has-live-chart");
@@ -497,6 +562,7 @@ function renderTradingViewChart(symbol) {
 renderCompanyTabs();
 renderSortButtons();
 renderCompanies();
+initTickerSearch();
 renderTradingViewChart(activeSymbol);
 
 document.querySelectorAll(".email-form").forEach((form) => {
