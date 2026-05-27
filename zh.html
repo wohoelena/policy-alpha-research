@@ -81,7 +81,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260527-nav-watchlist" />
+    <link rel="stylesheet" href="styles.css?v=20260527-research-first-hero" />
   </head>
   <body>
     <header class="site-header">
@@ -95,11 +95,11 @@
       </a>
       <nav class="nav" aria-label="主导航">
         <a href="#top">首页</a>
-        <a href="#strategy">研究框架</a>
-        <a href="zh-themes.html">研究主题</a>
-        <a href="#companies">市场观察</a>
-        <a href="#product">组合模型</a>
         <a href="#insights">研究札记</a>
+        <a href="#companies">市场观察</a>
+        <a href="zh-themes.html">研究主题</a>
+        <a href="#strategy">研究框架</a>
+        <a href="#product">组合模型</a>
         <a href="#risk">风险治理</a>
         <a href="#about">关于</a>
       </nav>
@@ -126,13 +126,18 @@
             Policy Alpha Research 研究政策变化、产业转型和资本轮动如何塑造长期市场领导力。
           </p>
           <div class="hero-actions">
+            <a class="button primary" href="#insights">阅读研究</a>
             <a class="button primary" href="#framework">查看研究框架</a>
-            <a class="button secondary" href="zh-themes.html">研究主题</a>
-            <a class="button secondary" href="#disclaimer">阅读风险声明</a>
+          </div>
+          <div class="hero-utility-actions" aria-label="网站操作">
             <button class="hero-save-action save-site-button" type="button" data-save-url="https://policyalpharesearch.com/zh.html">
               <span aria-hidden="true">+</span>
               收藏网站
             </button>
+            <button class="hero-save-action subscribe-trigger" type="button">
+              订阅观察笔记
+            </button>
+            <a class="hero-save-action" href="#disclaimer">风险声明</a>
           </div>
           <div class="hero-stat-strip" aria-label="研究框架摘要">
             <div><span>研究范围</span><strong>全球权益 + 战略资产</strong></div>
@@ -762,6 +767,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/nvidia-research-elena-zhang.pdf" target="_blank" rel="noopener">查看 PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">订阅</button>
               <a class="button secondary" href="reports/nvidia-research-elena-zhang.pdf" download>下载报告</a>
             </div>
           </article>
@@ -777,6 +783,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/policy-alpha-report.pdf" target="_blank" rel="noopener">查看 PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">订阅</button>
               <a class="button secondary" href="reports/policy-alpha-report.pdf" download>下载报告</a>
             </div>
           </article>
@@ -792,6 +799,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/policy-aware-value-investing.pdf" target="_blank" rel="noopener">查看 PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">订阅</button>
               <a class="button secondary" href="reports/policy-aware-value-investing.pdf" download>下载报告</a>
             </div>
           </article>
@@ -970,35 +978,6 @@
             </ul>
           </article>
         </div>
-        <div class="about-contact-bar">
-          <span>联系</span>
-          <p>填写下方信息后，系统会自动整理成邮件发送给 Elena Zhang</p>
-        </div>
-        <form class="inquiry-form email-form">
-          <label>
-            <span>姓名</span>
-            <input name="name" type="text" autocomplete="name" required />
-          </label>
-          <label>
-            <span>邮箱</span>
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>合作方式</span>
-            <select name="inquiry_type" required>
-              <option value="">请选择</option>
-              <option value="研究合作">研究合作</option>
-              <option value="专业交流">专业交流</option>
-              <option value="组合讨论">组合讨论</option>
-              <option value="其他">其他</option>
-            </select>
-          </label>
-          <label class="form-full">
-            <span>专业交流内容</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="contact-button" type="submit">发送邮件</button>
-        </form>
       </section>
 
       <section id="disclaimer" class="disclaimer">
@@ -1048,6 +1027,6 @@
       <span class="footer-copyright">© 2026 Policy Alpha Research · 研究：Elena Zhang</span>
     </footer>
 
-    <script src="script.js?v=20260527-tradingview-search"></script>
+    <script src="script.js?v=20260527-subscribe-modal"></script>
   </body>
 </html>

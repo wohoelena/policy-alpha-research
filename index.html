@@ -83,7 +83,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260527-nav-watchlist" />
+    <link rel="stylesheet" href="styles.css?v=20260527-research-first-hero" />
   </head>
   <body>
     <header class="site-header">
@@ -97,11 +97,11 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#top">Home</a>
-        <a href="#strategy">Framework</a>
-        <a href="themes.html">Themes</a>
-        <a href="#companies">Market Watch</a>
-        <a href="#product">Portfolio</a>
         <a href="#insights">Research</a>
+        <a href="#companies">Market Watch</a>
+        <a href="themes.html">Themes</a>
+        <a href="#strategy">Framework</a>
+        <a href="#product">Portfolio</a>
         <a href="#risk">Risk</a>
         <a href="#about">About</a>
       </nav>
@@ -129,13 +129,18 @@
             long-duration market leadership.
           </p>
           <div class="hero-actions">
+            <a class="button primary" href="#insights">Read Research</a>
             <a class="button primary" href="#framework">View Framework</a>
-            <a class="button secondary" href="themes.html">Research Themes</a>
-            <a class="button secondary" href="#disclaimer">Read Disclaimer</a>
+          </div>
+          <div class="hero-utility-actions" aria-label="Site actions">
             <button class="hero-save-action save-site-button" type="button" data-save-url="https://policyalpharesearch.com/">
               <span aria-hidden="true">+</span>
               Save site
             </button>
+            <button class="hero-save-action subscribe-trigger" type="button">
+              Subscribe
+            </button>
+            <a class="hero-save-action" href="#disclaimer">Disclaimer</a>
           </div>
           <div class="hero-stat-strip" aria-label="Research mandate summary">
             <div><span>Research Universe</span><strong>Global Equities + Strategic Assets</strong></div>
@@ -784,6 +789,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/nvidia-research-elena-zhang.pdf" target="_blank" rel="noopener">View PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">Subscribe</button>
               <a class="button secondary" href="reports/nvidia-research-elena-zhang.pdf" download>Download</a>
             </div>
           </article>
@@ -800,6 +806,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/policy-alpha-report.pdf" target="_blank" rel="noopener">View PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">Subscribe</button>
               <a class="button secondary" href="reports/policy-alpha-report.pdf" download>Download</a>
             </div>
           </article>
@@ -816,6 +823,7 @@
             </p>
             <div class="report-actions">
               <a class="button primary" href="reports/policy-aware-value-investing.pdf" target="_blank" rel="noopener">View PDF</a>
+              <button class="button secondary subscribe-trigger" type="button">Subscribe</button>
               <a class="button secondary" href="reports/policy-aware-value-investing.pdf" download>Download</a>
             </div>
           </article>
@@ -1001,35 +1009,6 @@
             </ul>
           </article>
         </div>
-        <div class="about-contact-bar">
-          <span>Contact</span>
-          <p>Complete the form below and it will open an email draft for Elena Zhang</p>
-        </div>
-        <form class="inquiry-form email-form">
-          <label>
-            <span>Name</span>
-            <input name="name" type="text" autocomplete="name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            <span>Inquiry Type</span>
-            <select name="inquiry_type" required>
-              <option value="">Select one</option>
-              <option value="Research collaboration">Research collaboration</option>
-              <option value="Professional exchange">Professional exchange</option>
-              <option value="Portfolio discussion">Portfolio discussion</option>
-              <option value="Other">Other</option>
-            </select>
-          </label>
-          <label class="form-full">
-            <span>Message</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="contact-button" type="submit">Send Email</button>
-        </form>
       </section>
 
       <section id="disclaimer" class="disclaimer">
@@ -1084,6 +1063,6 @@
       <span class="footer-copyright">© 2026 Policy Alpha Research · Research by Elena Zhang</span>
     </footer>
 
-    <script src="script.js?v=20260527-tradingview-search"></script>
+    <script src="script.js?v=20260527-subscribe-modal"></script>
   </body>
 </html>

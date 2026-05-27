@@ -526,6 +526,14 @@ h1 {
   gap: 12px;
 }
 
+.hero-utility-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
 .hero-save-action {
   appearance: none;
   display: inline-flex;
@@ -2415,6 +2423,135 @@ h2 {
   margin-top: 34px;
 }
 
+.research-subscribe-form {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(180px, 0.45fr) minmax(190px, 0.45fr) auto;
+  gap: 14px;
+  align-items: end;
+  margin-top: 24px;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(214, 168, 79, 0.08), transparent 48%),
+    rgba(10, 14, 17, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.research-subscribe-form > div {
+  display: grid;
+  gap: 4px;
+}
+
+.research-subscribe-form span {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-subscribe-form p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.research-subscribe-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.research-subscribe-form input,
+.research-subscribe-form select {
+  width: 100%;
+  border: 1px solid rgba(214, 168, 79, 0.28);
+  border-radius: 6px;
+  padding: 10px 11px;
+  background: rgba(5, 6, 7, 0.78);
+  color: var(--ink);
+  font: inherit;
+}
+
+.research-subscribe-form .button {
+  min-height: 42px;
+  white-space: nowrap;
+}
+
+.research-subscribe-form .button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.subscribe-status {
+  grid-column: 1 / -1;
+  min-height: 18px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.subscribe-status.is-success {
+  color: #91d7a8;
+}
+
+.subscribe-status.is-error {
+  color: #d1675f;
+}
+
+.subscribe-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.72);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.subscribe-modal.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.subscribe-modal-panel {
+  position: relative;
+  width: min(720px, 100%);
+  border: 1px solid rgba(214, 168, 79, 0.32);
+  border-radius: 10px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at top left, rgba(214, 168, 79, 0.16), transparent 36%),
+    #090d10;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.56);
+}
+
+.subscribe-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 2;
+  border: 1px solid rgba(214, 168, 79, 0.26);
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--gold);
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.research-subscribe-modal-form {
+  margin-top: 0;
+  padding-right: 46px;
+}
+
 .article-index h1 {
   margin: 0;
   max-width: 900px;
@@ -3353,7 +3490,8 @@ h2 {
   .backtest-grid,
   .report-grid,
   .insight-grid,
-  .methodology-grid {
+  .methodology-grid,
+  .research-subscribe-form {
     grid-template-columns: 1fr;
   }
 

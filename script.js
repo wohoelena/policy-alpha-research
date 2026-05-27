@@ -1,6 +1,8 @@
 const canvas = document.getElementById("trendChart");
 const ctx = canvas ? canvas.getContext("2d") : null;
 const isChinesePage = document.documentElement.lang.toLowerCase().startsWith("zh");
+const SUPABASE_URL = "https://fzvlmsoivrwilzrifxhr.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_9FmlFNXyx2l2v3OKKFTI7Q_bX2LUD0O";
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
@@ -581,6 +583,136 @@ document.querySelectorAll(".email-form").forEach((form) => {
     window.location.href = `mailto:elenazhang2378@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 });
+
+function initResearchSubscribeForms() {
+  document.querySelectorAll("[data-subscribe-form]").forEach((form) => {
+    if (form.dataset.subscribeBound === "true") return;
+    form.dataset.subscribeBound = "true";
+
+    const status = form.querySelector(".subscribe-status");
+    const submitButton = form.querySelector('button[type="submit"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const interestInput = form.querySelector('select[name="interest"]');
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const email = emailInput?.value.trim();
+      if (!email) return;
+
+      if (status) {
+        status.className = "subscribe-status";
+        status.textContent = isChinesePage ? "正在提交..." : "Submitting...";
+      }
+      if (submitButton) submitButton.disabled = true;
+
+      const payload = {
+        email,
+        interest: interestInput?.value || "All research notes",
+        source: form.dataset.source || window.location.pathname,
+        language: document.documentElement.lang || "en",
+        created_at: new Date().toISOString(),
+      };
+
+      try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/subscribers`, {
+          method: "POST",
+          headers: {
+            apikey: SUPABASE_ANON_KEY,
+            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+            "Content-Type": "application/json",
+            Prefer: "return=minimal",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) throw new Error(`Supabase insert failed: ${response.status}`);
+
+        form.reset();
+        if (status) {
+          status.className = "subscribe-status is-success";
+          status.textContent = isChinesePage
+            ? "订阅成功。后续研究札记会发送到你的邮箱。"
+            : "Subscription received. Future research notes will be sent to your inbox.";
+        }
+      } catch {
+        if (status) {
+          status.className = "subscribe-status is-error";
+          status.textContent = isChinesePage
+            ? "提交失败。请稍后再试，或直接邮件联系。"
+            : "Submission failed. Please try again later or contact by email.";
+        }
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+      }
+    });
+  });
+}
+
+function createSubscribeModal() {
+  let modal = document.querySelector(".subscribe-modal");
+  if (modal) return modal;
+
+  modal = document.createElement("div");
+  modal.className = "subscribe-modal";
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-modal", "true");
+  modal.setAttribute("aria-label", isChinesePage ? "订阅观察笔记" : "Subscribe to Research Notes");
+  modal.innerHTML = `
+    <div class="subscribe-modal-panel">
+      <button class="subscribe-modal-close" type="button" aria-label="${isChinesePage ? "关闭" : "Close"}">×</button>
+      <form
+        class="research-subscribe-form research-subscribe-modal-form"
+        data-subscribe-form
+        data-source="${isChinesePage ? "Policy Alpha Research modal - Chinese" : "Policy Alpha Research modal - English"}"
+      >
+        <div>
+          <span>${isChinesePage ? "订阅观察笔记" : "Subscribe to Research Notes"}</span>
+          <p>${isChinesePage ? "接收后续研究札记和报告更新。只用于研究分发，不做营销轰炸。" : "Receive future research notes and report updates. Research distribution only, no marketing blast."}</p>
+        </div>
+        <label>
+          <span>${isChinesePage ? "邮箱" : "Email"}</span>
+          <input type="email" name="email" placeholder="name@example.com" required />
+        </label>
+        <label>
+          <span>${isChinesePage ? "关注方向" : "Interest"}</span>
+          <select name="interest">
+            <option value="${isChinesePage ? "全部研究札记" : "All research notes"}">${isChinesePage ? "全部研究札记" : "All research notes"}</option>
+            <option value="${isChinesePage ? "AI 基础设施" : "AI Infrastructure"}">${isChinesePage ? "AI 基础设施" : "AI Infrastructure"}</option>
+            <option value="${isChinesePage ? "关键矿产" : "Critical Minerals"}">${isChinesePage ? "关键矿产" : "Critical Minerals"}</option>
+            <option value="${isChinesePage ? "ESG 与资本市场" : "ESG and Capital Markets"}">${isChinesePage ? "ESG 与资本市场" : "ESG and Capital Markets"}</option>
+            <option value="${isChinesePage ? "宏观政策" : "Macro Policy"}">${isChinesePage ? "宏观政策" : "Macro Policy"}</option>
+            <option value="${isChinesePage ? "仅研究报告" : "Reports only"}">${isChinesePage ? "仅研究报告" : "Reports only"}</option>
+          </select>
+        </label>
+        <button class="button primary" type="submit">${isChinesePage ? "订阅" : "Subscribe"}</button>
+        <p class="subscribe-status" aria-live="polite"></p>
+      </form>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  initResearchSubscribeForms();
+
+  const close = () => modal.classList.remove("is-visible");
+  modal.querySelector(".subscribe-modal-close").addEventListener("click", close);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) close();
+  });
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") close();
+  });
+  return modal;
+}
+
+document.querySelectorAll(".subscribe-trigger").forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = createSubscribeModal();
+    modal.classList.add("is-visible");
+    window.setTimeout(() => modal.querySelector('input[name="email"]')?.focus(), 80);
+  });
+});
+
+initResearchSubscribeForms();
 
 let deferredInstallPrompt = null;
 
