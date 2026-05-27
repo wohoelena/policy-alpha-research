@@ -1817,6 +1817,39 @@ h2 {
   align-items: start;
 }
 
+.watchlist-panel {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.watchlist-panel-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid rgba(214, 168, 79, 0.18);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.watchlist-panel-heading span,
+.live-chart-panel .panel-header span {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.watchlist-panel-heading strong {
+  color: rgba(244, 240, 230, 0.74);
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: right;
+}
+
 .company-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1937,8 +1970,18 @@ h2 {
 }
 
 .live-chart-panel .panel-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
   margin: 0;
   padding: 18px 18px 0;
+}
+
+.live-chart-panel .panel-header strong {
+  color: rgba(244, 240, 230, 0.82);
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .market-lookup-form {
@@ -3272,6 +3315,16 @@ h2 {
 
   .company-workbench {
     grid-template-columns: 1fr;
+  }
+
+  .watchlist-panel-heading,
+  .live-chart-panel .panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .watchlist-panel-heading strong {
+    text-align: left;
   }
 
   .market-lookup-row {

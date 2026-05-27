@@ -81,7 +81,7 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260527-market-lookup" />
+    <link rel="stylesheet" href="styles.css?v=20260527-nav-watchlist" />
   </head>
   <body>
     <header class="site-header">
@@ -95,17 +95,13 @@
       </a>
       <nav class="nav" aria-label="主导航">
         <a href="#top">首页</a>
-        <a href="#strategy">策略框架</a>
-        <a href="#sectors">行业配置</a>
-        <a href="#product">资产配比</a>
-        <a href="#value-portfolio">价值组合</a>
-        <a href="#research-library">研究报告</a>
-        <a href="#insights">观察</a>
+        <a href="#strategy">研究框架</a>
         <a href="zh-themes.html">研究主题</a>
-        <a href="zh-methodology.html">研究方法</a>
-        <a href="#risk">风控体系</a>
-        <a href="#about">关于我</a>
-        <a href="#disclaimer">免责声明</a>
+        <a href="#companies">市场观察</a>
+        <a href="#product">组合模型</a>
+        <a href="#insights">研究札记</a>
+        <a href="#risk">风险治理</a>
+        <a href="#about">关于</a>
       </nav>
       <details class="language-switch">
         <summary aria-label="Language selector"><span>简体中文</span></summary>
@@ -462,7 +458,13 @@
         </p>
 
         <div class="company-workbench">
-          <div class="company-list" aria-live="polite"></div>
+          <div class="watchlist-panel">
+            <div class="watchlist-panel-heading">
+              <span>研究观察名单</span>
+              <strong>按行业主题排序的研究样本，不代表投资建议</strong>
+            </div>
+            <div class="company-list" aria-live="polite"></div>
+          </div>
           <aside class="live-chart-panel">
             <div class="panel-header">
               <span>市场查询</span>
