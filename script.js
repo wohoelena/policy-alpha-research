@@ -31,6 +31,56 @@ document.addEventListener("click", (event) => {
   });
 });
 
+function getSitePrefix() {
+  return window.location.pathname.includes("/articles/") ? "../" : "";
+}
+
+function initAppShell() {
+  if (document.querySelector(".mobile-app-nav")) return;
+  const prefix = getSitePrefix();
+  const zh = isChinesePage;
+  const home = zh ? `${prefix}zh.html#top` : `${prefix}#top`;
+  const research = zh ? `${prefix}zh.html#insights` : `${prefix}#insights`;
+  const watch = zh ? `${prefix}zh.html#companies` : `${prefix}#companies`;
+  const reports = zh ? `${prefix}zh.html#research-library` : `${prefix}#research-library`;
+  const nav = document.createElement("nav");
+  nav.className = "mobile-app-nav";
+  nav.setAttribute("aria-label", zh ? "移动端应用导航" : "Mobile app navigation");
+  nav.innerHTML = `
+    <a href="${home}" data-app-tab="home"><span aria-hidden="true">⌂</span><strong>${zh ? "首页" : "Home"}</strong></a>
+    <a href="${research}" data-app-tab="research"><span aria-hidden="true">◇</span><strong>${zh ? "研究" : "Research"}</strong></a>
+    <a href="${watch}" data-app-tab="watch"><span aria-hidden="true">⌕</span><strong>${zh ? "市场" : "Watch"}</strong></a>
+    <a href="${reports}" data-app-tab="reports"><span aria-hidden="true">▤</span><strong>${zh ? "报告" : "Reports"}</strong></a>
+    <button class="subscribe-trigger" type="button"><span aria-hidden="true">＋</span><strong>${zh ? "订阅" : "Subscribe"}</strong></button>
+  `;
+  document.body.appendChild(nav);
+}
+
+function initReadingProgress() {
+  const article = document.querySelector(".article-shell");
+  if (!article || document.querySelector(".reading-progress")) return;
+  const progress = document.createElement("div");
+  progress.className = "reading-progress";
+  progress.setAttribute("aria-hidden", "true");
+  progress.innerHTML = "<span></span>";
+  document.body.prepend(progress);
+
+  const bar = progress.querySelector("span");
+  const update = () => {
+    const rect = article.getBoundingClientRect();
+    const total = Math.max(1, rect.height - window.innerHeight);
+    const read = Math.min(total, Math.max(0, -rect.top));
+    bar.style.transform = `scaleX(${read / total})`;
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+}
+
+initAppShell();
+initReadingProgress();
+
 const strategyPoints = [100, 108, 101, 119, 127, 116, 132, 148, 139, 154, 163, 151, 168, 174, 181, 169, 176, 188, 181, 186.4];
 const sp500Points = [100, 106, 102, 112, 118, 113, 122, 130, 126, 136, 143, 138, 150, 155, 158, 149, 154, 162, 158, 161.8];
 const nasdaqPoints = [100, 112, 106, 126, 134, 121, 139, 152, 145, 158, 168, 154, 171, 179, 184, 166, 171, 181, 174, 174.2];
@@ -714,11 +764,11 @@ document.querySelectorAll(".subscribe-trigger").forEach((button) => {
 
 initResearchSubscribeForms();
 
-let deferredInstallPrompt = null;
+let policyAlphaDeferredInstallPrompt = null;
 
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
-  deferredInstallPrompt = event;
+  policyAlphaDeferredInstallPrompt = event;
 });
 
 async function copySaveUrl(url) {
@@ -759,10 +809,10 @@ function saveSiteMessage(copied) {
 if (!document.querySelector(".article-shell")) {
   document.querySelectorAll(".save-site-button").forEach((button) => {
     button.addEventListener("click", async () => {
-      if (deferredInstallPrompt) {
-        deferredInstallPrompt.prompt();
-        await deferredInstallPrompt.userChoice;
-        deferredInstallPrompt = null;
+      if (policyAlphaDeferredInstallPrompt) {
+        policyAlphaDeferredInstallPrompt.prompt();
+        await policyAlphaDeferredInstallPrompt.userChoice;
+        policyAlphaDeferredInstallPrompt = null;
         return;
       }
 
@@ -777,7 +827,7 @@ const latestInsight = isChinesePage
   ? {
       id: "nvidia-at-the-tollgate-20260526",
       label: "New Insight",
-      title: "NVIDIA at the Tollgate",
+      title: "NVIDIA：AI 基础设施的收费站",
       summary: "AI 基础设施周期有价格，而市场已经知道。完整估值报告已同步发布。",
       primary: "阅读文章",
       secondary: "稍后再看",
