@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v59";
+const CACHE_NAME = "policy-alpha-research-v60";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
