@@ -141,4 +141,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
   </url>
+  <url>
+    <loc>https://policyalpharesearch.com/disclosures.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/disclosures.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-disclosures.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/zh-disclosures.html</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/disclosures.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-disclosures.html" />
+  </url>
 </urlset>
