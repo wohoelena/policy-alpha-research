@@ -36,7 +36,18 @@ function getSitePrefix() {
 }
 
 function initLanguageSwitchFallback() {
-  if (document.querySelector(".language-switch")) return;
+  const existingSwitches = document.querySelectorAll(".language-switch");
+  if (existingSwitches.length) {
+    existingSwitches.forEach((switcher, index) => {
+      if (index === 0) {
+        switcher.classList.add("language-switch-root");
+        document.body.appendChild(switcher);
+      } else {
+        switcher.remove();
+      }
+    });
+    return;
+  }
 
   const path = window.location.pathname;
   const file = path.split("/").pop() || "index.html";
@@ -139,7 +150,7 @@ function initLanguageSwitchFallback() {
     : Object.fromEntries(languageOrder.map((languageKey) => [languageKey, rootLinkFor(languageKey)]).filter(([, href]) => href));
 
   const details = document.createElement("details");
-  details.className = "language-switch";
+  details.className = "language-switch language-switch-root";
   details.innerHTML = `
     <summary aria-label="Language selector"><span>${languageLabels[currentLang] || "English"}</span></summary>
     <div class="language-menu" role="listbox" aria-label="Language options">
