@@ -49,7 +49,7 @@ function initAppShell() {
   nav.innerHTML = `
     <a href="${home}" data-app-tab="home"><span aria-hidden="true">⌂</span><strong>${zh ? "首页" : "Home"}</strong></a>
     <a href="${research}" data-app-tab="research"><span aria-hidden="true">◇</span><strong>${zh ? "研究" : "Research"}</strong></a>
-    <a href="${watch}" data-app-tab="watch"><span aria-hidden="true">⌕</span><strong>${zh ? "市场" : "Watch"}</strong></a>
+    <button class="market-search-trigger" type="button"><span aria-hidden="true">⌕</span><strong>${zh ? "搜索" : "Search"}</strong></button>
     <a href="${reports}" data-app-tab="reports"><span aria-hidden="true">▤</span><strong>${zh ? "报告" : "Reports"}</strong></a>
     <button class="subscribe-trigger" type="button"><span aria-hidden="true">＋</span><strong>${zh ? "订阅" : "Subscribe"}</strong></button>
   `;
@@ -397,6 +397,8 @@ function normalizeTickerSymbol(value) {
 
 function initTickerSearch() {
   document.querySelectorAll(".ticker-search-form").forEach((form) => {
+    if (form.dataset.tickerSearchReady === "true") return;
+    form.dataset.tickerSearchReady = "true";
     const input = form.querySelector(".ticker-search-input");
     const error = form.querySelector(".ticker-search-error");
     if (!input) return;
@@ -421,7 +423,121 @@ function initTickerSearch() {
       activeSymbol = symbol;
       renderCompanies();
       renderTradingViewChart(symbol);
+      renderMarketSearchChart(symbol);
     });
+  });
+}
+
+function createMarketSearchModal() {
+  const prefix = getSitePrefix();
+  const modal = document.createElement("div");
+  modal.className = "market-search-modal";
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-modal", "true");
+  modal.setAttribute("aria-label", isChinesePage ? "市场搜索" : "Market search");
+  modal.hidden = true;
+  modal.innerHTML = `
+    <div class="market-search-backdrop" data-market-search-close></div>
+    <section class="market-search-panel">
+      <button class="market-search-close" type="button" aria-label="${isChinesePage ? "关闭" : "Close"}" data-market-search-close>×</button>
+      <div class="market-search-heading">
+        <span>${isChinesePage ? "Market Search" : "Market Search"}</span>
+        <h2>${isChinesePage ? "搜索股票与 ETF 图表" : "Search Stocks & ETFs"}</h2>
+        <p>${isChinesePage ? "输入股票代码或交易所格式，直接调取 TradingView 图表。" : "Enter a ticker or exchange format to load a TradingView chart."}</p>
+      </div>
+      <form class="ticker-search-form market-lookup-form market-search-form" aria-label="${isChinesePage ? "搜索股票代码" : "Search ticker"}">
+        <label for="globalMarketSearchInput">${isChinesePage ? "股票代码" : "Ticker"}</label>
+        <div class="market-lookup-row">
+          <input
+            id="globalMarketSearchInput"
+            class="ticker-search-input"
+            type="text"
+            placeholder="${isChinesePage ? "NVDA 或 NASDAQ:NVDA" : "NVDA or NASDAQ:NVDA"}"
+            autocomplete="off"
+          />
+          <button class="button primary" type="submit">${isChinesePage ? "查看图表" : "View Chart"}</button>
+        </div>
+        <p class="ticker-search-hint">${isChinesePage ? "支持 NVDA、AAPL、TSM、BHP、SPY、QQQ 等，也支持完整交易所格式。" : "Supports NVDA, AAPL, TSM, BHP, SPY, QQQ, and full exchange formats."}</p>
+        <p class="ticker-search-error" aria-live="polite"></p>
+        <a class="market-lookup-link" id="marketSearchExternalLink" href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" target="_blank" rel="noopener noreferrer">
+          ${isChinesePage ? "打开 TradingView" : "Open on TradingView"}
+        </a>
+      </form>
+      <div class="market-search-status">
+        <span>${isChinesePage ? "当前图表" : "Active Chart"}</span>
+        <strong id="marketSearchSymbolLabel">NASDAQ:AAPL</strong>
+      </div>
+      <div id="market-search-tradingview-chart" class="tradingview-chart market-search-chart"></div>
+      <p class="chart-note">
+        ${isChinesePage ? "图表由 TradingView 在线组件提供，可能因地区、网络或交易所数据权限显示延迟或无法加载。" : "Charts are powered by TradingView widgets and may be delayed or unavailable depending on region, network, and exchange data access."}
+      </p>
+    </section>
+  `;
+  document.body.appendChild(modal);
+  modal.querySelectorAll("[data-market-search-close]").forEach((button) => {
+    button.addEventListener("click", closeMarketSearch);
+  });
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeMarketSearch();
+  });
+  initTickerSearch();
+  return modal;
+}
+
+function getMarketSearchModal() {
+  return document.querySelector(".market-search-modal") || createMarketSearchModal();
+}
+
+function openMarketSearch() {
+  const modal = getMarketSearchModal();
+  modal.hidden = false;
+  document.body.classList.add("modal-open");
+  requestAnimationFrame(() => {
+    modal.classList.add("is-visible");
+    modal.querySelector(".ticker-search-input")?.focus();
+  });
+  renderMarketSearchChart(activeSymbol || "NASDAQ:AAPL");
+}
+
+function closeMarketSearch() {
+  const modal = document.querySelector(".market-search-modal");
+  if (!modal) return;
+  modal.classList.remove("is-visible");
+  document.body.classList.remove("modal-open");
+  window.setTimeout(() => {
+    if (!modal.classList.contains("is-visible")) modal.hidden = true;
+  }, 180);
+}
+
+function initMarketSearchEntrypoints() {
+  const header = document.querySelector(".site-header");
+  if (header && !header.querySelector(".header-market-search")) {
+    const button = document.createElement("button");
+    button.className = "header-market-search market-search-trigger";
+    button.type = "button";
+    button.textContent = isChinesePage ? "市场搜索" : "Market Search";
+    const subscribe = header.querySelector(".header-subscribe");
+    header.insertBefore(button, subscribe || header.querySelector(".nav"));
+  }
+
+  document.querySelectorAll(".market-search-trigger").forEach((trigger) => {
+    if (trigger.dataset.marketSearchReady === "true") return;
+    trigger.dataset.marketSearchReady = "true";
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      openMarketSearch();
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest(".market-search-trigger");
+    if (!trigger) return;
+    event.preventDefault();
+    openMarketSearch();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMarketSearch();
   });
 }
 
@@ -538,10 +654,10 @@ function renderCompanies() {
   });
 }
 
-function renderTradingViewChart(symbol) {
-  const target = document.getElementById("tradingview-chart");
-  const label = document.getElementById("activeSymbolLabel");
-  const externalLink = document.getElementById("tradingViewExternalLink");
+function renderTradingViewChartInto(target, symbol, options = {}) {
+  const label = options.label || null;
+  const externalLink = options.externalLink || null;
+  const height = options.height || "430";
   if (!target) return;
 
   if (label) label.textContent = symbol;
@@ -579,7 +695,7 @@ function renderTradingViewChart(symbol) {
   script.text = JSON.stringify({
     symbol,
     width: "100%",
-    height: "430",
+    height,
     locale: isChinesePage ? "zh_CN" : "en",
     colorTheme: "dark",
     autosize: true,
@@ -611,10 +727,27 @@ function renderTradingViewChart(symbol) {
   window.setTimeout(() => window.clearInterval(chartCheck), 6000);
 }
 
+function renderTradingViewChart(symbol) {
+  renderTradingViewChartInto(document.getElementById("tradingview-chart"), symbol, {
+    label: document.getElementById("activeSymbolLabel"),
+    externalLink: document.getElementById("tradingViewExternalLink"),
+    height: "430",
+  });
+}
+
+function renderMarketSearchChart(symbol) {
+  renderTradingViewChartInto(document.getElementById("market-search-tradingview-chart"), symbol, {
+    label: document.getElementById("marketSearchSymbolLabel"),
+    externalLink: document.getElementById("marketSearchExternalLink"),
+    height: "460",
+  });
+}
+
 renderCompanyTabs();
 renderSortButtons();
 renderCompanies();
 initTickerSearch();
+initMarketSearchEntrypoints();
 renderTradingViewChart(activeSymbol);
 
 document.querySelectorAll(".email-form").forEach((form) => {
