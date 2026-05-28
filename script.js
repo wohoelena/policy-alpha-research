@@ -35,6 +35,123 @@ function getSitePrefix() {
   return window.location.pathname.includes("/articles/") ? "../" : "";
 }
 
+function initLanguageSwitchFallback() {
+  if (document.querySelector(".language-switch")) return;
+
+  const path = window.location.pathname;
+  const file = path.split("/").pop() || "index.html";
+  const inArticles = path.includes("/articles/");
+  const lang = document.documentElement.lang.toLowerCase();
+  const languageLabels = {
+    en: "English",
+    "zh-cn": "简体中文",
+    "zh-hant": "繁體中文",
+    ja: "日本語",
+    ko: "한국어",
+    de: "Deutsch",
+    fr: "Français",
+  };
+  const currentLang = lang.startsWith("zh-hant")
+    ? "zh-hant"
+    : lang.startsWith("zh")
+      ? "zh-cn"
+      : lang.startsWith("ja")
+        ? "ja"
+        : lang.startsWith("ko")
+          ? "ko"
+          : lang.startsWith("de")
+            ? "de"
+            : lang.startsWith("fr")
+              ? "fr"
+              : "en";
+  const homeLinks = {
+    en: "index.html",
+    "zh-cn": "zh.html",
+    "zh-hant": "zh-hant.html",
+    ja: "ja.html",
+    ko: "ko.html",
+    de: "de.html",
+    fr: "fr.html",
+  };
+  const languageOrder = ["en", "zh-cn", "zh-hant", "ja", "ko", "de", "fr"];
+  const languageAttrs = {
+    en: "en",
+    "zh-cn": "zh-CN",
+    "zh-hant": "zh-Hant",
+    ja: "ja",
+    ko: "ko",
+    de: "de",
+    fr: "fr",
+  };
+  const articleTranslations = {
+    "lithium-is-no-longer-just-an-ev-trade.html": {
+      en: "lithium-is-no-longer-just-an-ev-trade.html",
+      "zh-cn": "zh-lithium-is-no-longer-just-an-ev-trade.html",
+      "zh-hant": "zh-hant-lithium-is-no-longer-just-an-ev-trade.html",
+      ja: "ja-lithium-is-no-longer-just-an-ev-trade.html",
+      ko: "ko-lithium-is-no-longer-just-an-ev-trade.html",
+      de: "de-lithium-is-no-longer-just-an-ev-trade.html",
+      fr: "fr-lithium-is-no-longer-just-an-ev-trade.html",
+    },
+    "the-next-ai-race-wont-be-won-by-the-smartest-model.html": {
+      en: "the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      "zh-cn": "zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      "zh-hant": "zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      ja: "ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      ko: "ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      de: "de-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+      fr: "fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html",
+    },
+    "esg-is-no-longer-a-values-framework.html": {
+      en: "esg-is-no-longer-a-values-framework.html",
+      "zh-cn": "zh-esg-is-no-longer-a-values-framework.html",
+      "zh-hant": "zh-hant-esg-is-no-longer-a-values-framework.html",
+      ja: "ja-esg-is-no-longer-a-values-framework.html",
+      ko: "ko-esg-is-no-longer-a-values-framework.html",
+      de: "de-esg-is-no-longer-a-values-framework.html",
+      fr: "fr-esg-is-no-longer-a-values-framework.html",
+    },
+    "nvidia-at-the-tollgate.html": {
+      en: "nvidia-at-the-tollgate.html",
+      "zh-cn": "zh-nvidia-at-the-tollgate.html",
+    },
+  };
+
+  function baseArticleFile(name) {
+    return name
+      .replace(/^(zh-hant|zh|ja|ko|de|fr)-/, "")
+      .replace(/^zh-cn-/, "");
+  }
+
+  function rootLinkFor(languageKey) {
+    if (/^(zh-hant|zh|ja|ko|de|fr)\.html$/.test(file)) return homeLinks[languageKey];
+    const section = file
+      .replace(/^(zh-hant|zh|ja|ko|de|fr)-/, "")
+      .replace(/^index\.html$/, "");
+    if (!section) return homeLinks[languageKey];
+    if (section === "disclosures.html" && !["en", "zh-cn"].includes(languageKey)) return null;
+    const prefix = languageKey === "en" ? "" : languageKey === "zh-cn" ? "zh-" : `${languageKey}-`;
+    return `${prefix}${section}`;
+  }
+
+  const links = inArticles
+    ? articleTranslations[baseArticleFile(file)] || {}
+    : Object.fromEntries(languageOrder.map((languageKey) => [languageKey, rootLinkFor(languageKey)]).filter(([, href]) => href));
+
+  const details = document.createElement("details");
+  details.className = "language-switch";
+  details.innerHTML = `
+    <summary aria-label="Language selector"><span>${languageLabels[currentLang] || "English"}</span></summary>
+    <div class="language-menu" role="listbox" aria-label="Language options">
+      ${languageOrder
+        .filter((languageKey) => links[languageKey])
+        .map((languageKey) => `<a${languageKey === currentLang ? ' class="is-active"' : ""} href="${links[languageKey]}" lang="${languageAttrs[languageKey]}">${languageLabels[languageKey]}</a>`)
+        .join("")}
+    </div>
+  `;
+  document.body.appendChild(details);
+}
+
 function initAppShell() {
   if (document.querySelector(".mobile-app-nav")) return;
   const prefix = getSitePrefix();
@@ -78,6 +195,7 @@ function initReadingProgress() {
   window.addEventListener("resize", update);
 }
 
+initLanguageSwitchFallback();
 initAppShell();
 initReadingProgress();
 
