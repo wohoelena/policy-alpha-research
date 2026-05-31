@@ -3889,6 +3889,27 @@ h2 {
     padding: 18px;
   }
 
+  @media (display-mode: browser) {
+    body {
+      padding-bottom: calc(24px + env(safe-area-inset-bottom));
+    }
+
+    main {
+      padding-top: 58px;
+    }
+
+    .mobile-app-nav {
+      top: 58px;
+      bottom: auto;
+      border-radius: 14px;
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.32);
+    }
+
+    .language-switch {
+      bottom: calc(16px + env(safe-area-inset-bottom));
+    }
+  }
+
   .market-search-heading h2 {
     font-size: 28px;
   }

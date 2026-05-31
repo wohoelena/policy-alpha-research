@@ -1085,29 +1085,90 @@ if (!document.querySelector(".article-shell")) {
   });
 }
 
-const latestInsight = isChinesePage
-  ? {
-      id: "nvidia-at-the-tollgate-20260526",
+function getCurrentLanguageKey() {
+  const lang = document.documentElement.lang.toLowerCase();
+  if (lang.startsWith("zh-hant")) return "zh-hant";
+  if (lang.startsWith("zh")) return "zh";
+  if (lang.startsWith("ja")) return "ja";
+  if (lang.startsWith("ko")) return "ko";
+  if (lang.startsWith("de")) return "de";
+  if (lang.startsWith("fr")) return "fr";
+  return "en";
+}
+
+function getLatestInsight() {
+  const prefix = getSitePrefix();
+  const languageKey = getCurrentLanguageKey();
+  const localized = {
+    zh: {
       label: "New Insight",
       title: "NVIDIA：AI 基础设施的收费站",
       summary: "AI 基础设施周期有价格，而市场已经知道。完整估值报告已同步发布。",
       primary: "阅读文章",
       secondary: "稍后再看",
-      url: "articles/zh-nvidia-at-the-tollgate.html",
-    }
-  : {
-      id: "nvidia-at-the-tollgate-20260526",
+      article: "zh-nvidia-at-the-tollgate.html",
+    },
+    "zh-hant": {
+      label: "New Insight",
+      title: "NVIDIA：AI 基礎設施的收費站",
+      summary: "AI 基礎設施週期有價格，而市場已經知道。完整估值報告已同步發布。",
+      primary: "閱讀文章",
+      secondary: "稍後再看",
+      article: "zh-nvidia-at-the-tollgate.html",
+    },
+    ja: {
+      label: "New Insight",
+      title: "NVIDIA at the Tollgate",
+      summary: "AI インフラサイクルには価格があり、市場はすでにそれを織り込んでいます。最新レポートを公開しました。",
+      primary: "記事を読む",
+      secondary: "あとで見る",
+      article: "nvidia-at-the-tollgate.html",
+    },
+    ko: {
+      label: "New Insight",
+      title: "NVIDIA at the Tollgate",
+      summary: "AI 인프라 사이클에는 가격이 있으며 시장은 이미 이를 반영하고 있습니다. 최신 리포트가 공개되었습니다.",
+      primary: "글 읽기",
+      secondary: "나중에 보기",
+      article: "nvidia-at-the-tollgate.html",
+    },
+    de: {
+      label: "New Insight",
+      title: "NVIDIA at the Tollgate",
+      summary: "Der KI-Infrastrukturzyklus hat einen Preis, und der Markt kennt ihn bereits. Der vollständige Bericht ist verfügbar.",
+      primary: "Artikel lesen",
+      secondary: "Später",
+      article: "nvidia-at-the-tollgate.html",
+    },
+    fr: {
+      label: "New Insight",
+      title: "NVIDIA at the Tollgate",
+      summary: "Le cycle d’infrastructure IA a un prix, et le marché le sait déjà. Le rapport complet est disponible.",
+      primary: "Lire l’article",
+      secondary: "Plus tard",
+      article: "nvidia-at-the-tollgate.html",
+    },
+    en: {
       label: "New Insight",
       title: "NVIDIA at the Tollgate",
       summary: "The AI infrastructure cycle has a price — and the market already knows it. Full valuation report now available.",
       primary: "Read Note",
       secondary: "Later",
-      url: "articles/nvidia-at-the-tollgate.html",
-    };
+      article: "nvidia-at-the-tollgate.html",
+    },
+  };
+  const insight = localized[languageKey] || localized.en;
+  return {
+    id: "nvidia-at-the-tollgate-20260526",
+    ...insight,
+    url: `${prefix}articles/${insight.article}`,
+  };
+}
 
 function showInsightUpdate() {
   if (!document.body || window.location.hash === "#insights") return;
-  const languageKey = isChinesePage ? "zh" : "en";
+  const latestInsight = getLatestInsight();
+  const languageKey = getCurrentLanguageKey();
   const storageKey = `policy-alpha-insight-update-seen-${languageKey}`;
   const legacyStorageKey = `policy-alpha-seen-${latestInsight.id}-${languageKey}`;
   const hasSeenAnyInsightUpdate = () => {
