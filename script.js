@@ -210,6 +210,57 @@ initLanguageSwitchFallback();
 initAppShell();
 initReadingProgress();
 
+function initArticleShareButtons() {
+  const buttons = document.querySelectorAll(".share-article-button");
+  if (!buttons.length) return;
+
+  const canonical = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+  if (/\/articles\/zh?-?nvidia-at-the-tollgate\.html$|\/articles\/nvidia-at-the-tollgate\.html$/.test(new URL(canonical, window.location.href).pathname)) {
+    return;
+  }
+
+  const title = document.querySelector('meta[property="og:title"]')?.content || document.title;
+  const text =
+    document.querySelector('meta[property="og:description"]')?.content ||
+    document.querySelector('meta[name="description"]')?.content ||
+    "";
+  const shareUrl = canonical;
+
+  buttons.forEach((button) => {
+    if (button.dataset.shareBound === "true") return;
+    button.dataset.shareBound = "true";
+    button.addEventListener("click", async () => {
+      const originalText = button.textContent;
+      const copiedText = isChinesePage ? "链接已复制" : "Link Copied";
+      const fallbackMessage = isChinesePage
+        ? "已复制文章链接，可粘贴到微信、小红书、Instagram 或其他平台。"
+        : "Article link copied. You can paste it into your preferred platform.";
+      const shareData = { title, text, url: shareUrl };
+
+      try {
+        if (navigator.share && navigator.canShare?.(shareData) !== false) {
+          await navigator.share(shareData);
+          return;
+        }
+      } catch (error) {
+        if (error?.name === "AbortError") return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        button.textContent = copiedText;
+        window.setTimeout(() => {
+          button.textContent = originalText;
+        }, 1800);
+      } catch {
+        window.prompt(fallbackMessage, shareUrl);
+      }
+    });
+  });
+}
+
+initArticleShareButtons();
+
 const strategyPoints = [100, 108, 101, 119, 127, 116, 132, 148, 139, 154, 163, 151, 168, 174, 181, 169, 176, 188, 181, 186.4];
 const sp500Points = [100, 106, 102, 112, 118, 113, 122, 130, 126, 136, 143, 138, 150, 155, 158, 149, 154, 162, 158, 161.8];
 const nasdaqPoints = [100, 112, 106, 126, 134, 121, 139, 152, 145, 158, 168, 154, 171, 179, 184, 166, 171, 181, 174, 174.2];
