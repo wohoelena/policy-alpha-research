@@ -72,6 +72,34 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-methodology.html" />
   </url>
   <url>
+    <loc>https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.98</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.93</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/reports/musk-stack-full-report.pdf</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/reports/musk-stack-issue-brief.pdf</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+  </url>
+  <url>
     <loc>https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>

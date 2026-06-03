@@ -2842,6 +2842,10 @@ h2 {
   pointer-events: none;
 }
 
+.musk-stack-hero::after {
+  content: "SPCX";
+}
+
 .article-metric-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3070,6 +3074,226 @@ h2 {
   line-height: 1.75;
 }
 
+.research-table {
+  display: grid;
+  margin: 26px 0;
+  overflow: hidden;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  background: rgba(9, 12, 15, 0.96);
+}
+
+.research-table-row {
+  display: grid;
+  border-bottom: 1px solid rgba(214, 168, 79, 0.14);
+}
+
+.research-table-row:last-child {
+  border-bottom: 0;
+}
+
+.research-table-row.header {
+  background: rgba(214, 168, 79, 0.08);
+}
+
+.research-table-cell {
+  min-width: 0;
+  padding: 14px 16px;
+  border-right: 1px solid rgba(214, 168, 79, 0.14);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.research-table-cell:last-child {
+  border-right: 0;
+}
+
+.research-table-row.header .research-table-cell {
+  color: rgba(244, 240, 230, 0.68);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-table-cell strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.research-table-cell.accent,
+.research-table-cell.base {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.research-table-cell.bull {
+  color: #7fd7aa;
+  font-weight: 900;
+}
+
+.research-table-cell.bear {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.research-table-cell.dim {
+  color: rgba(244, 240, 230, 0.46);
+  font-weight: 900;
+}
+
+.contrarian-table .research-table-row {
+  grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.layer-table .research-table-row {
+  grid-template-columns: 54px 130px minmax(0, 1fr) 165px;
+}
+
+.scenario-table .research-table-row {
+  grid-template-columns: 105px 78px minmax(0, 1fr) 120px;
+}
+
+.valuation-table .research-table-row {
+  grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(96px, 0.7fr));
+}
+
+.watchlist-table .research-table-row {
+  grid-template-columns: 170px minmax(0, 1fr) 130px 130px;
+}
+
+.assumptions-table {
+  margin: 20px 0 12px;
+}
+
+.assumptions-table .research-table-row {
+  grid-template-columns: 1fr 1.08fr 1.35fr;
+}
+
+.prob-badge {
+  display: inline-flex;
+  min-width: 46px;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: rgba(214, 168, 79, 0.12);
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.prob-badge.bull {
+  background: rgba(127, 215, 170, 0.12);
+  color: #7fd7aa;
+}
+
+.prob-badge.bear {
+  background: rgba(209, 103, 95, 0.14);
+  color: var(--red);
+}
+
+.prob-badge.tail {
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(244, 240, 230, 0.55);
+}
+
+.mc-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.mc-cell {
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(214, 168, 79, 0.09), transparent 48%),
+    rgba(12, 15, 18, 0.94);
+  text-align: center;
+}
+
+.mc-label {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mc-value {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.mc-value.accent {
+  color: var(--gold);
+}
+
+.mc-value.red {
+  color: var(--red);
+}
+
+.mc-sub {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.signal-box {
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  padding: 20px;
+  background: rgba(214, 168, 79, 0.055);
+}
+
+.signal-box h3 {
+  margin-top: 0;
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: 25px;
+}
+
+.signal-box ul {
+  margin-bottom: 0;
+}
+
+.signal-box li {
+  color: var(--muted);
+}
+
+.signal-box.bear {
+  border-color: rgba(209, 103, 95, 0.34);
+}
+
+.signal-box.bull {
+  border-color: rgba(127, 215, 170, 0.28);
+}
+
+.article-footnote {
+  margin-top: -10px;
+  color: rgba(244, 240, 230, 0.48);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
 .research-quote {
   margin: 40px 0;
   border: 1px solid rgba(214, 168, 79, 0.35);
@@ -3223,6 +3447,7 @@ h2 {
 .article-related,
 .article-connected-themes,
 .article-framework-chart,
+.article-source-map,
 .article-references,
 .article-disclaimer {
   max-width: 820px;
@@ -3234,6 +3459,7 @@ h2 {
 .article-related,
 .article-connected-themes,
 .article-framework-chart,
+.article-source-map,
 .article-references,
 .article-disclaimer {
   border: 1px solid rgba(214, 168, 79, 0.22);
@@ -3247,6 +3473,7 @@ h2 {
 .article-related h2,
 .article-connected-themes h2,
 .article-framework-chart h2,
+.article-source-map h2,
 .article-references h2,
 .article-disclaimer h2,
 .article-body h2 {
@@ -3301,6 +3528,59 @@ h2 {
   font-weight: 900;
 }
 
+.transmission-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.transmission-node {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  min-height: 190px;
+  border: 1px solid rgba(214, 168, 79, 0.24);
+  border-radius: 8px;
+  padding: 18px;
+  background:
+    linear-gradient(180deg, rgba(214, 168, 79, 0.08), rgba(255, 255, 255, 0.025)),
+    rgba(9, 12, 15, 0.82);
+}
+
+.transmission-node:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  z-index: 2;
+  width: 14px;
+  height: 1px;
+  background: rgba(214, 168, 79, 0.72);
+}
+
+.transmission-node span {
+  color: rgba(214, 168, 79, 0.72);
+  font-family: var(--display-font);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.transmission-node strong {
+  color: var(--ink);
+  font-family: var(--display-font);
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.transmission-node p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
 .related-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3342,6 +3622,62 @@ h2 {
   border-left: 4px solid var(--gold);
 }
 
+.article-source-map {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 22px;
+  align-items: start;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(214, 168, 79, 0.13), transparent 34%),
+    linear-gradient(180deg, rgba(19, 24, 29, 0.98), rgba(8, 10, 12, 0.98));
+}
+
+.article-source-map p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.source-map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.source-map-grid a {
+  display: grid;
+  gap: 7px;
+  min-height: 104px;
+  padding: 14px;
+  border: 1px solid rgba(214, 168, 79, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--ink);
+}
+
+.source-map-grid a:hover {
+  border-color: rgba(214, 168, 79, 0.5);
+  background: rgba(214, 168, 79, 0.08);
+}
+
+.source-map-grid span {
+  width: fit-content;
+  border: 1px solid rgba(214, 168, 79, 0.32);
+  border-radius: 999px;
+  padding: 4px 8px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.source-map-grid strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
 .article-summary ul,
 .article-references ul {
   margin: 0;
@@ -3366,6 +3702,15 @@ h2 {
   font-weight: 800;
 }
 
+.article-references p {
+  margin: 16px 0 0;
+  border-top: 1px solid rgba(214, 168, 79, 0.14);
+  padding-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .article-body {
   color: var(--muted);
   font-size: 18px;
@@ -3375,6 +3720,14 @@ h2 {
 .article-body h2 {
   margin-top: 42px;
   color: var(--ink);
+}
+
+.article-body h3 {
+  margin: 28px 0 12px;
+  color: var(--gold);
+  font-family: var(--display-font);
+  font-size: clamp(18px, 2.4vw, 24px);
+  letter-spacing: 0;
 }
 
 .article-body p {
@@ -4137,6 +4490,251 @@ h2 {
   .watch-signal-grid,
   .full-report-card {
     grid-template-columns: 1fr;
+  }
+
+  .article-source-map,
+  .source-map-grid,
+  .transmission-map {
+    grid-template-columns: 1fr;
+  }
+
+  .transmission-node {
+    min-height: auto;
+  }
+
+  .transmission-node:not(:last-child)::after {
+    top: auto;
+    right: 50%;
+    bottom: -13px;
+    width: 1px;
+    height: 14px;
+  }
+
+  .contrarian-table .research-table-row,
+  .layer-table .research-table-row,
+  .scenario-table .research-table-row,
+  .valuation-table .research-table-row,
+  .watchlist-table .research-table-row,
+  .assumptions-table .research-table-row,
+  .signals-grid,
+  .mc-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .research-table-row.header {
+    display: none;
+  }
+
+  .research-table {
+    gap: 12px;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .research-table-row:not(.header) {
+    overflow: hidden;
+    border: 1px solid rgba(214, 168, 79, 0.18);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(214, 168, 79, 0.055), rgba(255, 255, 255, 0.018)),
+      rgba(8, 10, 12, 0.94);
+  }
+
+  .research-table-cell {
+    display: grid;
+    gap: 6px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(214, 168, 79, 0.1);
+    padding: 13px 14px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .research-table-cell:last-child {
+    border-bottom: 0;
+  }
+
+  .research-table-cell::before {
+    display: block;
+    color: rgba(214, 168, 79, 0.78);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .contrarian-table .research-table-cell:nth-child(1)::before {
+    content: "View";
+  }
+
+  .contrarian-table .research-table-cell:nth-child(2)::before {
+    content: "Market Consensus";
+  }
+
+  .contrarian-table .research-table-cell:nth-child(3)::before {
+    content: "Policy Alpha";
+  }
+
+  .layer-table .research-table-cell:nth-child(1)::before {
+    content: "#";
+  }
+
+  .layer-table .research-table-cell:nth-child(2)::before {
+    content: "Layer";
+  }
+
+  .layer-table .research-table-cell:nth-child(3)::before {
+    content: "Entity / Description";
+  }
+
+  .layer-table .research-table-cell:nth-child(4)::before {
+    content: "Primary Regulator";
+  }
+
+  .scenario-table .research-table-cell:nth-child(1)::before {
+    content: "Scenario";
+  }
+
+  .scenario-table .research-table-cell:nth-child(2)::before {
+    content: "Probability";
+  }
+
+  .scenario-table .research-table-cell:nth-child(3)::before {
+    content: "Policy Trigger";
+  }
+
+  .scenario-table .research-table-cell:nth-child(4)::before {
+    content: "Implied Value";
+  }
+
+  .valuation-table .research-table-cell:nth-child(1)::before {
+    content: "Component";
+  }
+
+  .valuation-table .research-table-cell:nth-child(2)::before {
+    content: "Base";
+  }
+
+  .valuation-table .research-table-cell:nth-child(3)::before {
+    content: "Bull";
+  }
+
+  .valuation-table .research-table-cell:nth-child(4)::before {
+    content: "Bear";
+  }
+
+  .assumptions-table .research-table-cell:nth-child(1)::before {
+    content: "Model Input";
+  }
+
+  .assumptions-table .research-table-cell:nth-child(2)::before {
+    content: "Base Assumption";
+  }
+
+  .assumptions-table .research-table-cell:nth-child(3)::before {
+    content: "Why It Matters";
+  }
+
+  .watchlist-table .research-table-cell:nth-child(1)::before {
+    content: "Policy Variable";
+  }
+
+  .watchlist-table .research-table-cell:nth-child(2)::before {
+    content: "Key Milestone";
+  }
+
+  .watchlist-table .research-table-cell:nth-child(3)::before {
+    content: "Bull Signal";
+  }
+
+  .watchlist-table .research-table-cell:nth-child(4)::before {
+    content: "Bear Signal";
+  }
+
+  html[lang="zh-CN"] .contrarian-table .research-table-cell:nth-child(1)::before {
+    content: "观点";
+  }
+
+  html[lang="zh-CN"] .contrarian-table .research-table-cell:nth-child(2)::before {
+    content: "市场共识";
+  }
+
+  html[lang="zh-CN"] .contrarian-table .research-table-cell:nth-child(3)::before {
+    content: "Policy Alpha 分析";
+  }
+
+  html[lang="zh-CN"] .layer-table .research-table-cell:nth-child(2)::before {
+    content: "层级";
+  }
+
+  html[lang="zh-CN"] .layer-table .research-table-cell:nth-child(3)::before {
+    content: "实体 / 描述";
+  }
+
+  html[lang="zh-CN"] .layer-table .research-table-cell:nth-child(4)::before {
+    content: "主要监管方";
+  }
+
+  html[lang="zh-CN"] .scenario-table .research-table-cell:nth-child(1)::before {
+    content: "情景";
+  }
+
+  html[lang="zh-CN"] .scenario-table .research-table-cell:nth-child(2)::before {
+    content: "概率";
+  }
+
+  html[lang="zh-CN"] .scenario-table .research-table-cell:nth-child(3)::before {
+    content: "关键政策触发因素";
+  }
+
+  html[lang="zh-CN"] .scenario-table .research-table-cell:nth-child(4)::before {
+    content: "隐含每股价值";
+  }
+
+  html[lang="zh-CN"] .valuation-table .research-table-cell:nth-child(1)::before {
+    content: "组成部分";
+  }
+
+  html[lang="zh-CN"] .valuation-table .research-table-cell:nth-child(2)::before {
+    content: "基准";
+  }
+
+  html[lang="zh-CN"] .valuation-table .research-table-cell:nth-child(3)::before {
+    content: "乐观";
+  }
+
+  html[lang="zh-CN"] .valuation-table .research-table-cell:nth-child(4)::before {
+    content: "悲观";
+  }
+
+  html[lang="zh-CN"] .assumptions-table .research-table-cell:nth-child(1)::before {
+    content: "模型输入";
+  }
+
+  html[lang="zh-CN"] .assumptions-table .research-table-cell:nth-child(2)::before {
+    content: "基准假设";
+  }
+
+  html[lang="zh-CN"] .assumptions-table .research-table-cell:nth-child(3)::before {
+    content: "为什么重要";
+  }
+
+  html[lang="zh-CN"] .watchlist-table .research-table-cell:nth-child(1)::before {
+    content: "政策变量";
+  }
+
+  html[lang="zh-CN"] .watchlist-table .research-table-cell:nth-child(2)::before {
+    content: "关键节点";
+  }
+
+  html[lang="zh-CN"] .watchlist-table .research-table-cell:nth-child(3)::before {
+    content: "积极信号";
+  }
+
+  html[lang="zh-CN"] .watchlist-table .research-table-cell:nth-child(4)::before {
+    content: "消极信号";
   }
 
   .valuation-panel {

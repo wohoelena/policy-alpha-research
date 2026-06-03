@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v66";
+const CACHE_NAME = "policy-alpha-research-v73";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -18,12 +18,14 @@ const CORE_ASSETS = [
   "/fr-articles.html",
   "/articles/nvidia-at-the-tollgate.html",
   "/articles/zh-nvidia-at-the-tollgate.html",
+  "/articles/musk-stack-from-code-to-cosmos.html",
+  "/articles/zh-musk-stack-from-code-to-cosmos.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260531-secondary-header-fix-v66",
-  "/script.js?v=20260531-secondary-header-fix-v66",
+  "/styles.css?v=20260603-musk-stack-mobile-table-v73",
+  "/script.js?v=20260603-musk-stack-mobile-table-v73",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -41,7 +43,11 @@ const CORE_ASSETS = [
   "/assets/social/zh-esg-capital-access-share-card.png",
   "/assets/social/nvidia-tollgate-share-card.png",
   "/assets/social/zh-nvidia-tollgate-share-card.png",
+  "/assets/social/musk-stack-share-card.png",
+  "/assets/social/zh-musk-stack-share-card.png",
   "/reports/nvidia-research-elena-zhang.pdf",
+  "/reports/musk-stack-full-report.pdf",
+  "/reports/musk-stack-issue-brief.pdf",
 ];
 
 self.addEventListener("install", (event) => {
