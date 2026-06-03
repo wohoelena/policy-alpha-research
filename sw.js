@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v73";
+const CACHE_NAME = "policy-alpha-research-v79";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -24,8 +24,8 @@ const CORE_ASSETS = [
   "/zh-themes.html",
   "/methodology.html",
   "/zh-methodology.html",
-  "/styles.css?v=20260603-musk-stack-mobile-table-v73",
-  "/script.js?v=20260603-musk-stack-mobile-table-v73",
+  "/styles.css?v=20260603-spacex-share-card-v79",
+  "/script.js?v=20260603-spacex-share-card-v79",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -43,8 +43,8 @@ const CORE_ASSETS = [
   "/assets/social/zh-esg-capital-access-share-card.png",
   "/assets/social/nvidia-tollgate-share-card.png",
   "/assets/social/zh-nvidia-tollgate-share-card.png",
-  "/assets/social/musk-stack-share-card.png",
-  "/assets/social/zh-musk-stack-share-card.png",
+  "/assets/social/spacex-musk-stack-share-card-v79.png",
+  "/assets/social/zh-spacex-musk-stack-share-card-v79.png",
   "/reports/nvidia-research-elena-zhang.pdf",
   "/reports/musk-stack-full-report.pdf",
   "/reports/musk-stack-issue-brief.pdf",
