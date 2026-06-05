@@ -2846,6 +2846,229 @@ h2 {
   content: "SPCX";
 }
 
+.power-constraint-article {
+  max-width: 1120px;
+}
+
+.power-constraint-hero {
+  min-height: 460px;
+  border: 1px solid rgba(214, 168, 79, 0.22);
+  border-radius: 10px;
+  padding: clamp(28px, 5vw, 54px) clamp(24px, 5vw, 56px);
+  padding-right: clamp(260px, 30vw, 360px);
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(7, 9, 11, 0.98) 0%, rgba(7, 9, 11, 0.9) 55%, rgba(52, 35, 7, 0.68) 100%),
+    radial-gradient(circle at 80% 18%, rgba(214, 168, 79, 0.22), transparent 34%);
+  box-shadow: var(--shadow);
+}
+
+.power-constraint-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(54, 156, 162, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(54, 156, 162, 0.08) 1px, transparent 1px);
+  background-size: 150px 150px;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.2));
+}
+
+.power-constraint-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.power-constraint-hero::after {
+  content: "POWER";
+  top: clamp(112px, 15vw, 170px);
+  right: clamp(24px, 5vw, 54px);
+  color: rgba(214, 168, 79, 0.24);
+  font-size: clamp(72px, 9vw, 118px);
+  line-height: 0.8;
+}
+
+.power-constraint-hero h1 {
+  max-width: 680px;
+  font-size: clamp(54px, 8vw, 108px);
+  letter-spacing: 0;
+}
+
+.power-constraint-hero .article-dek {
+  max-width: 660px;
+  color: rgba(240, 235, 222, 0.78);
+}
+
+.power-constraint-hero .article-share-tools {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 520px;
+  max-width: 100%;
+  margin-top: 26px;
+  gap: 10px;
+  justify-content: stretch;
+}
+
+.power-constraint-hero .article-share-tools .button {
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+}
+
+.power-constraint-hero .article-meta-line span {
+  border: 1px solid rgba(214, 168, 79, 0.22);
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(7, 9, 11, 0.64);
+}
+
+.power-constraint-article .article-metric-strip {
+  max-width: none;
+  margin: 20px 0 0;
+}
+
+.power-constraint-article .article-metric-strip div {
+  min-height: 138px;
+  border-color: rgba(214, 168, 79, 0.28);
+  background:
+    linear-gradient(145deg, rgba(214, 168, 79, 0.13), rgba(255, 255, 255, 0.025) 44%, rgba(7, 9, 11, 0.95)),
+    rgba(11, 14, 17, 0.96);
+}
+
+.power-constraint-article .article-metric-strip strong {
+  font-size: clamp(26px, 3.4vw, 42px);
+}
+
+.power-constraint-article .article-summary,
+.power-constraint-article .article-framework-chart,
+.power-constraint-article .article-source-map,
+.power-constraint-article .article-references,
+.power-constraint-article .article-disclaimer,
+.power-constraint-article .related-research {
+  max-width: none;
+}
+
+.power-constraint-article .article-summary {
+  border-color: rgba(133, 199, 198, 0.22);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(55, 159, 161, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(16, 22, 25, 0.98), rgba(8, 10, 12, 0.98));
+}
+
+.power-constraint-article .article-summary ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.power-constraint-article .article-summary li {
+  position: relative;
+  margin: 0;
+  border-left: 2px solid rgba(214, 168, 79, 0.55);
+  padding: 4px 0 4px 13px;
+  line-height: 1.6;
+}
+
+.power-constraint-article .mini-flow span {
+  min-height: 98px;
+  background:
+    linear-gradient(180deg, rgba(214, 168, 79, 0.12), rgba(54, 156, 162, 0.055)),
+    rgba(9, 12, 15, 0.92);
+}
+
+.power-constraint-article .research-quote {
+  border: 1px solid rgba(214, 168, 79, 0.26);
+  border-left: 4px solid var(--gold);
+  background:
+    radial-gradient(circle at 85% 14%, rgba(214, 168, 79, 0.14), transparent 32%),
+    rgba(12, 15, 18, 0.96);
+}
+
+.power-constraint-article .research-table {
+  border-color: rgba(214, 168, 79, 0.2);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+}
+
+.power-constraint-article .exposure-table {
+  display: block;
+  overflow-x: auto;
+  border-color: rgba(214, 168, 79, 0.2);
+  background:
+    linear-gradient(140deg, rgba(214, 168, 79, 0.08), transparent 34%),
+    rgba(8, 10, 12, 0.96);
+}
+
+.power-constraint-article .exposure-table .research-table-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.85fr) minmax(320px, 1.45fr) minmax(280px, 1.1fr);
+  min-width: 820px;
+}
+
+.power-constraint-article .exposure-table .research-table-cell {
+  padding: 16px 18px;
+  font-size: 14px;
+}
+
+.power-constraint-article .research-table-row.header {
+  background: rgba(214, 168, 79, 0.12);
+}
+
+.power-constraint-article .research-table-cell.accent {
+  background:
+    linear-gradient(180deg, rgba(214, 168, 79, 0.09), rgba(214, 168, 79, 0.035));
+  color: rgba(231, 190, 112, 0.94);
+  font-weight: 800;
+}
+
+.power-constraint-article .signal-box {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(214, 168, 79, 0.1), transparent 30%),
+    rgba(12, 15, 18, 0.96);
+}
+
+.power-constraint-article .article-source-map {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+
+.power-constraint-article .related-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.power-constraint-article .related-grid a {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(214, 168, 79, 0.18);
+  background:
+    linear-gradient(145deg, rgba(214, 168, 79, 0.08), transparent 42%),
+    rgba(8, 10, 12, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.power-constraint-article .related-grid a::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(214, 168, 79, 0.75), transparent);
+}
+
+.power-constraint-article .related-grid a:hover {
+  border-color: rgba(214, 168, 79, 0.42);
+  background:
+    linear-gradient(145deg, rgba(214, 168, 79, 0.12), transparent 48%),
+    rgba(10, 12, 14, 0.96);
+}
+
+.power-constraint-article .article-body {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
 .article-metric-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3445,6 +3668,7 @@ h2 {
 .article-body,
 .article-footer-note,
 .article-related,
+.related-research,
 .article-connected-themes,
 .article-framework-chart,
 .article-source-map,
@@ -3457,6 +3681,7 @@ h2 {
 .article-summary,
 .article-footer-note,
 .article-related,
+.related-research,
 .article-connected-themes,
 .article-framework-chart,
 .article-source-map,
@@ -3471,6 +3696,7 @@ h2 {
 
 .article-summary h2,
 .article-related h2,
+.related-research h2,
 .article-connected-themes h2,
 .article-framework-chart h2,
 .article-source-map h2,
@@ -4452,6 +4678,47 @@ h2 {
     padding-right: 0;
   }
 
+  .power-constraint-hero {
+    min-height: 0;
+    padding: 24px 18px 22px;
+    border-radius: 8px;
+  }
+
+  .power-constraint-hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 14vw, 66px);
+  }
+
+  .power-constraint-hero::after {
+    top: 42px;
+    right: 12px;
+    font-size: 58px;
+    opacity: 0.75;
+  }
+
+  .power-constraint-hero .article-meta-line {
+    gap: 7px;
+  }
+
+  .power-constraint-hero .article-meta-line span {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .power-constraint-hero .article-share-tools {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .power-constraint-hero .article-share-tools .button {
+    min-width: 0;
+    width: 100%;
+    padding-inline: 6px;
+    font-size: 10px;
+  }
+
   .article-hero h1 {
     max-width: 980px;
   }
@@ -4492,10 +4759,40 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .power-constraint-article .article-metric-strip div {
+    min-height: auto;
+  }
+
+  .power-constraint-article .article-summary ul,
+  .power-constraint-article .related-grid {
+    grid-template-columns: 1fr;
+  }
+
   .article-source-map,
   .source-map-grid,
   .transmission-map {
     grid-template-columns: 1fr;
+  }
+
+  .power-constraint-article .article-source-map {
+    grid-template-columns: 1fr;
+  }
+
+  .power-constraint-article .mini-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .power-constraint-article .mini-flow span {
+    min-height: 58px;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .power-constraint-article .mini-flow span:not(:last-child)::after {
+    top: auto;
+    right: 50%;
+    bottom: -14px;
+    transform: translateX(50%) rotate(90deg);
   }
 
   .transmission-node {
@@ -5300,5 +5597,78 @@ body {
 
   .focus-taxonomy span {
     width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .power-constraint-hero .article-share-tools {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .power-constraint-hero .article-share-tools .button {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+    padding-inline: 6px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 980px) {
+  .power-constraint-article .exposure-table {
+    display: block;
+    overflow-x: auto;
+    border: 1px solid rgba(214, 168, 79, 0.2);
+    border-radius: 8px;
+    background:
+      linear-gradient(140deg, rgba(214, 168, 79, 0.08), transparent 34%),
+      rgba(8, 10, 12, 0.96);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .power-constraint-article .exposure-table .research-table-row,
+  .power-constraint-article .exposure-table .research-table-row.header {
+    display: grid;
+    grid-template-columns: minmax(148px, 0.8fr) minmax(300px, 1.45fr) minmax(260px, 1.1fr);
+    min-width: 760px;
+    border-radius: 0;
+    border-inline: 0;
+    border-top: 0;
+    background: transparent;
+  }
+
+  .power-constraint-article .exposure-table .research-table-row.header {
+    background: rgba(214, 168, 79, 0.12);
+  }
+
+  .power-constraint-article .exposure-table .research-table-cell {
+    display: block;
+    border-right: 1px solid rgba(214, 168, 79, 0.14);
+    border-bottom: 0;
+    padding: 14px 15px;
+    white-space: normal;
+  }
+
+  .power-constraint-article .exposure-table .research-table-cell::before {
+    content: none;
+  }
+
+  .power-constraint-hero .article-share-tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100% !important;
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .power-constraint-hero .article-share-tools .button {
+    min-width: 0;
+    width: 100% !important;
+    justify-content: center;
+    padding-inline: 6px;
+    font-size: 10px;
   }
 }
