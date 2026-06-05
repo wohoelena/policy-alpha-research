@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Power Constraint | AI Infrastructure Energy Policy Insight</title>
+    <meta
+      name="description"
+      content="Policy Alpha Research analyzes why AI infrastructure is becoming an energy policy trade, with power access, grid interconnection, tariffs, utilities, and transmission as valuation variables."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Elena Zhang" />
+    <meta
+      name="keywords"
+      content="AI infrastructure power demand, data centers electricity, energy policy, FERC large loads, grid interconnection, hyperscaler capex, Policy Alpha Research"
+    />
+    <link rel="canonical" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <link rel="alternate" type="application/rss+xml" title="Policy Alpha Research Feed" href="https://policyalpharesearch.com/feed.xml" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Policy Alpha Research" />
+    <meta property="og:title" content="The Power Constraint" />
+    <meta
+      property="og:description"
+      content="AI's next bottleneck may not be chips. It may be power."
+    />
+    <meta property="og:url" content="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <meta property="og:image" content="https://policyalpharesearch.com/assets/social/power-constraint-share-card.png" />
+    <meta property="og:image:secure_url" content="https://policyalpharesearch.com/assets/social/power-constraint-share-card.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta itemprop="name" content="The Power Constraint" />
+    <meta itemprop="description" content="AI's next bottleneck may not be chips. It may be power." />
+    <meta itemprop="image" content="https://policyalpharesearch.com/assets/social/power-constraint-share-card.png" />
+    <meta property="article:author" content="Elena Zhang" />
+    <meta property="article:published_time" content="2026-06-05" />
+    <meta property="article:modified_time" content="2026-06-05" />
+    <meta property="article:section" content="AI Infrastructure" />
+    <meta property="article:tag" content="AI infrastructure" />
+    <meta property="article:tag" content="Data centers" />
+    <meta property="article:tag" content="Energy policy" />
+    <meta property="article:tag" content="Grid interconnection" />
+    <meta property="article:tag" content="FERC" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Power Constraint" />
+    <meta name="twitter:description" content="Why AI infrastructure is becoming an energy policy trade." />
+    <meta name="twitter:image" content="https://policyalpharesearch.com/assets/social/power-constraint-share-card.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="../assets/app-icon-180.png" />
+    <link rel="manifest" href="../site.webmanifest" />
+    <meta name="theme-color" content="#07090b" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The Power Constraint: Why AI Infrastructure Is Becoming an Energy Policy Trade",
+        "description": "Policy Alpha Research analyzes why AI infrastructure is becoming an energy policy trade, with power access, grid interconnection, tariffs, utilities, and transmission as valuation variables.",
+        "author": { "@type": "Person", "name": "Elena Zhang", "url": "https://policyalpharesearch.com/#about" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Policy Alpha Research",
+          "url": "https://policyalpharesearch.com",
+          "logo": { "@type": "ImageObject", "url": "https://policyalpharesearch.com/assets/policy-alpha-logo.png" }
+        },
+        "datePublished": "2026-06-05",
+        "dateModified": "2026-06-05",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html"
+        },
+        "image": "https://policyalpharesearch.com/assets/social/power-constraint-share-card.png",
+        "isAccessibleForFree": true,
+        "keywords": [
+          "AI infrastructure",
+          "data centers",
+          "energy policy",
+          "FERC large loads",
+          "grid interconnection",
+          "hyperscaler capex",
+          "utility capex"
+        ],
+        "citation": [
+          "https://www.iea.org/reports/energy-and-ai/executive-summary",
+          "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+          "https://www.energy.gov/oe/clean-energy-resources-meet-data-center-electricity-demand",
+          "https://www.energy.gov/oe/resource-adequacy",
+          "https://ferc.gov/news-events/news/ferc-orders-action-co-location-issues-related-data-centers-running-ai",
+          "https://d1io3yog0oux5.cloudfront.net/_a4e6cd39306846199c937321539f3d06/equinix/news/2025-08-14_Equinix_Collaborates_with_Leading_Alternative_1079.pdf"
+        ],
+        "about": [
+          { "@type": "Thing", "name": "AI infrastructure" },
+          { "@type": "Thing", "name": "Data center electricity demand" },
+          { "@type": "Thing", "name": "Energy policy" },
+          { "@type": "Thing", "name": "Grid interconnection" }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="../styles.css?v=20260605-power-constraint-v84" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top" aria-label="Policy Alpha Research home">
+        <span class="brand-mark" aria-hidden="true"><img src="../assets/policy-alpha-logo.png" alt="" /></span>
+        <span><strong>Policy Alpha Research</strong></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#top">Home</a>
+        <a href="../index.html#strategy">Process</a>
+        <a href="../index.html#research-library">Reports</a>
+        <a href="../index.html#insights">Insights</a>
+        <a href="../themes.html">Themes</a>
+        <a href="../methodology.html">Methodology</a>
+        <a href="../articles.html">Archive</a>
+        <a href="../index.html#disclaimer">Disclaimer</a>
+      </nav>
+    </header>
+
+    <details class="language-switch">
+      <summary aria-label="Language selector"><span>English</span></summary>
+      <div class="language-menu" role="listbox" aria-label="Language options">
+        <a class="is-active" href="the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="en">English</a>
+        <a href="zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="zh-CN">简体中文</a>
+        <a href="zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="zh-Hant">繁體中文</a>
+        <a href="ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="ja">日本語</a>
+        <a href="ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="ko">한국어</a>
+        <a href="de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="de">Deutsch</a>
+        <a href="fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" lang="fr">Français</a>
+      </div>
+    </details>
+
+    <main id="top">
+      <article class="article-shell">
+        <header class="article-hero deep-research-hero">
+          <p class="eyebrow">Policy Alpha Research</p>
+          <p class="series-kicker">AI Infrastructure Series · June 2026</p>
+          <h1>The Power Constraint</h1>
+          <div class="article-meta-line">
+            <span>Elena Zhang</span>
+            <span>June 2026</span>
+            <span>Framework View: Research Only</span>
+          </div>
+          <p class="article-dek">
+            Why AI infrastructure is becoming an energy policy trade.
+          </p>
+          <div class="article-share-tools">
+            <button class="button primary share-article-button" type="button">Share Article</button>
+            <button class="button secondary subscribe-trigger" type="button">Subscribe</button>
+            <a class="button secondary" href="../articles.html">Back to Archive</a>
+          </div>
+        </header>
+
+        <section class="article-metric-strip" aria-label="Power constraint key figures">
+          <div><span>Primary Bottleneck</span><strong>Power</strong><small>grid access and interconnection</small></div>
+          <div><span>Policy Node</span><strong>FERC</strong><small>large-load and co-location rules</small></div>
+          <div><span>Transmission Chain</span><strong>AI → Grid</strong><small>capex to power procurement</small></div>
+          <div><span>Research Lens</span><strong>Permits</strong><small>tariffs, cost allocation, siting</small></div>
+        </section>
+
+        <section class="article-disclaimer article-boundary">
+          <h2>Research Boundary</h2>
+          <p>
+            This note is general financial information and educational research only. It is not personal financial
+            advice, not a recommendation to buy, sell, hold, or subscribe to any security, and not a valuation opinion
+            for any individual investor. Sector and company references are used for research discussion only.
+          </p>
+        </section>
+
+        <section class="article-summary">
+          <h2>Key Takeaways</h2>
+          <ul>
+            <li>AI infrastructure is moving from a chip-supply story to a power-access story.</li>
+            <li>Data centers are becoming large-load industrial assets, not only digital infrastructure.</li>
+            <li>Grid interconnection, power procurement, tariffs, permitting, and cost allocation may become valuation variables for the AI capex cycle.</li>
+            <li>The second-order equity-market impact may flow through utilities, power equipment, grid infrastructure, nuclear, gas, storage, and data-center operators.</li>
+            <li>The main policy variables to watch are FERC large-load rules, state-level tariffs, grid interconnection reform, transmission buildout, energy incentives, and local permitting.</li>
+          </ul>
+        </section>
+
+        <section class="article-framework-chart" aria-label="AI power constraint framework">
+          <h2>Framework Map</h2>
+          <div class="mini-flow">
+            <span>AI Demand</span>
+            <span>Data-Center Capex</span>
+            <span>Power Procurement</span>
+            <span>Grid Interconnection</span>
+            <span>Policy Transmission</span>
+          </div>
+        </section>
+
+        <section class="article-source-map" aria-label="Research source map">
+          <div>
+            <p class="eyebrow">Reference Architecture</p>
+            <h2>How This Note Is Sourced</h2>
+            <p>
+              The framework uses public energy-agency research, federal regulatory proceedings, grid-policy materials,
+              company power-procurement examples, and Policy Alpha Research's own transmission framework. External
+              sources support the policy and infrastructure context; sector maps and scenario framing remain author
+              research judgments.
+            </p>
+          </div>
+          <div class="source-map-grid">
+            <a href="https://www.iea.org/reports/energy-and-ai/executive-summary" target="_blank" rel="noopener">
+              <span>IEA</span><strong>Data-center electricity demand outlook</strong>
+            </a>
+            <a href="https://www.energy.gov/oe/clean-energy-resources-meet-data-center-electricity-demand" target="_blank" rel="noopener">
+              <span>DOE</span><strong>Clean energy resources for data-center demand</strong>
+            </a>
+            <a href="https://ferc.gov/news-events/news/ferc-orders-action-co-location-issues-related-data-centers-running-ai" target="_blank" rel="noopener">
+              <span>FERC</span><strong>Large-load and co-location proceedings</strong>
+            </a>
+            <a href="https://www.energy.gov/oe/resource-adequacy" target="_blank" rel="noopener">
+              <span>DOE</span><strong>Resource adequacy and speed-to-power policy</strong>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-body">
+          <h2>Executive Summary</h2>
+          <p>
+            The AI trade has been dominated by compute. That made sense. The first bottleneck was access to advanced
+            GPUs, model-training clusters, and cloud capacity. In that phase, the market focused on semiconductors,
+            hyperscaler capex, and accelerator supply chains.
+          </p>
+          <p>
+            But the next bottleneck may be less digital and more physical. AI data centers need power. They also need
+            land, cooling, substations, transmission, interconnection approval, and local political permission. That
+            shifts part of the AI infrastructure story away from pure technology and toward energy policy.
+          </p>
+          <p>
+            This is the main point: <strong>AI infrastructure is becoming an energy policy trade.</strong>
+          </p>
+          <p>
+            The market may still describe the theme as AI capex. Policy Alpha Research views it as a transmission
+            chain: AI model demand leads to data-center capex, data-center capex requires power procurement, power
+            procurement depends on grid interconnection, grid interconnection drives utility capex, and utility capex
+            is governed by energy policy, permitting, tariffs, and cost allocation.
+          </p>
+          <blockquote class="research-quote">
+            <strong>The AI narrative is compute.</strong>
+            <strong>The infrastructure bottleneck is power.</strong>
+            <span>Policy Alpha Research · June 2026</span>
+          </blockquote>
+
+          <h2>Why This Theme Matters Now</h2>
+          <p>
+            The AI infrastructure debate is changing faster than the market narrative. In the early stage, the core
+            question was: who has enough GPUs? Now the question is broader: who can convert GPU commitments into
+            functioning infrastructure?
+          </p>
+          <p>
+            That requires power. It also requires grid capacity that the current regulatory system was not designed to
+            deliver at AI speed. The International Energy Agency estimates that global data-center electricity
+            consumption could more than double to around 945 TWh by 2030 in its base case. Estimates vary because AI
+            workloads, inference efficiency, chip performance, cooling technology, and utilization rates are still in
+            flux. But the directional signal is clear: data centers are becoming a major electricity-demand driver.
+          </p>
+          <p>
+            The more important shift is not only total demand, but load concentration and timing. AI campuses can be
+            very large, geographically clustered, and time-sensitive. A utility can absorb gradual demand growth across
+            a planning cycle. It cannot easily absorb a sudden queue of multi-hundred-megawatt or gigawatt-scale
+            projects requesting interconnection in the same region within the same short window.
+          </p>
+          <p>
+            This mismatch between AI's speed of commitment and the grid's speed of accommodation is where policy enters
+            the valuation story. Power is not allocated by market demand alone. It moves through regulated utilities,
+            grid operators, state commissions, FERC rulemaking, permitting processes, local politics, and cost-allocation
+            decisions.
+          </p>
+
+          <h2>From Cloud Capex to Power Procurement</h2>
+          <p>
+            Hyperscaler capex used to be discussed mainly through servers, chips, networking gear, and data-center
+            shells. That framework is incomplete now. The more useful lens is total infrastructure access. A company
+            needs accelerators, but it also needs the power envelope to use them. It needs grid interconnection,
+            redundancy, cooling, a local utility or power partner, and often long-term power purchase agreements,
+            behind-the-meter generation, co-location with generation assets, or a dedicated clean-energy strategy.
+          </p>
+          <p>
+            This changes how AI capex announcements should be read. A large data-center commitment is not only a demand
+            signal for semiconductors. It is also a demand signal for transmission and distribution upgrades,
+            substations, transformers, switchgear, backup power, cooling systems, power management, gas generation,
+            nuclear or small modular reactor options, storage, utility rate-case growth, and state-level permitting
+            decisions.
+          </p>
+          <p>
+            Policy Alpha Research separates AI infrastructure into three layers:
+          </p>
+          <div class="research-table layer-table">
+            <div class="research-table-row header">
+              <div class="research-table-cell">Layer</div>
+              <div class="research-table-cell">Scope</div>
+              <div class="research-table-cell">Analytical Question</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Compute</strong></div>
+              <div class="research-table-cell">GPUs, networking, servers, cloud clusters, training, and inference.</div>
+              <div class="research-table-cell accent">Who controls scarce compute capacity?</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Power</strong></div>
+              <div class="research-table-cell">Electricity supply, grid access, power procurement, reliability, and cooling.</div>
+              <div class="research-table-cell accent">Who can secure enough megawatts at the right site?</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Policy</strong></div>
+              <div class="research-table-cell">FERC rules, state utility regulation, tariffs, permitting, incentives, and local constraints.</div>
+              <div class="research-table-cell accent">Who receives permission, cost recovery, and interconnection priority?</div>
+            </div>
+          </div>
+          <p>
+            The compute layer gets the headline. The power layer determines whether the headline can become operating
+            capacity.
+          </p>
+
+          <h2>Grid Interconnection Is the New Bottleneck</h2>
+          <p>
+            The U.S. grid was not built for sudden AI load growth. It was built around a slower rhythm: population
+            growth, industrial demand, utility planning cycles, generation additions, transmission studies, and regulated
+            cost recovery. AI data centers move faster than that.
+          </p>
+          <p>
+            This creates a policy problem. If data centers receive accelerated grid access, who pays for the required
+            upgrades? The data-center customer? Existing ratepayers? The utility? A broader regional transmission
+            process? If large loads co-locate with generation assets, do they reduce pressure on the grid or shift costs
+            onto other users? If utilities create special tariffs for data centers, do those tariffs fairly allocate
+            costs or protect incumbents?
+          </p>
+          <p>
+            These questions are no longer theoretical. FERC has launched proceedings around co-location and large-load
+            issues related to AI data centers, including questions of reliability, tariff design, and fair cost
+            allocation. The policy issue is not whether AI demand exists. It is how quickly that demand can connect to
+            the grid without socializing the wrong costs or undermining reliability.
+          </p>
+
+          <h2>The Data Center Becomes an Industrial Asset</h2>
+          <p>
+            The phrase data center can make the asset sound clean and digital. AI data centers increasingly behave like
+            heavy industrial assets. They consume large amounts of electricity. They need cooling. They create localized
+            infrastructure stress. They may compete with manufacturing, households, and other commercial loads for grid
+            capacity. They can trigger political resistance when local communities worry about water usage, land use,
+            noise, emissions, or higher electricity bills.
+          </p>
+          <p>
+            This changes the policy treatment. A traditional software business scales through code. An AI infrastructure
+            business scales through physical inputs: chips, buildings, power, grid access, cooling, and regulatory
+            permission. That is why AI is starting to look less like a pure software cycle and more like an industrial
+            buildout.
+          </p>
+          <p>
+            This matters for valuation because industrial buildouts are not valued only on demand. They are valued on
+            execution, permitting, capex discipline, supply-chain reliability, and policy continuity. If AI demand is
+            strong but power access is delayed, revenue timing can slip. If power costs rise, margins can compress. If
+            utilities require expensive upgrades, capital intensity increases. If local regulators push back, site
+            selection becomes more difficult.
+          </p>
+
+          <h2>Who Is Exposed?</h2>
+          <p>
+            The power constraint extends well beyond the obvious AI companies. It creates a structured exposure map
+            across several parts of the capital markets.
+          </p>
+          <div class="research-table watchlist-table">
+            <div class="research-table-row header">
+              <div class="research-table-cell">Exposure</div>
+              <div class="research-table-cell">Potential Transmission</div>
+              <div class="research-table-cell">Risk Check</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Hyperscalers</strong></div>
+              <div class="research-table-cell">Cloud providers compete for GPUs, land, power contracts, interconnection slots, and operating capacity.</div>
+              <div class="research-table-cell accent">Capex commitments only become revenue if infrastructure connects on time.</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Data-center operators</strong></div>
+              <div class="research-table-cell">Operators with secured power and utility relationships may gain scarcity value.</div>
+              <div class="research-table-cell accent">Utility upgrade lead times and local permitting can delay monetization.</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Utilities</strong></div>
+              <div class="research-table-cell">Load growth can support rate-base expansion and transmission investment.</div>
+              <div class="research-table-cell accent">Regulators may resist cost socialization if data centers raise bills for existing customers.</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Power equipment</strong></div>
+              <div class="research-table-cell">Transformers, switchgear, substations, power management, and grid systems gain second-order demand.</div>
+              <div class="research-table-cell accent">Backlog quality matters more than AI-adjacent narrative.</div>
+            </div>
+            <div class="research-table-row">
+              <div class="research-table-cell"><strong>Generation and storage</strong></div>
+              <div class="research-table-cell">Gas, nuclear, SMRs, batteries, and firm clean power become part of the data-center procurement debate.</div>
+              <div class="research-table-cell accent">Deployment timelines and regulatory approval are the constraint.</div>
+            </div>
+          </div>
+          <p>
+            This is not a recommendation list. It is a policy-transmission map. The discipline is to separate direct AI
+            revenue from indirect AI infrastructure exposure, and to distinguish actual contracted load growth from
+            speculative AI-adjacent positioning.
+          </p>
+
+          <h2>Policy Variables to Watch</h2>
+          <p>
+            The next phase of the AI infrastructure trade will be shaped by policy signals as much as earnings calls.
+            The most important variables are FERC large-load and co-location rules, state-level data-center tariffs,
+            interconnection reform, transmission buildout, energy incentives, nuclear and SMR licensing, gas generation
+            approvals, water use, and local permitting.
+          </p>
+          <p>
+            The policy watchlist is important because AI infrastructure is no longer constrained by private capital
+            alone. It is constrained by public permission.
+          </p>
+
+          <h2>Bull and Bear Scenarios</h2>
+          <div class="signals-grid">
+            <div class="signal-box bull">
+              <h3>Bull Case: Fast Grid Accommodation</h3>
+              <ul>
+                <li>FERC and state regulators clarify large-load interconnection rules.</li>
+                <li>Utilities receive clear cost-recovery pathways.</li>
+                <li>Transmission investment increases and hyperscalers secure long-term power supply.</li>
+                <li>Power equipment, grid infrastructure, and secured data-center capacity gain scarcity value.</li>
+              </ul>
+            </div>
+            <div class="signal-box bear">
+              <h3>Bear Case: Affordability and Reliability Backlash</h3>
+              <ul>
+                <li>Regulators and local communities focus on electricity bills, water usage, and grid reliability.</li>
+                <li>Data-center approvals slow or receive tougher tariffs.</li>
+                <li>Utilities face cost-recovery uncertainty.</li>
+                <li>Hyperscalers shift projects behind the meter or to regions with looser constraints.</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            The base case is probably the most realistic: AI power demand keeps growing, but the market starts to price
+            regional friction.
+          </p>
+
+          <h2>The Capital-Flow Implication</h2>
+          <p>
+            The first AI trade was concentrated. It rewarded the companies closest to accelerators, cloud capex, and
+            model deployment. The dominant valuation question was: who has the compute?
+          </p>
+          <p>
+            The next phase may broaden. If the bottleneck moves toward power, capital may rotate toward companies that
+            solve the physical constraints of AI infrastructure. That does not mean every utility or power-equipment
+            company becomes an AI winner. The analytical work is to distinguish between actual contracted load growth,
+            rate-base expansion tied to identifiable infrastructure investment, order backlog with direct linkage to
+            grid upgrades, secured power capacity with credible delivery timelines, and speculative AI-adjacent
+            positioning without direct revenue exposure.
+          </p>
+          <p>
+            The harder question is timing. Hyperscaler capex announcements move quickly. Grid interconnection, utility
+            rate cases, transmission approvals, and permitting processes do not. The gap between announced AI
+            infrastructure investment and the physical capacity to power it is where execution risk lives.
+          </p>
+
+          <h2>Policy Alpha View</h2>
+          <p>
+            AI is moving from a software story to an infrastructure story. Models, chips, and cloud capex remain
+            important inputs. But the constraint that determines whether AI demand converts into functioning capacity may
+            now be power access.
+          </p>
+          <p>
+            A data center without reliable electricity is not an AI factory. It is a building with expensive equipment
+            inside.
+          </p>
+          <p>
+            That is why energy policy now belongs inside the AI infrastructure discussion. Grid interconnection, tariffs,
+            transmission, generation mix, and local permitting are no longer background details. They are part of the
+            valuation chain, and they operate on timelines that are fundamentally slower than the rate at which
+            hyperscalers can commit capital.
+          </p>
+          <p>
+            The strongest version of the AI infrastructure thesis requires more than demand. It requires enough power,
+            delivered in the right places, at the right cost, on the right timeline, with enough regulatory support to
+            survive the political process of cost allocation and local approval.
+          </p>
+          <p>
+            The AI narrative is compute. The infrastructure bottleneck is power. The policy question is who gets
+            connected first.
+          </p>
+
+          <h2>Watch Signals</h2>
+          <div class="signals-grid">
+            <div class="signal-box bull">
+              <h3>Upgrade Signals</h3>
+              <ul>
+                <li>Faster FERC or regional grid-operator approval for large-load interconnection.</li>
+                <li>State-level data-center tariffs that clarify cost allocation without blocking demand.</li>
+                <li>Hyperscaler power agreements with credible delivery timelines.</li>
+                <li>Utility capex plans tied to contracted data-center load.</li>
+                <li>Faster transformer, switchgear, and substation deployment.</li>
+                <li>Nuclear, SMR, gas, or storage projects linked to data-center demand.</li>
+              </ul>
+            </div>
+            <div class="signal-box bear">
+              <h3>Downgrade Signals</h3>
+              <ul>
+                <li>Local backlash over electricity bills, water usage, or grid reliability.</li>
+                <li>Data-center moratoriums or restrictive state-level rules.</li>
+                <li>Delays in transmission or interconnection queues.</li>
+                <li>Utilities unable to recover upgrade costs.</li>
+                <li>Hyperscaler capex slowing because power access cannot keep pace.</li>
+                <li>AI workload efficiency gains that reduce expected power-demand growth.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="related-research">
+          <h2>Related Research</h2>
+          <div class="related-grid">
+            <a href="nvidia-at-the-tollgate.html"><span>Deep Research</span><strong>NVIDIA at the Tollgate</strong></a>
+            <a href="the-next-ai-race-wont-be-won-by-the-smartest-model.html"><span>AI Infrastructure</span><strong>The Next AI Race</strong></a>
+            <a href="musk-stack-from-code-to-cosmos.html"><span>Policy Transmission</span><strong>The Musk Stack</strong></a>
+            <a href="../themes.html"><span>Connected Themes</span><strong>AI Infrastructure, Grid, Energy Policy</strong></a>
+          </div>
+        </section>
+
+        <section class="article-references">
+          <h2>Selected Public References</h2>
+          <ul>
+            <li><a href="https://www.iea.org/reports/energy-and-ai/executive-summary" target="_blank" rel="noopener">International Energy Agency - Energy and AI, Executive Summary</a></li>
+            <li><a href="https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai" target="_blank" rel="noopener">International Energy Agency - Energy supply for AI</a></li>
+            <li><a href="https://www.energy.gov/oe/clean-energy-resources-meet-data-center-electricity-demand" target="_blank" rel="noopener">U.S. Department of Energy - Clean Energy Resources to Meet Data Center Electricity Demand</a></li>
+            <li><a href="https://www.energy.gov/oe/resource-adequacy" target="_blank" rel="noopener">U.S. Department of Energy - Resource Adequacy and large-load demand growth</a></li>
+            <li><a href="https://ferc.gov/news-events/news/ferc-orders-action-co-location-issues-related-data-centers-running-ai" target="_blank" rel="noopener">Federal Energy Regulatory Commission - Co-location issues related to AI data centers</a></li>
+            <li><a href="https://d1io3yog0oux5.cloudfront.net/_a4e6cd39306846199c937321539f3d06/equinix/news/2025-08-14_Equinix_Collaborates_with_Leading_Alternative_1079.pdf" target="_blank" rel="noopener">Equinix - Advanced nuclear energy collaboration press release</a></li>
+          </ul>
+          <p>
+            Source note: public references support the energy, regulatory, and infrastructure context. Scenario framing,
+            sector mapping, and watch signals are Policy Alpha Research judgments and should not be treated as
+            securities recommendations.
+          </p>
+        </section>
+
+        <section class="article-disclaimer">
+          <h2>Disclaimer</h2>
+          <p>
+            This insight is produced by Elena Zhang / Policy Alpha Research for informational and educational purposes
+            only. Nothing in this document constitutes investment advice, a solicitation to buy or sell any security, or
+            a recommendation to take any particular investment action. The author may hold positions in securities
+            discussed.
+          </p>
+          <p>
+            Policy Alpha Research is not an Australian Financial Services licensee. Sector references, company
+            references, scenario frameworks, framework labels, and watch signals are research tools only and should not
+            be treated as securities recommendations or advice for any individual reader.
+          </p>
+          <p>
+            All views may change without notice as new information becomes available. Past performance, historical data,
+            policy observations, and research judgments do not guarantee future results. Readers should obtain
+            independent financial, legal, and tax advice before making any investment decision.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Policy Alpha Research</span>
+      <span>Research by Elena Zhang</span>
+      <a href="../index.html#disclaimer">Risk Disclosure</a>
+    </footer>
+    <script src="../script.js?v=20260605-power-constraint-v84"></script>
+  </body>
+</html>
