@@ -7,13 +7,24 @@
     <link>https://policyalpharesearch.com/articles.html</link>
     <description>Independent policy-aware macro and equity research on strategic assets, AI infrastructure, critical minerals, sector rotation, and portfolio construction.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://policyalpharesearch.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://policyalpharesearch.com/assets/app-icon-512.png</url>
       <title>Policy Alpha Research</title>
       <link>https://policyalpharesearch.com/</link>
     </image>
+    <item>
+      <title>The Power Constraint</title>
+      <link>https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html</link>
+      <guid isPermaLink="true">https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+      <category>AI Infrastructure</category>
+      <category>Energy Policy</category>
+      <category>Grid Interconnection</category>
+      <category>Data Centers</category>
+      <description>AI infrastructure is moving from a chip-supply story to a power-access story, where grid interconnection, tariffs, permitting, and energy policy become valuation variables.</description>
+    </item>
     <item>
       <title>The Musk Stack: From Code to Cosmos</title>
       <link>https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html</link>

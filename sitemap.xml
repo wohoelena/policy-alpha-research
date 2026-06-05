@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://policyalpharesearch.com/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://policyalpharesearch.com/zh.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/" />
@@ -19,23 +19,105 @@
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/zh-articles.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.86</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/zh-hant-articles.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/ja-articles.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/ko-articles.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/de-articles.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/fr-articles.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.86</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-articles.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/zh-hant-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/ja-articles.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/ko-articles.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/de-articles.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/fr-articles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/themes.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/themes.html" />
@@ -71,22 +153,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/methodology.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-methodology.html" />
   </url>
-  <url>
-    <loc>https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.98</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
-  </url>
-  <url>
-    <loc>https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.93</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
-  </url>
+
+
   <url>
     <loc>https://policyalpharesearch.com/reports/musk-stack-full-report.pdf</loc>
     <lastmod>2026-06-03</lastmod>
@@ -99,22 +167,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.74</priority>
   </url>
-  <url>
-    <loc>https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
-  </url>
-  <url>
-    <loc>https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
-  </url>
+
+
   <url>
     <loc>https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf</loc>
     <lastmod>2026-05-26</lastmod>
@@ -122,52 +176,396 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
   </url>
   <url>
-    <loc>https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.92</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-lithium-is-no-longer-just-an-ev-trade.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.88</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-esg-is-no-longer-a-values-framework.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html" />
   </url>
   <url>
     <loc>https://policyalpharesearch.com/disclosures.html</loc>
@@ -184,5 +582,173 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/disclosures.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/zh-disclosures.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-nvidia-at-the-tollgate.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
   </url>
 </urlset>
