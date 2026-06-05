@@ -2855,7 +2855,6 @@ h2 {
   border: 1px solid rgba(214, 168, 79, 0.22);
   border-radius: 10px;
   padding: clamp(28px, 5vw, 54px) clamp(24px, 5vw, 56px);
-  padding-right: clamp(260px, 30vw, 360px);
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(7, 9, 11, 0.98) 0%, rgba(7, 9, 11, 0.9) 55%, rgba(52, 35, 7, 0.68) 100%),
@@ -2882,17 +2881,12 @@ h2 {
 }
 
 .power-constraint-hero::after {
-  content: "POWER";
-  top: clamp(112px, 15vw, 170px);
-  right: clamp(24px, 5vw, 54px);
-  color: rgba(214, 168, 79, 0.24);
-  font-size: clamp(72px, 9vw, 118px);
-  line-height: 0.8;
+  content: none;
 }
 
 .power-constraint-hero h1 {
-  max-width: 680px;
-  font-size: clamp(54px, 8vw, 108px);
+  max-width: 980px;
+  font-size: clamp(48px, 7.2vw, 92px);
   letter-spacing: 0;
 }
 
@@ -4686,14 +4680,11 @@ h2 {
 
   .power-constraint-hero h1 {
     max-width: 100%;
-    font-size: clamp(44px, 14vw, 66px);
+    font-size: clamp(40px, 11vw, 58px);
   }
 
   .power-constraint-hero::after {
-    top: 42px;
-    right: 12px;
-    font-size: 58px;
-    opacity: 0.75;
+    display: none;
   }
 
   .power-constraint-hero .article-meta-line {
@@ -5618,6 +5609,10 @@ body {
 }
 
 @media (max-width: 980px) {
+  .power-constraint-hero::after {
+    display: none;
+  }
+
   .power-constraint-article .exposure-table {
     display: block;
     overflow-x: auto;
