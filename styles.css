@@ -4367,7 +4367,7 @@ h2 {
   }
 
   body {
-    padding-bottom: calc(86px + env(safe-area-inset-bottom));
+    padding-bottom: calc(70px + env(safe-area-inset-bottom));
   }
 
   section,
@@ -4381,21 +4381,24 @@ h2 {
 
   .mobile-app-nav {
     position: fixed;
-    right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom));
-    left: 12px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 88;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 3px;
-    padding: 6px;
-    border: 1px solid rgba(214, 168, 79, 0.28);
-    border-radius: 16px;
+    gap: 2px;
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid rgba(214, 168, 79, 0.24);
+    border-radius: 16px 16px 0 0;
     background:
-      linear-gradient(180deg, rgba(18, 22, 25, 0.94), rgba(7, 9, 11, 0.96)),
-      rgba(7, 9, 11, 0.96);
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.42);
-    backdrop-filter: blur(18px);
+      linear-gradient(180deg, rgba(18, 22, 25, 0.98), rgba(7, 9, 11, 0.98)),
+      rgba(7, 9, 11, 0.98);
+    box-shadow: 0 -18px 44px rgba(0, 0, 0, 0.42);
+    transform: translateZ(0);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
 
   .mobile-app-nav a,
@@ -4405,9 +4408,9 @@ h2 {
     place-items: center;
     gap: 1px;
     min-width: 0;
-    min-height: 44px;
+    min-height: 42px;
     border: 0;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 4px 2px;
     background: transparent;
     color: rgba(226, 234, 235, 0.72);
@@ -4780,10 +4783,12 @@ h2 {
   }
 
   .power-constraint-article .mini-flow span:not(:last-child)::after {
+    content: "↓";
     top: auto;
-    right: 50%;
+    right: auto;
+    left: 50%;
     bottom: -14px;
-    transform: translateX(50%) rotate(90deg);
+    transform: translateX(-50%);
   }
 
   .transmission-node {
@@ -5543,10 +5548,11 @@ body {
   }
 
   .theme-map-row div:not(:last-child)::after {
+    content: "↓";
     top: auto;
     right: 22px;
     bottom: -11px;
-    transform: rotate(90deg);
+    transform: none;
   }
 
   .snapshot-grid div,
