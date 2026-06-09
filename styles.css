@@ -2846,6 +2846,10 @@ h2 {
   content: "SPCX";
 }
 
+.ehang-hero::after {
+  content: "eVTOL";
+}
+
 .power-constraint-article {
   max-width: 1120px;
 }
@@ -5671,5 +5675,206 @@ body {
     justify-content: center;
     padding-inline: 6px;
     font-size: 10px;
+  }
+}
+
+.ehang-article .ehang-chart-panel {
+  align-items: stretch;
+}
+
+.ehang-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ehang-chart-card {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  border: 1px solid rgba(216, 174, 79, 0.28);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(7, 9, 11, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.ehang-chart-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  letter-spacing: 0;
+}
+
+.ehang-chart-card p {
+  min-height: 4.5em;
+  margin: 0 0 0.95rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.ehang-chart-card svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ehang-chart-card .chart-grid {
+  stroke: rgba(223, 231, 235, 0.1);
+  stroke-width: 1;
+}
+
+.ehang-chart-card .chart-axis {
+  stroke: rgba(223, 231, 235, 0.22);
+  stroke-width: 1;
+}
+
+.ehang-chart-card .chart-label {
+  fill: #aab5ba;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ehang-chart-card .chart-value {
+  fill: #f5f1e6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ehang-valuation-snapshot,
+.ehang-risk-dashboard {
+  margin: clamp(1.4rem, 3vw, 2.25rem) 0;
+  padding: clamp(1.15rem, 2.4vw, 1.55rem);
+  border: 1px solid rgba(216, 174, 79, 0.28);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(216, 174, 79, 0.14), transparent 36%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018)),
+    rgba(7, 9, 11, 0.8);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.ehang-snapshot-heading,
+.ehang-risk-heading {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.ehang-snapshot-heading h3,
+.ehang-risk-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+  letter-spacing: 0;
+}
+
+.ehang-snapshot-heading p:not(.eyebrow),
+.ehang-risk-heading p:not(.eyebrow) {
+  margin: 0;
+  max-width: 68ch;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.ehang-scenario-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.ehang-scenario-card,
+.ehang-risk-card {
+  min-width: 0;
+  border: 1px solid rgba(216, 174, 79, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.045);
+  padding: 1rem;
+}
+
+.ehang-scenario-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 190px;
+}
+
+.ehang-scenario-card.bear {
+  border-color: rgba(216, 107, 107, 0.36);
+}
+
+.ehang-scenario-card.base {
+  border-color: rgba(216, 174, 79, 0.4);
+}
+
+.ehang-scenario-card.bull {
+  border-color: rgba(88, 208, 165, 0.34);
+}
+
+.ehang-scenario-card span,
+.ehang-risk-card span {
+  display: block;
+  width: fit-content;
+  border-radius: 999px;
+  background: rgba(216, 174, 79, 0.14);
+  color: var(--gold);
+  padding: 0.28rem 0.62rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ehang-scenario-card strong,
+.ehang-risk-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.ehang-scenario-card small,
+.ehang-risk-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.ehang-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.ehang-risk-card {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+}
+
+@media (max-width: 900px) {
+  .ehang-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ehang-chart-card {
+    padding: 1.15rem;
+  }
+
+  .ehang-chart-card p {
+    min-height: 0;
+  }
+
+  .ehang-scenario-cards,
+  .ehang-risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ehang-scenario-card {
+    min-height: 0;
   }
 }

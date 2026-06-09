@@ -751,4 +751,30 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-musk-stack-from-code-to-cosmos.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html" />
   </url>
+  <url>
+    <loc>https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.93</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://policyalpharesearch.com/articles/zh-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://policyalpharesearch.com/articles/zh-hant-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://policyalpharesearch.com/articles/ja-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://policyalpharesearch.com/articles/ko-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://policyalpharesearch.com/articles/de-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://policyalpharesearch.com/articles/fr-from-certification-to-cash-flow-evtol.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html" />
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/reports/ehang-evtol-policy-alpha-june-2026.pdf</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://policyalpharesearch.com/reports/ehang-public-source-dcf-model-policy-alpha.xlsx</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
 </urlset>

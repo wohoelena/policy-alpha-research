@@ -126,6 +126,15 @@ function initLanguageSwitchFallback() {
       en: "nvidia-at-the-tollgate.html",
       "zh-cn": "zh-nvidia-at-the-tollgate.html",
     },
+    "from-certification-to-cash-flow-evtol.html": {
+      en: "from-certification-to-cash-flow-evtol.html",
+      "zh-cn": "zh-from-certification-to-cash-flow-evtol.html",
+      "zh-hant": "zh-hant-from-certification-to-cash-flow-evtol.html",
+      ja: "ja-from-certification-to-cash-flow-evtol.html",
+      ko: "ko-from-certification-to-cash-flow-evtol.html",
+      de: "de-from-certification-to-cash-flow-evtol.html",
+      fr: "fr-from-certification-to-cash-flow-evtol.html",
+    },
   };
 
   function baseArticleFile(name) {
@@ -1152,65 +1161,65 @@ function getLatestInsight() {
   const languageKey = getCurrentLanguageKey();
   const localized = {
     zh: {
-      label: "New Insight",
-      title: "电力约束",
-      summary: "AI 基础设施正在从芯片供给叙事转向电力接入、并网、许可和能源政策约束。",
+      label: "最新研究",
+      title: "从认证到现金流",
+      summary: "低空经济正在从政策叙事进入商业化测试。亿航智能提供了一个观察认证、运营、现金流和 DCF 压力测试的早期公开市场案例。",
       primary: "阅读文章",
       secondary: "稍后再看",
-      article: "zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "zh-from-certification-to-cash-flow-evtol.html",
     },
     "zh-hant": {
-      label: "New Insight",
-      title: "電力約束",
-      summary: "AI 基礎設施正在從晶片供給敘事轉向電力接入、併網、許可和能源政策約束。",
+      label: "最新研究",
+      title: "從認證到現金流",
+      summary: "低空經濟正在從政策敘事進入商業化測試。億航智能提供了一個觀察認證、營運、現金流和 DCF 壓力測試的早期公開市場案例。",
       primary: "閱讀文章",
       secondary: "稍後再看",
-      article: "zh-hant-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "zh-hant-from-certification-to-cash-flow-evtol.html",
     },
     ja: {
       label: "New Insight",
-      title: "電力制約",
-      summary: "AIインフラはチップ供給の物語から、電力アクセス、系統接続、許認可、エネルギー政策の制約へ移行している。",
+      title: "認証からキャッシュフローへ",
+      summary: "低空経済は政策ナラティブから商業化テストへ移行しています。EHang は認証、運航、キャッシュフロー、DCFストレステストを観察する初期ケースです。",
       primary: "記事を読む",
       secondary: "あとで見る",
-      article: "ja-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "ja-from-certification-to-cash-flow-evtol.html",
     },
     ko: {
       label: "New Insight",
-      title: "전력 제약",
-      summary: "AI 인프라는 칩 공급 서사에서 전력 접근, 계통 접속, 허가, 에너지 정책 제약으로 이동하고 있다.",
+      title: "인증에서 현금흐름으로",
+      summary: "저고도 경제는 정책 서사에서 상업화 테스트로 이동하고 있습니다. EHang은 인증, 운영, 현금흐름, DCF 스트레스 테스트를 관찰하는 초기 공개시장 사례입니다.",
       primary: "글 읽기",
       secondary: "나중에 보기",
-      article: "ko-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "ko-from-certification-to-cash-flow-evtol.html",
     },
     de: {
       label: "New Insight",
-      title: "The Power Constraint",
-      summary: "AI-Infrastruktur bewegt sich von einer Chip-Supply-Story zu Stromzugang, Netzanschluss, Genehmigungen und Energiepolitik.",
+      title: "Von Zertifizierung zu Cashflow",
+      summary: "Die Low-Altitude Economy bewegt sich von politischer Erzählung zum Kommerzialisierungstest. EHang ist ein früher Fall für Zertifizierung, Betrieb, Cashflow und DCF-Stresstest.",
       primary: "Artikel lesen",
       secondary: "Später",
-      article: "de-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "de-from-certification-to-cash-flow-evtol.html",
     },
     fr: {
       label: "New Insight",
-      title: "The Power Constraint",
-      summary: "L’infrastructure IA passe d’un récit de disponibilité des puces à une contrainte d’accès à l’électricité, de réseau, de permis et de politique énergétique.",
+      title: "De la certification au cash-flow",
+      summary: "L’économie de basse altitude passe du récit politique au test de commercialisation. EHang est un premier cas pour suivre certification, opérations, cash-flow et stress test DCF.",
       primary: "Lire l’article",
       secondary: "Plus tard",
-      article: "fr-the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "fr-from-certification-to-cash-flow-evtol.html",
     },
     en: {
       label: "New Insight",
-      title: "The Power Constraint",
-      summary: "AI infrastructure is moving from a chip-supply story to a power-access and energy-policy story.",
+      title: "From Certification to Cash Flow",
+      summary: "The low-altitude economy is moving from policy narrative to commercialization test. EHang offers an early public-market case for certification, operations, cash flow, and DCF stress testing.",
       primary: "Read Note",
       secondary: "Later",
-      article: "the-power-constraint-ai-infrastructure-energy-policy-trade.html",
+      article: "from-certification-to-cash-flow-evtol.html",
     },
   };
   const insight = localized[languageKey] || localized.en;
   return {
-    id: "the-power-constraint-20260605",
+    id: "ehang-evtol-commercialization-20260609",
     ...insight,
     url: `${prefix}articles/${insight.article}`,
   };
@@ -1220,15 +1229,13 @@ function showInsightUpdate() {
   if (!document.body || window.location.hash === "#insights") return;
   const latestInsight = getLatestInsight();
   const languageKey = getCurrentLanguageKey();
-  const storageKey = `policy-alpha-insight-update-seen-${languageKey}`;
+  const storageKey = `policy-alpha-insight-update-seen-${latestInsight.id}-${languageKey}`;
   const legacyStorageKey = `policy-alpha-seen-${latestInsight.id}-${languageKey}`;
   const hasSeenAnyInsightUpdate = () => {
     try {
       if (window.localStorage?.getItem(storageKey) === "1") return true;
       if (window.localStorage?.getItem(legacyStorageKey) === "1") return true;
-      return Object.keys(window.localStorage || {}).some(
-        (key) => key.startsWith("policy-alpha-seen-") && key.endsWith(`-${languageKey}`),
-      );
+      return false;
     } catch {
       return false;
     }

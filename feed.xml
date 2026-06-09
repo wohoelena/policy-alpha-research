@@ -7,13 +7,24 @@
     <link>https://policyalpharesearch.com/articles.html</link>
     <description>Independent policy-aware macro and equity research on strategic assets, AI infrastructure, critical minerals, sector rotation, and portfolio construction.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://policyalpharesearch.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://policyalpharesearch.com/assets/app-icon-512.png</url>
       <title>Policy Alpha Research</title>
       <link>https://policyalpharesearch.com/</link>
     </image>
+    <item>
+      <title>From Certification to Cash Flow</title>
+      <link>https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html</link>
+      <guid isPermaLink="true">https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html</guid>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Low-Altitude Economy</category>
+      <category>eVTOL</category>
+      <category>EHang</category>
+      <category>China Industrial Policy</category>
+      <description>EHang is an early public-market case study for whether China's low-altitude economy can move from certification milestones to repeatable operations, revenue quality, and cash-flow conversion.</description>
+    </item>
     <item>
       <title>The Power Constraint</title>
       <link>https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html</link>
