@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#07090b"/>
+  <rect x="24" y="24" width="1152" height="582" rx="14" fill="#0b0c09" stroke="#d8ae4f" stroke-width="2"/>
+  <path d="M560 0h640v630H760c-80-110-120-220-120-330 0-110-30-210-80-300Z" fill="#2a2000" opacity=".55"/>
+  <g opacity=".18" stroke="#325658" stroke-width="1">
+    <path d="M0 180h1200M0 380h1200M240 0v630M620 0v630M960 0v630"/>
+  </g>
+  <text x="56" y="96" fill="#d8ae4f" font-size="40" font-family="Inter, Arial, sans-serif" font-weight="800">PA</text>
+  <text x="118" y="76" fill="#d8ae4f" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="800">POLICY ALPHA RESEARCH</text>
+  <text x="118" y="112" fill="#9aa6ad" font-size="18" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif">低空经济研究</text>
+  <text x="980" y="76" fill="#d8ae4f" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="800">ISSUE 05</text>
+  <text x="980" y="112" fill="#9aa6ad" font-size="18" font-family="Inter, Arial, sans-serif">2026.06</text>
+  <text x="72" y="252" fill="#f2f0e8" font-size="68" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif" font-weight="650"><tspan x="72" dy="0">从认证到现金流</tspan></text>
+  <text x="72" y="352" fill="#d8ae4f" font-size="26" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif" font-weight="600"><tspan x="72" dy="0">亿航智能 · eVTOL 商业化 · DCF 压力测试</tspan></text>
+  <text x="72" y="510" fill="#9aa6ad" font-size="18" font-family="Inter, Arial, sans-serif">Elena Zhang · Policy Alpha Research</text>
+  <text x="420" y="510" fill="#d8ae4f" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="800">policyalpharesearch.com</text>
+</svg>
