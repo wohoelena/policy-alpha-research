@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050807"/>
+      <stop offset="0.58" stop-color="#11120b"/>
+      <stop offset="1" stop-color="#2a210f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="28%" r="58%">
+      <stop offset="0" stop-color="#c89b3c" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#c89b3c" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#c89b3c" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { font-family: 'Noto Sans SC','PingFang SC','Microsoft YaHei','SimHei','Inter','Arial',sans-serif; }
+      .gold { fill:#d6a83d; }
+      .muted { fill:#8f9699; }
+      .title { fill:#f4f0e7; font-weight:500; letter-spacing:0; }
+      .sub { fill:#d6a83d; font-weight:600; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" rx="0" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="18" y="18" width="1164" height="594" rx="12" fill="none" stroke="#c89b3c" stroke-width="2"/>
+  <text x="52" y="86" class="gold" font-size="40" font-weight="700">PA</text>
+  <text x="116" y="72" class="gold" font-size="26" font-weight="700">POLICY ALPHA RESEARCH</text>
+  <text x="116" y="106" class="muted" font-size="22">Policy Transmission Series</text>
+  <text x="940" y="72" class="gold" font-size="24" font-weight="700">ISSUE 06</text>
+  <text x="940" y="106" class="muted" font-size="21">2026.06</text>
+  <text x="64" y="270" class="title" font-size="54">
+    <tspan x="64" y="270">La politique industrielle</tspan><tspan x="64" y="340">revalorise les champions mondiaux</tspan>
+  </text>
+  <text x="64" y="415" class="sub" font-size="30">Capacité stratégique · chaînes d’approvisionnement · capital public</text>
+  <line x1="48" y1="500" x2="1152" y2="500" stroke="#b58a2a" stroke-width="1" opacity="0.55"/>
+  <text x="48" y="558" class="muted" font-size="21">Elena Zhang · Policy Alpha Research</text>
+  <text x="858" y="558" class="gold" font-size="28" font-weight="700">policyalpharesearch.com</text>
+</svg>
