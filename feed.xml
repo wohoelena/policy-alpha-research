@@ -7,13 +7,24 @@
     <link>https://policyalpharesearch.com/articles.html</link>
     <description>Independent policy-aware macro and equity research on strategic assets, AI infrastructure, critical minerals, sector rotation, and portfolio construction.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://policyalpharesearch.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://policyalpharesearch.com/assets/app-icon-512.png</url>
       <title>Policy Alpha Research</title>
       <link>https://policyalpharesearch.com/</link>
     </image>
+    <item>
+      <title>Robot Economics: The Cost per Useful Hour</title>
+      <link>https://policyalpharesearch.com/articles/robot-economics-when-do-humanoid-robots-become-cheaper.html</link>
+      <guid isPermaLink="true">https://policyalpharesearch.com/articles/robot-economics-when-do-humanoid-robots-become-cheaper.html</guid>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+      <author>policyalpharesearch@gmail.com (Elena Zhang)</author>
+      <category>Robot Economics</category>
+      <category>Industrial Automation</category>
+      <category>Humanoid Robots</category>
+      <description>The economic test for humanoid robots is not the demo. It is cost per autonomous, quality-adjusted useful hour.</description>
+    </item>
         <item>
       <title>The Return of Industrial Policy Is Repricing Global Champions</title>
       <link>https://policyalpharesearch.com/articles/industrial-policy-global-champions.html</link>

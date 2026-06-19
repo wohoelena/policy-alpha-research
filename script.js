@@ -1171,69 +1171,68 @@ function getLatestInsight() {
   const localized = {
     zh: {
       label: "最新研究",
-      title: "产业政策正在重写全球龙头估值",
-      summary: "战略产能、供应链安全和公共资本，正在半导体、AI 电力基础设施、关键矿产和清洁技术制造中成为估值变量。",
+      title: "机器人经济学：每个有效工作小时的成本",
+      summary: "人形机器人的经济测试不是演示视频，而是每个自主、合格、可重复有效小时的全成本。",
       primary: "阅读文章",
       secondary: "稍后再看",
-      article: "zh-industrial-policy-global-champions.html",
+      article: "zh-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     "zh-hant": {
       label: "最新研究",
-      title: "產業政策正在重寫全球龍頭估值",
-      summary: "戰略產能、供應鏈安全和公共資本，正在半導體、AI 電力基礎設施、關鍵礦產和清潔技術製造中成为估值變數。",
-      primary: "阅读文章",
-      secondary: "稍后再看",
-      article: "zh-hant-industrial-policy-global-champions.html",
+      title: "機器人經濟學：每個有效工作小時的成本",
+      summary: "人形機器人的經濟測試不是展示影片，而是每個自主、合格、可重複有效小時的全成本。",
+      primary: "閱讀文章",
+      secondary: "稍後再看",
+      article: "zh-hant-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     ja: {
       label: "New Insight",
-      title: "産業政策がグローバル企業を再評価している",
-      summary: "戦略的生産能力、供給網安全保障、公的資本が、半導体、AI電力インフラ、重要鉱物、クリーン技術製造の評価変数になっています。",
+      title: "ロボット経済学：有効稼働時間あたりコスト",
+      summary: "ヒューマノイドの経済テストはデモではなく、自律的で品質調整後の有効時間あたり全コストです。",
       primary: "記事を読む",
       secondary: "あとで見る",
-      article: "ja-industrial-policy-global-champions.html",
+      article: "ja-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     ko: {
       label: "New Insight",
-      title: "산업정책이 글로벌 챔피언을 재평가하고 있다",
-      summary: "전략적 생산능력, 공급망 안보, 공공자본이 반도체, AI 전력 인프라, 핵심 광물, 클린테크 제조의 밸류에이션 변수가 되고 있습니다.",
+      title: "로봇 경제학: 유효 작업시간당 비용",
+      summary: "휴머노이드의 경제 테스트는 데모가 아니라 자율적이고 품질 조정된 유효 시간당 총비용입니다.",
       primary: "글 읽기",
       secondary: "나중에 보기",
-      article: "ko-industrial-policy-global-champions.html",
+      article: "ko-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     de: {
       label: "New Insight",
-      title: "Industriepolitik bewertet globale Champions neu",
-      summary: "Strategische Kapazität, Lieferkettensicherheit und öffentliches Kapital werden Bewertungsvariablen in Halbleitern, KI-Strominfrastruktur, kritischen Rohstoffen und Clean-Tech-Fertigung.",
+      title: "Robot Economics: Kosten pro produktiver Stunde",
+      summary: "Der ökonomische Test für Humanoide ist nicht das Demo-Video, sondern die Vollkosten je autonome, qualitätsbereinigte produktive Stunde.",
       primary: "Artikel lesen",
       secondary: "Später",
-      article: "de-industrial-policy-global-champions.html",
+      article: "de-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     fr: {
       label: "New Insight",
-      title: "La politique industrielle revalorise les champions mondiaux",
-      summary: "Capacité stratégique, sécurité des chaînes et capital public deviennent des variables de valorisation dans les semi-conducteurs, l’infrastructure électrique IA, les matières critiques et la clean-tech.",
+      title: "Robot Economics : le coût par heure utile",
+      summary: "Le test économique des humanoïdes n'est pas la démonstration, mais le coût complet par heure autonome, utile et ajustée de la qualité.",
       primary: "Lire l’article",
       secondary: "Plus tard",
-      article: "fr-industrial-policy-global-champions.html",
+      article: "fr-robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
     en: {
       label: "New Insight",
-      title: "Industrial Policy Is Repricing Global Champions",
-      summary: "Strategic capacity, supply-chain security, and public capital are becoming valuation variables across semiconductors, AI power infrastructure, critical minerals, and clean-tech manufacturing.",
+      title: "Robot Economics: The Cost per Useful Hour",
+      summary: "The economic test for humanoid robots is not the demo. It is cost per autonomous, quality-adjusted useful hour.",
       primary: "Read Note",
       secondary: "Later",
-      article: "industrial-policy-global-champions.html",
+      article: "robot-economics-when-do-humanoid-robots-become-cheaper.html",
     },
   };
   const insight = localized[languageKey] || localized.en;
   return {
-    id: "industrial-policy-global-champions-20260616",
+    id: "robot-economics-20260619",
     ...insight,
     url: `${prefix}articles/${insight.article}`,
   };
 }
-
 function showInsightUpdate() {
   if (!document.body || window.location.hash === "#insights") return;
   const latestInsight = getLatestInsight();

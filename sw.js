@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v100";
+const CACHE_NAME = "policy-alpha-research-v101-robot-insight";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -51,6 +51,13 @@ const CORE_ASSETS = [
   "/articles/ko-industrial-policy-global-champions.html",
   "/articles/de-industrial-policy-global-champions.html",
   "/articles/fr-industrial-policy-global-champions.html",
+  "/articles/robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/zh-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/zh-hant-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/ja-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/ko-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/de-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+  "/articles/fr-robot-economics-when-do-humanoid-robots-become-cheaper.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
