@@ -3662,6 +3662,29 @@ h2 {
   cursor: pointer;
 }
 
+@media (max-width: 560px) {
+  .insight-update {
+    padding: 16px;
+    place-items: end center;
+  }
+
+  .insight-update-panel {
+    padding: 22px 18px 20px;
+  }
+
+  .insight-update-panel h2 {
+    max-width: calc(100% - 32px);
+    font-size: clamp(24px, 7vw, 30px);
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .insight-update-panel p {
+    font-size: 14px;
+    line-height: 1.58;
+  }
+}
+
 .article-summary,
 .article-body,
 .article-footer-note,
@@ -6290,6 +6313,158 @@ body {
   }
 
   .industrial-policy-article .policy-transmission-table .research-table-cell::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 6px;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+.netflix-article .article-metric-strip div {
+  border-color: rgba(214, 168, 61, 0.22);
+  background:
+    linear-gradient(145deg, rgba(214, 168, 61, 0.1), rgba(6, 10, 12, 0.96) 54%),
+    radial-gradient(circle at 100% 0%, rgba(184, 29, 36, 0.06), transparent 42%);
+  box-shadow: inset 0 1px 0 rgba(244, 240, 230, 0.04);
+}
+
+.netflix-hero::after {
+  content: "NFLX";
+  right: clamp(10px, 4vw, 40px);
+  top: clamp(52px, 8vw, 82px);
+  z-index: 0;
+  color: rgba(184, 29, 36, 0.12);
+  font-size: clamp(74px, 13vw, 156px);
+  letter-spacing: 0.02em;
+}
+
+.netflix-hero h1 {
+  max-width: 880px;
+  font-size: clamp(34px, 4.25vw, 56px);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.netflix-hero .article-share-tools {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+  max-width: 520px;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.netflix-hero .article-share-tools .button {
+  min-height: 32px;
+  padding: 0 12px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+.netflix-article .article-metric-strip strong {
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 1.08;
+  overflow-wrap: normal;
+}
+
+.netflix-article .article-metric-strip small {
+  line-height: 1.5;
+}
+
+.netflix-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.netflix-article .article-framework-chart,
+.netflix-article .related-research,
+.netflix-article .article-references {
+  border-color: rgba(214, 168, 61, 0.22);
+  background:
+    linear-gradient(145deg, rgba(214, 168, 61, 0.08), rgba(7, 10, 12, 0.96) 48%),
+    radial-gradient(circle at 15% 0%, rgba(214, 168, 61, 0.1), transparent 36%);
+  box-shadow: inset 0 1px 0 rgba(244, 240, 230, 0.035);
+}
+
+.netflix-article .netflix-formula .mini-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.netflix-article .netflix-formula .mini-flow span {
+  min-height: 54px;
+  border: 1px solid rgba(214, 168, 61, 0.18);
+  border-radius: 12px;
+  background:
+    linear-gradient(145deg, rgba(214, 168, 61, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(7, 10, 12, 0.72);
+  color: rgba(244, 240, 230, 0.9);
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  font-weight: 750;
+}
+
+.netflix-article .netflix-monitor-table {
+  overflow: hidden;
+}
+
+.netflix-article .netflix-monitor-table .research-table-row {
+  grid-template-columns: var(--policy-cols);
+}
+
+.netflix-article .netflix-monitor-table .research-table-cell {
+  padding: 16px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.netflix-article .netflix-monitor-table .research-table-cell.accent {
+  color: var(--accent);
+  font-weight: 850;
+}
+
+@media (max-width: 760px) {
+  .netflix-article .netflix-formula .mini-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .netflix-hero h1 {
+    font-size: clamp(30px, 8vw, 36px);
+    line-height: 1.14;
+  }
+
+  .netflix-hero .article-share-tools {
+    max-width: 100%;
+    gap: 6px;
+  }
+
+  .netflix-hero .article-share-tools .button {
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 10px;
+  }
+
+  .netflix-article .article-metric-strip strong {
+    font-size: clamp(24px, 7vw, 31px);
+  }
+
+  .netflix-article .netflix-monitor-table .research-table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .netflix-article .netflix-monitor-table .research-table-row.header {
+    display: none;
+  }
+
+  .netflix-article .netflix-monitor-table .research-table-cell::before {
     content: attr(data-label);
     display: block;
     margin-bottom: 6px;

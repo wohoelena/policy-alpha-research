@@ -144,6 +144,11 @@ function initLanguageSwitchFallback() {
       de: "de-from-certification-to-cash-flow-evtol.html",
       fr: "fr-from-certification-to-cash-flow-evtol.html",
     },
+    "netflix-attention-yield.html": {
+      en: "netflix-attention-yield.html",
+      "zh-cn": "zh-netflix-attention-yield.html",
+      "zh-hant": "zh-hant-netflix-attention-yield.html",
+    },
   };
 
   function baseArticleFile(name) {
@@ -1171,68 +1176,69 @@ function getLatestInsight() {
   const localized = {
     zh: {
       label: "最新研究",
-      title: "机器人经济学：每个有效工作小时的成本",
-      summary: "人形机器人的经济测试不是演示视频，而是每个自主、合格、可重复有效小时的全成本。",
+      title: "Netflix：从订阅用户增长到注意力收益率",
+      summary: "Netflix 的估值锚正在从订阅用户增长，转向广告变现、留存价值、定价权和自由现金流质量。",
       primary: "阅读文章",
       secondary: "稍后再看",
-      article: "zh-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "zh-netflix-attention-yield.html",
     },
     "zh-hant": {
       label: "最新研究",
-      title: "機器人經濟學：每個有效工作小時的成本",
-      summary: "人形機器人的經濟測試不是展示影片，而是每個自主、合格、可重複有效小時的全成本。",
+      title: "Netflix：從訂閱用戶增長到注意力收益率",
+      summary: "Netflix 的估值錨正在從訂閱用戶增長，轉向廣告變現、留存價值、定價權和自由現金流品質。",
       primary: "閱讀文章",
       secondary: "稍後再看",
-      article: "zh-hant-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "zh-hant-netflix-attention-yield.html",
     },
     ja: {
       label: "New Insight",
-      title: "ロボット経済学：有効稼働時間あたりコスト",
-      summary: "ヒューマノイドの経済テストはデモではなく、自律的で品質調整後の有効時間あたり全コストです。",
+      title: "Netflix: From Subscriber Growth to Attention Yield",
+      summary: "Netflix is being repriced from subscriber growth toward attention yield, advertising monetization, retention value, pricing power, and free-cash-flow quality.",
       primary: "記事を読む",
       secondary: "あとで見る",
-      article: "ja-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "netflix-attention-yield.html",
     },
     ko: {
       label: "New Insight",
-      title: "로봇 경제학: 유효 작업시간당 비용",
-      summary: "휴머노이드의 경제 테스트는 데모가 아니라 자율적이고 품질 조정된 유효 시간당 총비용입니다.",
+      title: "Netflix: From Subscriber Growth to Attention Yield",
+      summary: "Netflix is being repriced from subscriber growth toward attention yield, advertising monetization, retention value, pricing power, and free-cash-flow quality.",
       primary: "글 읽기",
       secondary: "나중에 보기",
-      article: "ko-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "netflix-attention-yield.html",
     },
     de: {
       label: "New Insight",
-      title: "Robot Economics: Kosten pro produktiver Stunde",
-      summary: "Der ökonomische Test für Humanoide ist nicht das Demo-Video, sondern die Vollkosten je autonome, qualitätsbereinigte produktive Stunde.",
+      title: "Netflix: From Subscriber Growth to Attention Yield",
+      summary: "Netflix is being repriced from subscriber growth toward attention yield, advertising monetization, retention value, pricing power, and free-cash-flow quality.",
       primary: "Artikel lesen",
       secondary: "Später",
-      article: "de-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "netflix-attention-yield.html",
     },
     fr: {
       label: "New Insight",
-      title: "Robot Economics : le coût par heure utile",
-      summary: "Le test économique des humanoïdes n'est pas la démonstration, mais le coût complet par heure autonome, utile et ajustée de la qualité.",
+      title: "Netflix: From Subscriber Growth to Attention Yield",
+      summary: "Netflix is being repriced from subscriber growth toward attention yield, advertising monetization, retention value, pricing power, and free-cash-flow quality.",
       primary: "Lire l’article",
       secondary: "Plus tard",
-      article: "fr-robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "netflix-attention-yield.html",
     },
     en: {
       label: "New Insight",
-      title: "Robot Economics: The Cost per Useful Hour",
-      summary: "The economic test for humanoid robots is not the demo. It is cost per autonomous, quality-adjusted useful hour.",
+      title: "Netflix: From Subscriber Growth to Attention Yield",
+      summary: "Netflix is being repriced from subscriber growth toward attention yield, advertising monetization, retention value, pricing power, and free-cash-flow quality.",
       primary: "Read Note",
       secondary: "Later",
-      article: "robot-economics-when-do-humanoid-robots-become-cheaper.html",
+      article: "netflix-attention-yield.html",
     },
   };
   const insight = localized[languageKey] || localized.en;
   return {
-    id: "robot-economics-20260619",
+    id: "netflix-attention-yield-20260706",
     ...insight,
     url: `${prefix}articles/${insight.article}`,
   };
 }
+
 function showInsightUpdate() {
   if (!document.body || window.location.hash === "#insights") return;
   const latestInsight = getLatestInsight();
