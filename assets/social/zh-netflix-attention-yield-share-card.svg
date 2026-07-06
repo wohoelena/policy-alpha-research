@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#030506"/>
+      <stop offset="0.58" stop-color="#10100d"/>
+      <stop offset="1" stop-color="#28140f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="22%" r="62%">
+      <stop offset="0" stop-color="#b81d24" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#b81d24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="32" y="28" width="1136" height="574" rx="12" fill="none" stroke="#d6a84f" stroke-width="2"/>
+  <text x="64" y="82" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900" fill="#d6a84f">PA</text>
+  <text x="125" y="70" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="900" fill="#d6a84f">POLICY ALPHA RESEARCH 观察</text>
+  <text x="125" y="103" font-family="Inter, Arial, sans-serif" font-size="19" fill="#9ca3a6">媒体与注意力经济</text>
+  <text x="975" y="70" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="900" fill="#d6a84f">ISSUE 06</text>
+  <text x="975" y="103" font-family="Inter, Arial, sans-serif" font-size="18" fill="#9ca3a6">2026.07</text>
+  <text x="70" y="272" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif" font-size="56" font-weight="850" fill="#f4f0e6">Netflix：从订阅用户增长</text>
+  <text x="70" y="342" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif" font-size="56" font-weight="850" fill="#f4f0e6">到注意力收益率</text>
+  <text x="74" y="400" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',Inter,Arial,sans-serif" font-size="27" font-weight="700" fill="#d6a84f">广告变现 · 留存价值 · 自由现金流质量</text>
+  <text x="70" y="540" font-family="Inter, Arial, sans-serif" font-size="18" fill="#9ca3a6">Elena Zhang · Policy Alpha Research</text>
+  <text x="844" y="540" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" fill="#d6a84f">policyalpharesearch.com</text>
+</svg>
