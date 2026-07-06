@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v101";
+const CACHE_NAME = "policy-alpha-research-v103";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -107,8 +107,11 @@ const CORE_ASSETS = [
   "/assets/social/fr-industrial-policy-global-champions-share-card.png",
   "/assets/social/fr-industrial-policy-global-champions-share-card.jpg",
   "/assets/social/netflix-attention-yield-share-card.svg",
+  "/assets/social/netflix-attention-yield-share-card.jpg",
   "/assets/social/zh-netflix-attention-yield-share-card.svg",
+  "/assets/social/zh-netflix-attention-yield-share-card.jpg",
   "/assets/social/zh-hant-netflix-attention-yield-share-card.svg",
+  "/assets/social/zh-hant-netflix-attention-yield-share-card.jpg",
   "/reports/nvidia-research-elena-zhang.pdf",
   "/reports/ehang-evtol-policy-alpha-june-2026.pdf",
   "/reports/ehang-public-source-dcf-model-policy-alpha.xlsx",
