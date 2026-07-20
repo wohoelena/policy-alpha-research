@@ -1,33 +1,44 @@
 # Policy Alpha Research
 
-Policy Alpha Research is an independent macro and equity research platform focused on policy-aware investing, strategic assets, sector rotation, portfolio construction, and risk governance.
+Policy Alpha Research is an independent macro and equity research platform founded by Elena Zhang. It studies how policy shifts, industrial transformation, capital rotation, company fundamentals, valuation, and market confirmation interact across long-duration investment themes.
 
-## Site
+## Primary Entity
 
-- Website: https://policyalpharesearch.com/
-- English homepage: https://policyalpharesearch.com/
-- Chinese homepage: https://policyalpharesearch.com/zh.html
-- Research notes: https://policyalpharesearch.com/articles.html
-- Chinese research notes: https://policyalpharesearch.com/zh-articles.html
+- Organization: https://policyalpharesearch.com/
+- Founder and research lead: https://policyalpharesearch.com/elena-zhang.html
+- 中文作者介绍: https://policyalpharesearch.com/zh-elena-zhang.html
+- Research methodology: https://policyalpharesearch.com/methodology.html
 - Research themes: https://policyalpharesearch.com/themes.html
-- Chinese research themes: https://policyalpharesearch.com/zh-themes.html
-- Methodology: https://policyalpharesearch.com/methodology.html
+- Research archive: https://policyalpharesearch.com/articles.html
+- Chinese research archive: https://policyalpharesearch.com/zh-articles.html
+- Disclosures: https://policyalpharesearch.com/disclosures.html
 
 ## Core Research Themes
 
 - Policy-driven capital flows
+- AI, data-center, grid, and power infrastructure
+- Industrial policy, strategic capacity, and supply-chain security
 - Critical minerals and strategic materials
-- AI infrastructure and autonomous agents
-- ESG, capital access, and sustainability regulation
-- Energy security and grid resilience
-- Healthcare policy and defensive growth
-- Portfolio construction and risk governance
+- ESG, capital access, and regulatory compatibility
+- Attention economics and Inner Infrastructure
+- Company quality, valuation context, and risk governance
 
 ## Current Research Notes
 
+- Inner Infrastructure: The Meaning Economy After AI: https://policyalpharesearch.com/articles/inner-infrastructure-gaia.html
+- 内在基础设施：AI时代的意义经济与 GAIA 案例: https://policyalpharesearch.com/articles/zh-inner-infrastructure-gaia.html
+- Netflix: From Subscriber Growth to Attention Yield: https://policyalpharesearch.com/articles/netflix-attention-yield.html
+- Netflix：从订阅用户增长到注意力收益率: https://policyalpharesearch.com/articles/zh-netflix-attention-yield.html
+- The Return of Industrial Policy Is Repricing Global Champions: https://policyalpharesearch.com/articles/industrial-policy-global-champions.html
+- 产业政策回归：全球龙头公司的估值正在被重写: https://policyalpharesearch.com/articles/zh-industrial-policy-global-champions.html
+- From Certification to Cash Flow: The Next Test for eVTOL: https://policyalpharesearch.com/articles/from-certification-to-cash-flow-evtol.html
+- 从认证到现金流：eVTOL 的下一场商业化测试: https://policyalpharesearch.com/articles/zh-from-certification-to-cash-flow-evtol.html
+- The Power Constraint: https://policyalpharesearch.com/articles/the-power-constraint-ai-infrastructure-energy-policy-trade.html
+- 电力约束: https://policyalpharesearch.com/articles/zh-the-power-constraint-ai-infrastructure-energy-policy-trade.html
+- The Musk Stack: From Code to Cosmos: https://policyalpharesearch.com/articles/musk-stack-from-code-to-cosmos.html
+- Musk Stack：从代码到宇宙: https://policyalpharesearch.com/articles/zh-musk-stack-from-code-to-cosmos.html
 - NVIDIA at the Tollgate: https://policyalpharesearch.com/articles/nvidia-at-the-tollgate.html
-- NVIDIA at the Tollgate 中文版: https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html
-- Full NVIDIA research report: https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf
+- NVIDIA：AI 基础设施的收费站: https://policyalpharesearch.com/articles/zh-nvidia-at-the-tollgate.html
 - ESG Is Dead. Long Live ESG.: https://policyalpharesearch.com/articles/esg-is-no-longer-a-values-framework.html
 - ESG 已死，但 ESG 仍在扩张: https://policyalpharesearch.com/articles/zh-esg-is-no-longer-a-values-framework.html
 - The Next AI Race Won't Be Won by the Smartest Model: https://policyalpharesearch.com/articles/the-next-ai-race-wont-be-won-by-the-smartest-model.html
@@ -35,6 +46,17 @@ Policy Alpha Research is an independent macro and equity research platform focus
 - Lithium Is No Longer Just an EV Trade: https://policyalpharesearch.com/articles/lithium-is-no-longer-just-an-ev-trade.html
 - 锂不再只是电动车交易: https://policyalpharesearch.com/articles/zh-lithium-is-no-longer-just-an-ev-trade.html
 
+## Topic Hubs
+
+- Inner Infrastructure research: https://policyalpharesearch.com/inner-infrastructure.html
+- 内在基础设施专题: https://policyalpharesearch.com/zh-inner-infrastructure.html
+
+## Research Reports
+
+- NVIDIA full research report: https://policyalpharesearch.com/reports/nvidia-research-elena-zhang.pdf
+- EHang eVTOL research report: https://policyalpharesearch.com/reports/ehang-evtol-policy-alpha-june-2026.pdf
+- Musk Stack full report: https://policyalpharesearch.com/reports/musk-stack-full-report.pdf
+
 ## Important Notice
 
-Policy Alpha Research is for informational and educational purposes only. It does not provide personal financial advice, securities recommendations, fund solicitation, return guarantees, or asset management services.
+Policy Alpha Research publishes general information and educational research. It does not provide personal financial advice, securities recommendations for a specific client, fund solicitation, return guarantees, or asset management services. Readers should verify material data and obtain qualified professional advice before making investment decisions.

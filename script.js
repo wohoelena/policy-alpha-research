@@ -1318,3 +1318,21 @@ document.querySelectorAll(".process-card, .allocation-card, .company-card, .risk
   item.classList.add("fade-in");
   observer.observe(item);
 });
+
+const articleReadingProgress = document.querySelector(".article-reading-progress");
+if (articleReadingProgress) {
+  let readingProgressFrame = 0;
+  const updateReadingProgress = () => {
+    const scrollRange = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollRange > 0 ? Math.min(Math.max(window.scrollY / scrollRange, 0), 1) : 0;
+    articleReadingProgress.style.setProperty("--reading-progress", progress.toFixed(4));
+    readingProgressFrame = 0;
+  };
+  const scheduleReadingProgress = () => {
+    if (readingProgressFrame) return;
+    readingProgressFrame = window.requestAnimationFrame(updateReadingProgress);
+  };
+  updateReadingProgress();
+  window.addEventListener("scroll", scheduleReadingProgress, { passive: true });
+  window.addEventListener("resize", scheduleReadingProgress, { passive: true });
+}
