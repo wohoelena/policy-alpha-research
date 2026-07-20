@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v103";
+const CACHE_NAME = "policy-alpha-research-v107";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -54,6 +54,8 @@ const CORE_ASSETS = [
   "/articles/netflix-attention-yield.html",
   "/articles/zh-netflix-attention-yield.html",
   "/articles/zh-hant-netflix-attention-yield.html",
+  "/articles/inner-infrastructure-gaia.html",
+  "/articles/zh-inner-infrastructure-gaia.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
@@ -63,6 +65,8 @@ const CORE_ASSETS = [
   "/styles.css?v=20260616-industrial-policy-v2",
   "/styles.css?v=20260706-netflix-preview-v2",
   "/script.js?v=20260706-netflix-preview-v2",
+  "/styles.css?v=20260720-inner-infrastructure-v5",
+  "/script.js?v=20260720-inner-infrastructure-v5",
   "/site.webmanifest",
   "/sitemap.xml",
   "/feed.xml",
@@ -112,6 +116,10 @@ const CORE_ASSETS = [
   "/assets/social/zh-netflix-attention-yield-share-card.jpg",
   "/assets/social/zh-hant-netflix-attention-yield-share-card.svg",
   "/assets/social/zh-hant-netflix-attention-yield-share-card.jpg",
+  "/assets/social/inner-infrastructure-gaia-share-card.jpg",
+  "/assets/social/inner-infrastructure-gaia-share-card.png",
+  "/assets/social/zh-inner-infrastructure-gaia-share-card.jpg",
+  "/assets/social/zh-inner-infrastructure-gaia-share-card.png",
   "/reports/nvidia-research-elena-zhang.pdf",
   "/reports/ehang-evtol-policy-alpha-june-2026.pdf",
   "/reports/ehang-public-source-dcf-model-policy-alpha.xlsx",
