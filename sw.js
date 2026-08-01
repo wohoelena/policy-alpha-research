@@ -1,4 +1,4 @@
-const CACHE_NAME = "policy-alpha-research-v108";
+const CACHE_NAME = "policy-alpha-v20260802-multilingual-latest";
 const CORE_ASSETS = [
   "/",
   "/zh.html",
@@ -55,11 +55,20 @@ const CORE_ASSETS = [
   "/articles/ko-industrial-policy-global-champions.html",
   "/articles/de-industrial-policy-global-champions.html",
   "/articles/fr-industrial-policy-global-champions.html",
+  "/articles/inner-infrastructure-gaia.html",
   "/articles/netflix-attention-yield.html",
   "/articles/zh-netflix-attention-yield.html",
   "/articles/zh-hant-netflix-attention-yield.html",
-  "/articles/inner-infrastructure-gaia.html",
+  "/articles/ja-netflix-attention-yield.html",
+  "/articles/ko-netflix-attention-yield.html",
+  "/articles/de-netflix-attention-yield.html",
+  "/articles/fr-netflix-attention-yield.html",
   "/articles/zh-inner-infrastructure-gaia.html",
+  "/articles/zh-hant-inner-infrastructure-gaia.html",
+  "/articles/ja-inner-infrastructure-gaia.html",
+  "/articles/ko-inner-infrastructure-gaia.html",
+  "/articles/de-inner-infrastructure-gaia.html",
+  "/articles/fr-inner-infrastructure-gaia.html",
   "/themes.html",
   "/zh-themes.html",
   "/methodology.html",
